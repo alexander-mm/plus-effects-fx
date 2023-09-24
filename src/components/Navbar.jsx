@@ -58,13 +58,13 @@ const Navbar = () => {
                                     <Link
                                         onClick={() => setToggle((prev) => !prev)}
                                         to={item.to}
-                                        className={`font-montserrat leading-normal text-xl
+                                        className={`font-montserrat leading-[50px] text-[25px]
                                         ${location.pathname === item.to ? 'text-pale-red' : 'text-white-400/50'}`}>
                                         {item.label}
                                     </Link>
                                 </li>
                             ))}
-                            <li className='font-montserrat leading-normal text-lg text-red-600/70'>
+                            <li className='font-montserrat leading-[50px] text-[25px] text-red-600/70'>
                                 <p className='cursor-pointer' onClick={() => { handleForm(); setToggle((prev) => !prev); }}>Contacto</p>
                             </li>
                         </ul>
