@@ -4,7 +4,7 @@ import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
     return (
-        <footer className='bg-black pt-28 sm:pt-20'>
+        <footer className='bg-black pt-28 pb-10 sm:pt-20 px-10'>
             <div className=" max-container">
                 <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
                     <div className='flex flex-col items-start'>
@@ -12,8 +12,7 @@ const Footer = () => {
                             <img
                                 src={footerLogo}
                                 alt='logo'
-                                width={150}
-                                height={46}
+                                width={120}
                                 className='m-0'
                             />
                         </a>

@@ -20,9 +20,9 @@ const Navbar = () => {
     return (
         <header className='px-4 py-2 lg:px-10 absolute z-10 w-full fondotest'>
             <nav className='py-4 flex justify-between items-center max-container'>
-                <a href="/">
+                <a className='ml-4' href="/">
                     <img src={headerLogo} alt="Logo"
-                        width={110}
+                        width={100}
                     />
                 </a>
                 <ul className='flex-1 flex justify-end items-center gap-16 max-lg:hidden'>
@@ -30,15 +30,15 @@ const Navbar = () => {
                         <li key={item.label}>
                             <Link
                                 to={item.to}
-                                className={`font-montserrat leading-normal text-lg hover:text-white
-                                ${location.pathname === item.to ? 'text-pale-red/80 hover:text-red-600/50 hover:border-0 border border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50'}
+                                className={`font-montserrat leading-normal text-lg 
+                                ${location.pathname === item.to ? 'text-pale-red/80 hover:text-red-600/50 hover:border-0 border border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
                                 `}
                             >
                                 {item.label}
                             </Link>
                         </li>
                     ))}
-                    <li className='font-montserrat leading-normal text-lg font-bold text-red-600/75 hover:text-pale-red'>
+                    <li className='font-montserrat leading-normal text-lg font-bold text-white hover:text-white/70'>
                         <p className='cursor-pointer' onClick={handleForm}>Contacto</p>
                     </li>
                 </ul>
@@ -46,18 +46,19 @@ const Navbar = () => {
 
                 <div className='hidden max-lg:block'>
                     <img
+                        className='mr-4'
                         src={toggle ? closeBtn : hamburger}
-                        alt="Hamburger" width={25} height={25}
+                        alt="Hamburger" width={28} height={28}
                         onClick={() => setToggle((prev) => !prev)}
                     />
-                    <div className={`${toggle ? 'flex' : 'hidden'} bg-black border  text-white-400 rounded-md p-4 absolute top-20 right-1 z-[1000]`}>
+                    <div className={`${toggle ? 'flex' : 'hidden'} bg-black border border-white/30 text-white-400 rounded-md p-4 absolute top-20 right-1 z-[1000]`}>
                         <ul className='flex flex-col gap-4 justify-end items-center'>
                             {navLinks.map((item) => (
                                 <li key={item.label}>
                                     <Link
                                         onClick={() => setToggle((prev) => !prev)}
                                         to={item.to}
-                                        className={`font-montserrat leading-normal text-lg
+                                        className={`font-montserrat leading-normal text-xl
                                         ${location.pathname === item.to ? 'text-pale-red' : 'text-white-400/50'}`}>
                                         {item.label}
                                     </Link>
