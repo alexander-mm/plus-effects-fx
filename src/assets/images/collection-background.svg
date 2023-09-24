@@ -1,0 +1,9 @@
+<svg width="762" height="836" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <path id="svg_1" d="m0,0l762,0l0,836l-762,0l0,-836z" opacity="undefined" fill="#171818"/>
+  <path stroke="red" id="svg_4" stroke-linecap="square" stroke-width="3" stroke-opacity="0.8" d="m762.18298,39.44385l-229.45999,475.46201c108.88306,76.20806 109.4691,74.6901 229.95999,165.03799"/>
+  <path stroke="red" id="svg_5" stroke-linecap="square" stroke-width="3" stroke-opacity="0.8" d="m812.11277,31.45508l-229.45999,475.46201c108.88306,76.20806 109.4691,74.6901 229.95999,165.03799"/>
+  <path stroke="red" id="svg_6" stroke-linecap="square" stroke-width="3" stroke-opacity="0.8" d="m862.04256,19.47193l-229.45999,475.46201c108.88306,76.20806 109.4691,74.6901 229.95999,165.03799"/>
+ </g>
+</svg>
