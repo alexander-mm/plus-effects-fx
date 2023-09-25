@@ -1,22 +1,22 @@
-const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
+const CanonCard = ({ imgURL, changeBigCanonImage, bigCanonImg }) => {
     const handleClick = () => {
-        if (bigShoeImg !== imgURL.bigShoe) {
-            changeBigShoeImage(imgURL.bigShoe);
+        if (bigCanonImg !== imgURL.bigCanon) {
+            changeBigCanonImage(imgURL.bigCanon);
         }
     };
 
     return (
         <div
-            className={`border-2 rounded-lg ${bigShoeImg === imgURL.bigShoe
-                ? "border-pale-red"
-                : "border-transparent"
+            className={`rounded-lg ${bigCanonImg === imgURL.bigCanon
+                ? "border-pale-red border-2"
+                : "border-white/50 border opacity-30"
                 } cursor-pointer max-sm:flex-1`}
             onClick={handleClick}
         >
             <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-lg max-sm:p-4'>
                 <img
                     src={imgURL.thumbnail}
-                    alt='shoe colletion'
+                    alt='canon collection'
                     width={127}
                     height={103.34}
                     className='object-contain'
@@ -26,4 +26,4 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
     );
 };
 
-export default ShoeCard;
+export default CanonCard;

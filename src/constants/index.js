@@ -1,24 +1,24 @@
 import { facebook, instagram, whatsapp, tiktok, youtube } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { canon1,canon2,canon3, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const navLinks = [
     { to: "/", label: "Inicio" },
-    { to: "#products", label: "Productos" },
     { to: "/nosotros", label: "Nosotros" },
+    { to: "#products", label: "Productos" },
 ];
 
-export const shoes = [
+export const machines = [
     {
         thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
+        bigCanon: canon1,
     },
     {
         thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
+        bigCanon: canon2,
     },
     {
         thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
+        bigCanon: canon3,
     },
 ];
 
@@ -47,31 +47,21 @@ export const products = [
 
 export const footerLinks = [
     {
-        title: "Products",
+        title: "Productos",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Espuma One", link: "/" },
+            { name: "MHB-400", link: "/" },
+            { name: "FCM-350 SP", link: "/" },
+            { name: "FCM-350", link: "/" },
         ],
     },
     {
-        title: "Help",
+        title: "Ayuda",
         links: [
-            { name: "About us", link: "/" },
-            { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
-        ],
-    },
-    {
-        title: "Get in touch",
-        links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "Mapa del Sitio", link: "/" },
+            { name: "Políticas de Garantía", link: "/" },
+            { name: "Políticas de Devolución", link: "/" },
+            { name: "Sitios Asociados", link: "/" },
         ],
     },
 ];
