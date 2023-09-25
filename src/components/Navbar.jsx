@@ -64,7 +64,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                             ))}
-                            <li className='font-montserrat leading-[50px] text-[25px] text-red-600/70'>
+                            <li className='font-montserrat leading-[50px] text-[25px] text-red-600/60'>
                                 <p className='cursor-pointer' onClick={() => { handleForm(); setToggle((prev) => !prev); }}>Contacto</p>
                             </li>
                         </ul>
