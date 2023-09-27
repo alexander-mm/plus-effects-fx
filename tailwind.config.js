@@ -15,6 +15,8 @@ export default {
     },
     extend: {
       fontFamily: {
+        microflf: ['MicroFLF', 'sans-serif'],
+        sterilict: ['Sterilict', 'sans-serif'],
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },

@@ -55,7 +55,7 @@ const Form = ({ setForm }) => {
             <div className='py-10'>
                 <p className='text-center font-montserrat leading-normal text-2xl text-white'>Contáctanos</p>
             </div>
-            <div className='pb-[24em] sm:pb-[36em] md:pb-[34em] xl:pb-[6em]'>
+            <div className='pb-[24em] sm:pb-[36em] md:pb-[34em] xl:pb-[20em]'>
                 <form
                     onSubmit={handleSubmit}
                     className="bg-black rounded-md py-10 px-8"

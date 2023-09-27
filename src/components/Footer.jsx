@@ -1,12 +1,11 @@
-import { copyrightSign } from "../assets/icons";
 import { footerLogo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
     return (
-        <footer className=' bg-black pt-28 pb-10 sm:pt-20 px-10'>
+        <footer className=' bg-black pt-20 pb-6 sm:pt-10 px-10'>
             <div className=" max-container">
-                <div className='flex justify-around items-center gap-8 flex-wrap max-md:flex-col'>
+                <div className='flex justify-around items-center gap-8 md:flex-wrap max-md:flex-col'>
                     <div className='flex flex-col px-2 items-center'>
                         <a href='/'>
                             <img
@@ -38,13 +37,13 @@ const Footer = () => {
                     <div className="flex flex-row items-center gap-[4em] sm:gap-[10em] mt-6 lg:mt-0">
                         {footerLinks.map((section) => (
                             <div key={section.title}>
-                                <h4 className='font-montserrat text-2xl leading-normal font-medium mb-6 text-center text-white'>
+                                <h4 className='font-montserrat text-lg leading-normal font-medium mb-4 text-center text-white'>
                                     {section.title}
                                 </h4>
                                 <ul>
                                     {section.links.map((link) => (
                                         <li
-                                            className='mt-1 font-montserrat text-base leading-normal text-center text-white-400 hover:text-slate-gray'
+                                            className='mt-1 font-montserrat text-sm leading-normal text-center text-white-400 hover:text-slate-gray'
                                             key={link.name}
                                         >
                                             <a href={link.link}>{link.name}</a>
@@ -55,33 +54,19 @@ const Footer = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="flex flex-col justify-center ">
-                        <h4 className='font-montserrat text-2xl leading-normal font-medium mb-1 text-center text-white'>
+                    <div className="flex flex-col sm:flex-row xl:flex-col xl:gap-4 sm:gap-8 justify-center ">
+                        <h4 className='font-montserrat text-lg leading-normal font-medium mb-1 text-center text-white'>
                             Contacto
                         </h4>
-                        <ul className="flex flex-col text-center">
-                            <li className='mt-1 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray'>
+                        <ul className="flex items-center flex-col sm:flex-row sm:gap-4 xl:flex-col xl:gap-0 text-center">
+                            <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray'>
                                 <a href="/">clientes@masqueunefecto.com</a>
                             </li>
-                            <li className='mt-1 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray'>
+                            <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray lg:mt-1'>
                                 <a href="/">+5939812345678</a>
                             </li>
                         </ul>
                     </div>
-                </div>
-
-                <div className='flex justify-between text-white-400 mt-8 max-sm:flex-col max-sm:items-center'>
-                    <div className='flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer'>
-                        <img
-                            src={copyrightSign}
-                            alt='copyright sign'
-                            width={20}
-                            height={20}
-                            className='rounded-full m-0'
-                        />
-                        <p>Copyright. All rights reserved.</p>
-                    </div>
-                    <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
                 </div>
             </div>
 
