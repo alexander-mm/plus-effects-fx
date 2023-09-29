@@ -32,7 +32,7 @@ const AditivoX6 = () => {
                         </div>
 
                         <button type='button' className='bg-white mt-10 py-2 px-6 rounded-2xl cursor-pointer'>
-                            <a className='flex flex-row justify-center items-center gap-3 text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20colorante%20para%20Espuma" target="_blank" rel="noopener noreferrer">COMPRAR
+                            <a className='flex flex-row justify-center items-center gap-3 text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20paquete%20de%206%20colorantes%20para%20Espuma" target="_blank" rel="noopener noreferrer">COMPRAR
                                 <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
                             </a>
                         </button>

@@ -14,9 +14,9 @@ const KitBombeo = () => {
                     <div className="text-white text-center mb-12 lg:mb-0 mx-8 lg:mx-14">
                         <p className="font-microflf mb-8 text-3xl">SISTEMA DE BOMBEO AUXILIAR</p>
                         <h1 className="font-montserrat text-xl font-bold mb-2">DESCRIPCION:</h1>
-                        <p className="font-montserrat text-lg leading-8">- Bomba de superficie 750W <br />-Interruptor icorporado.<br />- Cable de conexión a toma corriente eléctrico.<br />- 4 Metros de manguera de 1 Pulgada con refuerzo en acero. <br />- Filtro textil incorporado.</p>
+                        <p className="font-montserrat text-lg leading-8">- Bomba de superficie 750W.<br />-Interruptor incorporado.<br />- Cable de conexión a toma corriente eléctrico.<br />- 4 Metros de manguera de 1 Pulgada con refuerzo en acero. <br />- Filtro textil incorporado.</p>
                         <button type='button' className='bg-white mt-10 py-2 px-6 rounded-2xl cursor-pointer'>
-                            <a className='flex flex-row justify-center items-center gap-3 text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20colorante%20para%20Espuma" target="_blank" rel="noopener noreferrer">COMPRAR
+                            <a className='flex flex-row justify-center items-center gap-3 text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20kit%20de%20bombeo%20para%20el%20cañon%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
                                 <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
                             </a>
                         </button>
