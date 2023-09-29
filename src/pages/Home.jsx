@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
 import { arrowRight } from '../assets/icons/'
 
@@ -10,20 +11,19 @@ const Home = () => {
                 <div className="w-full xl:w-2/5 relative flex flex-col justify-center items-start mt-28">
 
                     <div className="flex flex-col relative z-[9] text-pale-red ml-6 gap-y-6 xl:gap-y-12">
-                        <span className="text-white  font-montserrat text-[28px] md:text-[35px] lg:whitespace-nowrap">Equipos a la vanguardia mundial !</span>
-                        <span className="text-white font-montserrat font-bold text-[54px] md:text-[70px] xl:mt-2">Nuestra Estrella</span>
-                        <span className="text-white font-sterilict text-[55px] md:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
+                        <span className="text-white  font-montserrat text-[25px] md:text-[35px] lg:whitespace-nowrap">Equipos a la vanguardia mundial !</span>
+                        <span className="text-white font-montserrat font-bold text-[51px] md:whitespace-nowrap md:text-[75px] xl:mt-2 xl:bg-black">Nuestra Estrella</span>
+                        <span className="text-white font-sterilict text-[53px] md:whitespace-nowrap md:text-[75px]">ESPUMA<span className='text-pale-red font-sterilict xl:bg-black'> - One</span></span>
                         <div className='text-center mt-16 hidden xl:block'>
                             <p className="text-white text-lg font-montserrat">Explore todo nuestro catálogo de cañones de espuma.</p>
                             <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black hover:border hover:border-white'>
-                                <a
+                                <Link
                                     className='flex flex-row justify-center items-center text-black hover:text-white font-palanquin font-bold'
-                                    href="/maquinas"
-                                    target="_blank" rel="noopener noreferrer"
+                                    to="/maquinas"
                                 >
                                     EXPLORAR
                                     <img src={arrowRight} className='w-9 ml-2' alt="shop icon" />
-                                </a>
+                                </Link>
                             </button>
                         </div>
                     </div>
@@ -48,7 +48,6 @@ const Home = () => {
                         <a
                             className='flex flex-row justify-center items-center text-black font-palanquin font-bold'
                             href="/maquinas"
-                            target="_blank" rel="noopener noreferrer"
                         >
                             EXPLORAR
                             <img src={arrowRight} className='w-9 ml-2' alt="shop icon" />

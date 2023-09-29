@@ -2,19 +2,10 @@ import canon1 from './canon1.png'
 import canon2 from './canon2.png'
 import canon3 from './canon3.png'
 
-import customer1 from './customer1.jpeg'
-import customer2 from './customer2.svg'
+import sample from './sample.png'
 
 import footerLogo from './footer-logo.png'
 import headerLogo from './header-logo.png'
-
-import offer from './offer.svg'
-
-import shoe4 from './shoe4.svg'
-import shoe5 from './shoe5.svg'
-import shoe6 from './shoe6.svg'
-import shoe7 from './shoe7.svg'
-import shoe8 from './shoe8.svg'
 
 import thumbnailBackground from './thumbnail-background.svg'
 import thumbnailShoe1 from './thumbnail-shoe1.png'
@@ -26,18 +17,10 @@ export {
     canon2,
     canon3,
 
-    customer1,
-    customer2,
+    sample,
 
     footerLogo,
     headerLogo,
-
-    offer,
-    shoe4,
-    shoe5,
-    shoe6,
-    shoe7,
-    shoe8,
 
     thumbnailBackground,
     thumbnailShoe1,

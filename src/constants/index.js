@@ -1,11 +1,13 @@
 import { facebook, instagram, whatsapp, tiktok, youtube } from "../assets/icons";
 import { canon1,canon2,canon3, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { bidon, colorante, colorantex6, sistemadebombeo } from "../assets/shop-items";
 
 export const navLinks = [
     { to: "/", label: "Inicio" },
     { to: "/maquinas", label: "Máquinas" },
-    { to: "/consumibles&accs", label: "Consumibles y Accs" },
+    { to: "/insumos&accs", label: "Insumos & Accs" },
 ];
+
 
 export const machines = [
     {
@@ -19,6 +21,56 @@ export const machines = [
     {
         thumbnail: thumbnailShoe3,
         bigCanon: canon3,
+    },
+];
+
+export const articulos = [
+    {
+        thumbnail: bidon,
+        nombre: 'Espuma XPLUS',
+        descripcion: 'Bidon: 20 Litros',
+        to:"/bidon"
+    },
+    {
+        thumbnail: bidon,
+        nombre: 'Espuma XPLUS',
+        descripcion: 'Bidon: 20 Litros',
+        to:"/bidon"
+    },
+    {
+        thumbnail: bidon,
+        nombre: 'Espuma XPLUS',
+        descripcion: 'Bidon: 20 Litros',
+        to:"/bidon"
+    },
+    {
+        thumbnail: bidon,
+        nombre: 'Espuma XPLUS',
+        descripcion: 'Bidon: 20 Litros',
+        to:"/bidon"
+    },
+];
+
+export const aditivos = [
+    {
+        thumbnail: colorante,
+        nombre: 'Espuma XCOLOR',
+        descripcion: '1 UND',
+        to:"/aditivo"
+    },
+    {
+        thumbnail: colorantex6,
+        nombre: 'Espuma XCOLOR',
+        descripcion: '6 UNDS',
+        to:"/aditivox6"
+    },
+];
+export const accesoriosRefaccion = [
+    {
+        thumbnail: sistemadebombeo,
+        nombre: 'Kit de Bombeo AUX',
+        equipo: 'ESPUMA ONE',
+        to:"/kitbombeo"
     },
 ];
 
