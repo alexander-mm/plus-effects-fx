@@ -54,7 +54,7 @@ const Insumos = () => {
                         <div className='flex flex-row justify-around items-center'>
                             <p className='text-white text-center font-montserrat text-sm md:text-[16px]'>{aditivo.descripcion}</p>
                             <button type='button' className='bg-white px-2 rounded-lg w-9 h-8  cursor-pointer'>
-                                <a href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20quiero%20comprar%20liquido%20de%20espuma%20en%20presentación%20:" target="_blank" rel="noopener noreferrer">
+                                <a href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20quiero%20comprar%20colorante%20para%20espuma%20en%20presentación%20:" target="_blank" rel="noopener noreferrer">
                                     <img src={shopIcon} className='w-6 h-5' alt="shop icon" />
                                 </a>
                             </button>
@@ -81,7 +81,7 @@ const Insumos = () => {
                         <div className='flex flex-row justify-around items-center'>
                             <p className='text-white text-center font-montserrat font-bold'>EQUIPO: <span className=' font-normal'>{accs.equipo}</span></p>
                             <button type='button' className='bg-white px-2 rounded-lg w-9 h-8  cursor-pointer'>
-                                <a href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20quiero%20comprar%20liquido%20de%20espuma%20en%20presentación%20:" target="_blank" rel="noopener noreferrer">
+                                <a href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20este%20accesorio%20:" target="_blank" rel="noopener noreferrer">
                                     <img src={shopIcon} className='w-6 h-5' alt="shop icon" />
                                 </a>
                             </button>
