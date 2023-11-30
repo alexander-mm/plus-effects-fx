@@ -4,7 +4,7 @@ import { bidon, colorante, colorantex6, sistemadebombeo } from "../assets/shop-i
 
 export const navLinks = [
     { to: "/", label: "Inicio" },
-    { to: "/maquinas", label: "Máquinas" },
+    { to: "/maquinas", label: "Nuestros Equipos" },
     { to: "/insumos&accs", label: "Insumos & Accs" },
 ];
 
@@ -24,6 +24,12 @@ export const machines = [
     },
 ];
 
+export const maquinasEspuma = [
+    {
+        thumbnail: canon1,
+        to:"/espumaone"
+    },
+];
 export const articulos = [
     {
         thumbnail: bidon,

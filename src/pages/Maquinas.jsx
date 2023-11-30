@@ -1,84 +1,42 @@
-import { useState } from 'react'
-import { canon1 } from '../assets/images'
-import shopIcon from '../assets/icons/shop-icon.png'
-import { machines } from '../constants'
-import CanonCard from '../components/CanonCard'
+import { Link } from 'react-router-dom'
+import { maquinasEspuma } from '../constants'
+import { arrowRight } from '../assets/icons/'
 
-const Maquinas = () => {
-
-    const [bigCanonImg, setBigCanonImg] = useState(canon1)
+const Insumos = () => {
 
     return (
         <section className='bg-black'>
 
-            <h1 className='
-                  text-white
-                    text-center
-                    font-microflf
-                    pt-[3.5em]
-                    pb-[1.5em] xl:pb-[0]
-                    text-[40px]
-                '>MODELOS EN STOCK</h1>
+            <h1 className='text-white text-center font-microflf pt-[3.5em] pb-[1em] text-[40px]'>CAÑÓNES DE ESPUMA</h1>
 
-            <div className="w-full flex xl:flex-row flex-col-reverse justify-center min-h-[92vh] max-container gap-14 xl:gap-0 xl:py-[8em]">
-
-                <div className='flex justify-center xl:hidden'>
-                    <button type='button' className='bg-white py-2 px-6 rounded-2xl cursor-pointer'>
-                        <a className='flex flex-row justify-center items-center gap-3 text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
-                            <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
-                        </a>
-                    </button>
-                </div>
-
-                <div className="
-                    bg-black
-                        flex relative 
-                        justify-center items-center
-                        border-2 border-white/50 rounded-2xl
-                        px-[1em]  xl:px-[2em]
-                        pb-[9em] sm:pb-[12em] md:pb-[12em] lg:pb-[12em] xl:pb-[14em]
-                        pt-[1em] md:pt-[3em]  xl:pt-[1em]
-                        mx-8 md:mx-[7em] lg:mx-[15em] xl:mx-[0em]
-                        xl:ml-[2em]
-                    ">
-                    <img src={bigCanonImg} alt="canon collection" width={610} height={500} className=" object-contain relative z-1" />
-
-                    <div className='flex sm:gap-6 gap-4 absolute -bottom-[-5%]  max-sm:px-6'>
-                        {machines.map((image, index) => (
-                            <div key={index}>
-                                <CanonCard
-                                    index={index}
-                                    imgURL={image}
-                                    changeBigCanonImage={(shoe) => setBigCanonImg(shoe)}
-                                    bigCanonImg={bigCanonImg}
-                                />
+            <div className='flex flex-row justify-center mb-20'>
+                <div className=''>
+                    <h2 className='border-t border-white-400/10 text-white text-center font-microflf py-[1em] xl:pb-[0] text-[34px]'>ESPUMA <span className='inline-block text-pale-red'>ONE</span></h2>
+                    <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[2em] pb-[2em]">
+                        {maquinasEspuma.map((articulo, index) => (
+                            <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
+                                <Link to={articulo.to}>
+                                    <img
+                                        src={articulo.thumbnail}
+                                        alt={`Máquina ${index + 1}`}
+                                        className="w-[25em] md:w-[30em]"
+                                    />
+                                </Link>
                             </div>
                         ))}
                     </div>
-                </div>
-
-
-                <div className="w-full xl:w-3/6 flex flex-col justify-center text-center gap-y-1 xl:mr-[2em] xl:gap-y-10">
-                    <span className="text-white font-montserrat text-[24px] md:text-[28px] xl:text-[34px]">El nuevo integrante de la Familia!</span>
-                    <span className="text-white font-sterilict py-4 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
-                    <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- MAXIMO RENDIMIENTO</span>
-                    <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- GRAN ALCANCE</span>
-                    <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- PORTABILIDAD</span>
-
-                    <div className='hidden xl:block mt-16'>
-                        <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer hover:bg-green-600'>
-                            <a className='flex flex-row justify-center items-center text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
-                                <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
-                            </a>
+                    <div className='flex justify-center'>
+                        <button type='button' className='gap-2 font-palanquin font-bold  mt-8 py-2 px-4 rounded-2xl cursor-pointer bg-white hover:text-white hover:bg-black hover:border hover:border-white'>
+                            <Link className='flex flex-row items-center' to="/espumaone">
+                                <img src={arrowRight} className='w-6 h-5' alt="shop icon" />
+                                LEER MÁS...
+                            </Link>
                         </button>
                     </div>
                 </div>
             </div>
-
-
-
         </section>
-    );
-};
+    )
+}
 
-export default Maquinas;
+export default Insumos;
