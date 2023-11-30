@@ -63,7 +63,10 @@ const Footer = () => {
                                 <a href="/">clientes@masqueunefecto.com</a>
                             </li>
                             <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray lg:mt-1'>
-                                <a href="/">+5939812345678</a>
+                                <a href="/">Telf. +593 98 04 29 801</a>
+                            </li>
+                            <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray lg:mt-1'>
+                                <a href="/">Nicanor Gavilanes y Luis Padilla - Lote #6 - San Gabriel, Carchi</a>
                             </li>
                         </ul>
                     </div>

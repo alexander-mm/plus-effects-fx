@@ -60,7 +60,7 @@ export const aditivos = [
     },
     {
         thumbnail: colorantex6,
-        nombre: 'Espuma XCOLOR',
+        nombre: 'Espuma XCOLOR SIX PACK',
         descripcion: '6 UNDS',
         to:"/aditivox6"
     },
