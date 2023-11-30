@@ -60,7 +60,7 @@ const Footer = () => {
                         </h4>
                         <ul className="flex items-center flex-col sm:flex-row sm:gap-4 xl:flex-col xl:gap-0 text-center">
                             <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray'>
-                                <a href="/">clientes@masqueunefecto.com</a>
+                                <a href="/">ventas@masqueunefecto.com</a>
                             </li>
                             <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray lg:mt-1'>
                                 <a href="/">Telf. +593 98 04 29 801</a>
