@@ -11,7 +11,7 @@ const Insumos = () => {
 
             <div className='flex flex-row justify-center mb-20'>
                 <div className=''>
-                    <h2 className='border-t border-white-400/10 text-white text-center font-microflf py-[1em] xl:pb-[0] text-[34px]'>ESPUMA <span className='inline-block text-pale-red'>ONE</span></h2>
+
                     <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[2em] pb-[2em]">
                         {maquinasEspuma.map((articulo, index) => (
                             <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
@@ -19,7 +19,7 @@ const Insumos = () => {
                                     <img
                                         src={articulo.thumbnail}
                                         alt={`Máquina ${index + 1}`}
-                                        className="w-[25em] md:w-[30em]"
+                                        className="w-[30em] md:w-[35em]"
                                     />
                                 </Link>
                             </div>
