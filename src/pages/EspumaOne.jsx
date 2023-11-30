@@ -62,7 +62,7 @@ const Maquinas = () => {
                 </div>
 
 
-                <div className="w-full xl:w-3/6 flex flex-col justify-center mt-10 text-center gap-y-1 xl:mr-[2em] xl:gap-y-10">
+                <div className="w-full xl:w-3/6 flex flex-col justify-center mt-8 text-center gap-y-1 xl:mr-[2em] xl:gap-y-10">
                     <span className="text-white font-montserrat text-[24px] md:text-[28px] xl:text-[34px]">El nuevo integrante de la Familia!</span>
                     <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- MAXIMO RENDIMIENTO</span>
                     <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- GRAN ALCANCE</span>
