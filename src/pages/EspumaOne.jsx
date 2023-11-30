@@ -12,15 +12,9 @@ const Maquinas = () => {
 
     return (
         <section className='bg-black'>
-
-            <h1 className='
-                  text-white
-                    text-center
-                    font-microflf
-                    pt-[1em]
-                    pb-[1.5em] xl:pb-[0]
-                    text-[40px]
-                '>MODELOS EN STOCK</h1>
+            <div className='flex justify-center'>
+                <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
+            </div>
 
             <div className="w-full flex xl:flex-row flex-col-reverse justify-center min-h-[92vh] max-container gap-14 xl:gap-0 xl:py-[4em]">
 
@@ -68,9 +62,8 @@ const Maquinas = () => {
                 </div>
 
 
-                <div className="w-full xl:w-3/6 flex flex-col justify-center text-center gap-y-1 xl:mr-[2em] xl:gap-y-10">
+                <div className="w-full xl:w-3/6 flex flex-col justify-center mt-10 text-center gap-y-1 xl:mr-[2em] xl:gap-y-10">
                     <span className="text-white font-montserrat text-[24px] md:text-[28px] xl:text-[34px]">El nuevo integrante de la Familia!</span>
-                    <span className="text-white font-sterilict py-4 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
                     <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- MAXIMO RENDIMIENTO</span>
                     <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- GRAN ALCANCE</span>
                     <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- PORTABILIDAD</span>
