@@ -76,12 +76,12 @@ export const accesoriosRefaccion = [
 
 export const footerLinks = [
     {
-        title: "Productos",
+        title: "Máquinas",
         links: [
-            { name: "Espuma One", link: "/maquinas" },
-            { name: "MHB-400", link: "/" },
-            { name: "FCM-350 SP", link: "/" },
-            { name: "FCM-350", link: "/" },
+            { name: "Espuma", link: "/maquinas" },
+            { name: "Nieve", link: "/" },
+            { name: "CO2", link: "/" },
+            { name: "Burbujas", link: "/" },
         ],
     },
     {
@@ -96,9 +96,9 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-    { src: whatsapp, alt: "whatsapp logo" },
+    { src: whatsapp, alt: "whatsapp logo", href: "https://api.whatsapp.com/send?phone=593980429801" },
     { src: facebook, alt: "facebook logo", href: "https://www.facebook.com/masqueunefecto"},
-    { src: instagram, alt: "instagram logo" },
-    { src: tiktok, alt: "tiktok logo" },
-    { src: youtube, alt: "youtube logo" },
+    { src: instagram, alt: "instagram logo", href: "https://www.instagram.com/masqueunefecto/" },
+    { src: tiktok, alt: "tiktok logo", href: "https://www.tiktok.com/@masqueunefecto" },
+    { src: youtube, alt: "youtube logo", href: "https://www.youtube.com/channel/UCBQ952GNUt3RXTz2Iw0JwUg" },
 ];

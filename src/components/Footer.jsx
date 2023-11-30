@@ -1,4 +1,4 @@
-import { footerLogo } from "../assets/images";
+import { logo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className='flex flex-col px-2 items-center'>
                         <a href='/'>
                             <img
-                                src={footerLogo}
+                                src={logo}
                                 alt='logo'
                                 width={120}
                                 className='m-0'
