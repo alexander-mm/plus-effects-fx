@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
 import { arrowRight } from '../assets/icons/'
 
@@ -17,13 +16,13 @@ const Home = () => {
                         <div className='text-center mt-16 hidden xl:block'>
                             <p className="text-white text-lg font-montserrat">Explore todo nuestro catálogo de cañones de espuma.</p>
                             <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black hover:border hover:border-white'>
-                                <Link
+                                <a
                                     className='flex flex-row justify-center items-center text-black hover:text-white font-palanquin font-bold'
-                                    to="/maquinas"
+                                    href="/maquinas"
                                 >
                                     EXPLORAR
                                     <img src={arrowRight} className='w-9 ml-2' alt="shop icon" />
-                                </Link>
+                                </a>
                             </button>
                         </div>
                     </div>

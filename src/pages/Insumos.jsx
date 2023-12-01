@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { articulos } from '../constants'
 import { aditivos } from '../constants'
 import { accesoriosRefaccion } from '../constants'
@@ -16,13 +15,13 @@ const Insumos = () => {
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
                 {articulos.map((articulo, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
-                        <Link to={articulo.to}>
+                        <a href={articulo.to}>
                             <img
                                 src={articulo.thumbnail}
                                 alt={`Máquina ${index + 1}`}
                                 className="w-[10em] md:w-[15em]"
                             />
-                        </Link>
+                        </a>
                         <p className='text-white text-center text-[14px] font-montserrat font-bold'>{articulo.nombre}</p>
 
                         <div className='flex flex-row justify-around items-center'>
@@ -42,13 +41,13 @@ const Insumos = () => {
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
                 {aditivos.map((aditivo, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
-                        <Link to={aditivo.to}>
+                        <a href={aditivo.to}>
                             <img
                                 src={aditivo.thumbnail}
                                 alt={`Máquina ${index + 1}`}
                                 className="w-[10em] md:w-[15em]"
                             />
-                        </Link>
+                        </a>
                         <p className='text-white text-center text-[14px] font-montserrat font-bold'>{aditivo.nombre}</p>
 
                         <div className='flex flex-row justify-around items-center'>
@@ -68,13 +67,13 @@ const Insumos = () => {
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
                 {accesoriosRefaccion.map((accs, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
-                        <Link className='flex justify-center items-center' to={accs.to}>
+                        <a className='flex justify-center items-center' href={accs.to}>
                             <img
                                 src={accs.thumbnail}
                                 alt={`Máquina ${index + 1}`}
                                 className="w-[10em] md:w-[15em]"
                             />
-                        </Link>
+                        </a>
                         <p className='text-white text-center font-montserrat font-bold'>{accs.nombre}</p>
 
 

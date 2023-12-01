@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
 import { machines } from '../constants'
@@ -20,12 +19,12 @@ const Maquinas = () => {
 
                 <div className='flex justify-center items-center gap-2  xl:hidden'>
                     <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
-                        <Link
+                        <a
                             className='flex flex-row-reverse justify-center items-center text-black font-palanquin font-bold'
-                            to="/maquinas"
+                            href="/maquinas"
                         >
                             <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
-                        </Link>
+                        </a>
                     </button>
                     <button type='button' className='bg-white py-2 px-6 rounded-2xl cursor-pointer'>
                         <a className='flex flex-row justify-center items-center gap-3 text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
@@ -70,12 +69,12 @@ const Maquinas = () => {
 
                     <div className='hidden xl:flex xl:justify-center gap-2 xl:items-center mt-16'>
                         <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
-                            <Link
+                            <a
                                 className='flex justify-center items-center text-black font-palanquin font-bold'
-                                to="/maquinas"
+                                href="/maquinas"
                             >
                                 <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
-                            </Link>
+                            </a>
                         </button>
                         <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer hover:bg-green-600'>
                             <a className='flex flex-row justify-center items-center text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR

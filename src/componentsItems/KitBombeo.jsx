@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { sistemadebombeo } from "../assets/shop-items";
 import { arrowRight } from '../assets/icons/'
 import shopIcon from '../assets/icons/shop-icon.png'
@@ -29,13 +28,13 @@ const KitBombeo = () => {
 
                 <div className='text-center xl:mt-12'>
                     <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer'>
-                        <Link
+                        <a
                             className='flex flex-row-reverse justify-center items-center text-black font-palanquin font-bold'
                             to="/insumos&accs"
                         >
                             VOLVER A INSUMOS & ACCS
                             <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
-                        </Link>
+                        </a>
                     </button>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Form from './Form'
-import { Link, useLocation } from 'react-router-dom'
 import { navLinks } from '../constants'
 import { logo } from '../assets/images'
 import { hamburger } from '../assets/icons'
@@ -8,7 +7,6 @@ import closeBtn from '../assets/icons/close.svg'
 
 const Navbar = () => {
 
-    const location = useLocation()
 
     const [toggle, setToggle] = useState(false)
 
@@ -28,14 +26,14 @@ const Navbar = () => {
                 <ul className='flex-1 flex justify-end items-center gap-16 max-lg:hidden'>
                     {navLinks.map((item) => (
                         <li key={item.label}>
-                            <Link
-                                to={item.to}
+                            <a
+                                href={item.to}
                                 className={`font-montserrat leading-normal text-lg 
                                 ${location.pathname === item.to ? 'text-pale-red hover:text-red-600/50 hover:border-0 border border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
                                 `}
                             >
                                 {item.label}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                     <li className='font-montserrat leading-normal text-lg font-bold text-white hover:text-white/70'>
@@ -55,13 +53,13 @@ const Navbar = () => {
                         <ul className='flex flex-col gap-4 justify-end items-center'>
                             {navLinks.map((item) => (
                                 <li key={item.label}>
-                                    <Link
+                                    <a
                                         onClick={() => setToggle((prev) => !prev)}
-                                        to={item.to}
+                                        href={item.to}
                                         className={`font-montserrat leading-[50px] text-[25px]
                                         ${location.pathname === item.to ? 'text-pale-red' : 'text-white-400/50'}`}>
                                         {item.label}
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                             <li className='font-montserrat leading-[50px] text-[25px] text-white font-bold'>
