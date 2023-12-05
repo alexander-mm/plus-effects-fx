@@ -4,14 +4,14 @@ import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
 import { machines } from '../constants'
 import CanonCard from '../routes/CanonCard'
-import { arrowRight } from '../assets/icons/'
+import { arrowRight, sampleBanner, sampleImg } from '../assets/icons/'
 
 const Maquinas = () => {
 
     const [bigCanonImg, setBigCanonImg] = useState(canon1)
 
     return (
-        <section className='bg-black'>
+        <section className='bg-black pb-10'>
             <div className='flex justify-center'>
                 <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
             </div>
@@ -94,7 +94,24 @@ const Maquinas = () => {
 
             </div>
 
-
+            <div className='flex justify-center flex-wrap sm:mx-2 '>
+                <div className='flex justify-center'>
+                    <img src={sampleImg} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                    <img src={sampleBanner} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={sampleImg} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                    <img src={sampleBanner} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={sampleBanner} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                    <img src={sampleImg} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                </div>
+                <div className='flex justify-center'>
+                    <img src={sampleBanner} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                    <img src={sampleImg} className=' w-[12rem] sm:w-[20rem]' alt="" />
+                </div>
+            </div>
 
         </section>
     );
