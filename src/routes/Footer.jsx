@@ -1,4 +1,4 @@
-import { footerLogo } from "../assets/images";
+import { logo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className='flex flex-col px-2 items-center'>
                         <a href='/'>
                             <img
-                                src={footerLogo}
+                                src={logo}
                                 alt='logo'
                                 width={120}
                                 className='m-0'
@@ -60,10 +60,13 @@ const Footer = () => {
                         </h4>
                         <ul className="flex items-center flex-col sm:flex-row sm:gap-4 xl:flex-col xl:gap-0 text-center">
                             <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray'>
-                                <a href="/">clientes@masqueunefecto.com</a>
+                                <a href="/">ventas@masqueunefecto.com</a>
                             </li>
                             <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray lg:mt-1'>
-                                <a href="/">+5939812345678</a>
+                                <a href="/">Telf. +593 98 04 29 801</a>
+                            </li>
+                            <li className='font-montserrat text-sm leading-normal text-white-400 hover:text-slate-gray lg:mt-1'>
+                                <a href="/">Nicanor Gavilanes y Luis Padilla - Lote #6 - San Gabriel, Carchi</a>
                             </li>
                         </ul>
                     </div>
