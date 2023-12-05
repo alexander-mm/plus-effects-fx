@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
 import { machines } from '../constants'
-import CanonCard from '../components/CanonCard'
+import CanonCard from '../routes/CanonCard'
 import { arrowRight } from '../assets/icons/'
 
 const Maquinas = () => {
@@ -60,7 +60,6 @@ const Maquinas = () => {
                     </div>
                 </div>
 
-
                 <div className="w-full xl:w-3/6 flex flex-col justify-center mt-8 text-center gap-y-1 xl:mr-[2em] xl:gap-y-10">
                     <span className="text-white font-montserrat text-[24px] md:text-[28px] xl:text-[34px]">El nuevo integrante de la Familia!</span>
                     <span className="text-white font-montserrat text-[25px] xl:text-[30px]">- MAXIMO RENDIMIENTO</span>
@@ -83,6 +82,7 @@ const Maquinas = () => {
                         </button>
                     </div>
                 </div>
+
             </div>
 
 

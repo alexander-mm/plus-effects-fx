@@ -2,7 +2,10 @@ import canon1 from './canon1.png'
 import canon2 from './canon2.png'
 import canon3 from './canon3.png'
 
-import logo from './logo.png'
+import sample from './sample.png'
+
+import footerLogo from './footer-logo.png'
+import headerLogo from './header-logo.png'
 
 import thumbnailBackground from './thumbnail-background.svg'
 import thumbnailShoe1 from './thumbnail-shoe1.png'
@@ -14,7 +17,10 @@ export {
     canon2,
     canon3,
 
-    logo,
+    sample,
+
+    footerLogo,
+    headerLogo,
 
     thumbnailBackground,
     thumbnailShoe1,

@@ -1,32 +1,64 @@
-import './index.css'
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import EspumaOne from './pages/EspumaOne';
-import Maquinas from './pages/Maquinas';
-import Insumos from './pages/Insumos';
-import Bidon from './componentsItems/Bidon';
-import Aditivo from './componentsItems/Aditivo';
-import AditivoX6 from './componentsItems/AditivoX6';
-import KitBombeo from './componentsItems/KitBombeo';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+import Root from "./routes/root";
+import Home from './routes/Home'
+import Maquinas from './routes/Maquinas'
+import EspumaOne from './routes/EspumaOne'
+import Insumos from './routes/Insumos'
+import Bidon from './routes/Bidon'
+import Aditivo from './routes/Aditivo'
+import AditivoX6 from './routes/AditivoX6'
+import KitBombeo from './routes/KitBombeo'
 
-createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: '/maquinas',
+        element: <Maquinas />
+      },
+      {
+        path: '/insumos&accs',
+        element: <Insumos />
+      },
+    ],
+  },
+  {
+    path: '/espumaone',
+    element: <EspumaOne />
+  },
+  {
+    path: '/bidon',
+    element: <Bidon />
+  },
+  {
+    path: '/aditivo',
+    element: <Aditivo />
+  },
+  {
+    path: '/aditivox6',
+    element: <AditivoX6 />
+  },
+  {
+    path: '/kitbombeo',
+    element: <KitBombeo />
+  },
+
+])
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/maquinas" element={<Maquinas />} />
-          <Route path="/insumos&accs" element={<Insumos />} />
-          <Route path="/bidon" element={<Bidon />} />
-          <Route path="/aditivo" element={<Aditivo />} />
-          <Route path="/aditivox6" element={<AditivoX6 />} />
-          <Route path="/kitbombeo" element={<KitBombeo />} />
-        </Route>
-        <Route path="/espumaone" element={<EspumaOne />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>,
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
