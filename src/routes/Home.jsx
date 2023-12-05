@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
 
                 <div className='text-center mt-4 xl:hidden'>
-                    <p className="text-white text-lg font-montserrat">Explore todo nuestro catálogo de cañones de espuma.</p>
+                    <p className="text-white text-lg font-montserrat">Explore todo el catálogo de nuestros equipos.</p>
                     <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer'>
                         <Link
                             className='flex flex-row justify-center items-center text-black font-palanquin font-bold'
