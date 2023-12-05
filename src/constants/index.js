@@ -87,9 +87,9 @@ export const footerLinks = [
         title: "Máquinas",
         links: [
             { name: "Espuma", link: "/maquinas" },
-            { name: "Nieve", link: "/" },
-            { name: "CO2", link: "/" },
-            { name: "Burbujas", link: "/" },
+            { name: "Nieve", link: "/buildpage" },
+            { name: "CO2", link: "/buildpage" },
+            { name: "Burbujas", link: "/buildpage" },
         ],
     },
 ];
@@ -99,8 +99,8 @@ export const helpLinks = [
         title: "Ayuda",
         links: [
             { name: "Mapa del Sitio", link: "https://maps.app.goo.gl/nrMm5zkETkZpvzWn7" },
-            { name: "Políticas de Garantía", link: "/" },
-            { name: "Políticas de Devolución", link: "/" },
+            { name: "Políticas de Garantía", link: "/buildpage" },
+            { name: "Políticas de Devolución", link: "/buildpage" },
             { name: "Sitios Asociados", link: "https://espumaplay.com/" },
         ],
     },

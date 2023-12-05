@@ -14,6 +14,7 @@ import Bidon from './routes/Bidon'
 import Aditivo from './routes/Aditivo'
 import AditivoX6 from './routes/AditivoX6'
 import KitBombeo from './routes/KitBombeo'
+import Buildpage from "./routes/Buildpage";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: '/kitbombeo',
     element: <KitBombeo />
+  },
+  {
+    path: '/buildpage',
+    element: <Buildpage />
   },
 
 ])
