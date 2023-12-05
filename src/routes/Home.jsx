@@ -5,8 +5,8 @@ import { arrowRight } from '../assets/icons/'
 const Home = () => {
 
     return (
-        <section className='bg-black pt-12'>
-            <div className="w-full flex xl:flex-row flex-col justify-center min-h-screen xl:min-h-[91vh] max-container gap-10 pb-8 sm:pb-14 xl:py-20">
+        <section className='bg-black pt-6'>
+            <div className="w-full flex xl:flex-row flex-col justify-center min-h-screen xl:min-h-[91vh] max-container gap-10 pb-8 sm:pb-14 xl:py-0">
 
                 <div className="w-full xl:w-2/5 relative flex flex-col justify-center items-start mt-28">
 
@@ -22,7 +22,7 @@ const Home = () => {
                                     to="/maquinas"
                                 >
                                     EXPLORAR
-                                    <img src={arrowRight} className='w-9 ml-2' alt="shop icon" />
+                                    <img src={arrowRight} className='w-9 ml-2' alt="go icon" />
                                 </Link>
                             </button>
                         </div>
@@ -45,13 +45,13 @@ const Home = () => {
                 <div className='text-center mt-4 xl:hidden'>
                     <p className="text-white text-lg font-montserrat">Explore todo nuestro catálogo de cañones de espuma.</p>
                     <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer'>
-                        <a
+                        <Link
                             className='flex flex-row justify-center items-center text-black font-palanquin font-bold'
-                            href="/maquinas"
+                            to="/maquinas"
                         >
                             EXPLORAR
                             <img src={arrowRight} className='w-9 ml-2' alt="shop icon" />
-                        </a>
+                        </Link>
                     </button>
                 </div>
             </div>

@@ -26,6 +26,8 @@ export const machines = [
 
 export const maquinasEspuma = [
     {
+        name1: 'Espuma ',
+        name2: '- One',
         thumbnail: canon1,
         to:"/espumaone"
     },
@@ -90,13 +92,16 @@ export const footerLinks = [
             { name: "Burbujas", link: "/" },
         ],
     },
+];
+
+export const helpLinks = [
     {
         title: "Ayuda",
         links: [
-            { name: "Mapa del Sitio", link: "/" },
+            { name: "Mapa del Sitio", link: "https://maps.app.goo.gl/nrMm5zkETkZpvzWn7" },
             { name: "Políticas de Garantía", link: "/" },
             { name: "Políticas de Devolución", link: "/" },
-            { name: "Sitios Asociados", link: "/" },
+            { name: "Sitios Asociados", link: "https://espumaplay.com/" },
         ],
     },
 ];
@@ -107,4 +112,15 @@ export const socialMedia = [
     { src: instagram, alt: "instagram logo", href: "https://www.instagram.com/masqueunefecto/" },
     { src: tiktok, alt: "tiktok logo", href: "https://www.tiktok.com/@masqueunefecto" },
     { src: youtube, alt: "youtube logo", href: "https://www.youtube.com/channel/UCBQ952GNUt3RXTz2Iw0JwUg" },
+];
+
+export const contactLinks = [
+    {
+        title: "Contacto",
+        links: [
+            { name: "ventas@masqueunefecto.com", link: "ventas@masqueunefecto.com" },
+            { name: "Tel. (+593) 98 04 29 801", link: "https://api.whatsapp.com/send?phone=593980429801" },
+            { name: "Nicanor Gavilanes y Luis Padilla - Lote #6 - San Gabriel, Carchi", link: "https://maps.app.goo.gl/nrMm5zkETkZpvzWn7" },
+        ],
+    },
 ];
