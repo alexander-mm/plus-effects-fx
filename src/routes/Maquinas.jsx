@@ -14,7 +14,7 @@ const Maquinas = () => {
 
                     <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container pb-[2em]">
                         {maquinasEspuma.map((articulo, index) => (
-                            <div key={index} className="flex flex-col border mx-4 md:mx-0 py-4 rounded-md">
+                            <div key={index} className="flex flex-col border mx-4 md:mx-0 pt-4 rounded-md">
                                 <span className="text-white text-center font-sterilict text-[25px] mb-6">{articulo.name1}<span className='text-pale-red font-sterilict'>{articulo.name2}</span></span>
                                 <Link to={articulo.to}>
                                     {articulo.thumbnail && (
@@ -25,10 +25,12 @@ const Maquinas = () => {
                                         />
                                     )}
                                 </Link>
-                                {articulo.auxText && <span className='text-white text-center text-[20px] font-sterilict px-20 py-44'>{articulo.auxText}</span>}
-                                <div className='flex justify-end mr-6'>
-                                    {articulo.thumbnail && (<button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black hover:border hover:border-white'>
-                                        <Link className='flex flex-row justify-center items-center text-black hover:text-white font-palanquin font-bold' to={articulo.to}>
+
+                                {articulo.auxText && <span className='text-white text-center text-[20px] font-sterilict px-[65px] md:px-[105px] my-44'>{articulo.auxText}</span>}
+
+                                <div className='flex justify-end mr-6 mb-6'>
+                                    {articulo.thumbnail && (<button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black border hover:border-white'>
+                                        <Link className=' flex flex-row justify-center items-center gap-2 text-black hover:text-white font-palanquin font-bold' to={articulo.to}>
                                             <img src={arrowRight} className='w-7 ml-2' alt="back icon" />
                                             LEER MÁS...
                                         </Link>
