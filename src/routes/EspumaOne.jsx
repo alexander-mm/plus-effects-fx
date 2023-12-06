@@ -5,10 +5,20 @@ import shopIcon from '../assets/icons/shop-icon.png'
 import { machines } from '../constants'
 import CanonCard from '../routes/CanonCard'
 import { arrowRight, sampleBanner, sampleImg } from '../assets/icons/'
+import ImageModal from './ImageModal';
 
 const Maquinas = () => {
 
     const [bigCanonImg, setBigCanonImg] = useState(canon1)
+    const [modalImageUrl, setModalImageUrl] = useState(null);
+
+    const openModal = (imageUrl) => {
+        setModalImageUrl(imageUrl);
+    };
+
+    const closeModal = () => {
+        setModalImageUrl(null);
+    };
 
     return (
         <section className='bg-black pb-10'>
@@ -82,13 +92,37 @@ const Maquinas = () => {
 
             <div className='flex justify-center flex-wrap sm:mx-2 '>
                 <div className='flex justify-center'>
-                    <img src={sampleBanner} className=' w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem]' alt="" />
-                    <img src={sampleImg} className=' w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem]' alt="" />
+                    <img
+                        src={sampleBanner}
+                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
+                        alt=""
+                        onClick={() => openModal(sampleBanner)}
+                    />
+                    <img
+                        src={sampleImg}
+                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
+                        alt=""
+                        onClick={() => openModal(sampleImg)}
+                    />
                 </div>
                 <div className='flex justify-center'>
-                    <img src={sampleImg} className=' w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem]' alt="" />
-                    <img src={sampleBanner} className=' w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem]' alt="" />
+                    <img
+                        src={sampleImg}
+                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
+                        alt=""
+                        onClick={() => openModal(sampleImg)}
+                    />
+                    <img
+                        src={sampleBanner}
+                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
+                        alt=""
+                        onClick={() => openModal(sampleBanner)}
+                    />
                 </div>
+
+                {modalImageUrl && (
+                    <ImageModal imageUrl={modalImageUrl} closeModal={closeModal} />
+                )}
             </div>
             <div className='flex justify-center items-center gap-2 m-8 xl:hidden'>
                 <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>

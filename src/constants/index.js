@@ -31,6 +31,12 @@ export const maquinasEspuma = [
         thumbnail: canon1,
         to:"/espumaone"
     },
+    {
+        name1: 'Espuma ',
+        name2: '- X',
+        auxText: 'Muy Pronto / Coming Soon...',
+        to:"/"
+    },
 ];
 export const articulos = [
     {
