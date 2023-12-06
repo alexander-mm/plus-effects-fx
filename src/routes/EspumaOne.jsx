@@ -6,19 +6,27 @@ import { machines } from '../constants'
 import CanonCard from '../routes/CanonCard'
 import { arrowRight, sampleBanner, sampleImg } from '../assets/icons/'
 import ImageModal from './ImageModal';
+import CerrarBtn from '../assets/icons/cerrar.svg'
 
 const Maquinas = () => {
 
     const [bigCanonImg, setBigCanonImg] = useState(canon1)
-    const [modalImageUrl, setModalImageUrl] = useState(null);
+    const [modalContent, setModalContent] = useState({
+        type: null, // "image" or "video"
+        url: null,
+    });
 
-    const openModal = (imageUrl) => {
-        setModalImageUrl(imageUrl);
+    const openModal = (content) => {
+        setModalContent(content);
     };
 
     const closeModal = () => {
-        setModalImageUrl(null);
+        setModalContent({
+            type: null,
+            url: null,
+        });
     };
+
 
     return (
         <section className='bg-black pb-10'>
@@ -96,34 +104,54 @@ const Maquinas = () => {
                         src={sampleBanner}
                         className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
                         alt=""
-                        onClick={() => openModal(sampleBanner)}
+                        onClick={() => openModal({ type: 'image', url: sampleBanner })}
                     />
-                    <img
-                        src={sampleImg}
-                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
-                        alt=""
-                        onClick={() => openModal(sampleImg)}
-                    />
+                    <div
+                        className=' w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
+                        onClick={() => openModal({ type: 'video', url: 'https://www.masqueunefecto.com/wp-content/uploads/2023/11/main-mobile.mp4' })}
+                    >
+                        <img src={sampleImg} alt="" />
+
+                    </div>
                 </div>
                 <div className='flex justify-center'>
                     <img
                         src={sampleImg}
                         className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
                         alt=""
-                        onClick={() => openModal(sampleImg)}
+                        onClick={() => openModal({ type: 'image', url: sampleImg })}
                     />
                     <img
                         src={sampleBanner}
                         className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
                         alt=""
-                        onClick={() => openModal(sampleBanner)}
+                        onClick={() => openModal({ type: 'image', url: sampleBanner })}
                     />
                 </div>
 
-                {modalImageUrl && (
-                    <ImageModal imageUrl={modalImageUrl} closeModal={closeModal} />
+                {modalContent.type === 'image' && (
+                    <ImageModal imageUrl={modalContent.url} closeModal={closeModal} />
+                )}
+
+                {modalContent.type === 'video' && (
+                    <div className="p-20 flex-col z-[1000] fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
+                        <button
+                            onClick={closeModal}
+                            className="self-end w-[60px] mt-[em] text-white p-[14px] rounded-md"
+                        >
+                            <div className='border rounded-full p-[3px]'>
+                                <img className="w-full cursor-pointer" src={CerrarBtn} alt="cerrar form" />
+                            </div>
+
+                        </button>
+                        <video className="w-full md:h-full" autoPlay controls>
+                            <source src={modalContent.url} type='video/mp4' />
+                        </video>
+                    </div>
                 )}
             </div>
+
+
             <div className='flex justify-center items-center gap-2 m-8 xl:hidden'>
                 <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
                     <Link

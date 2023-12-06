@@ -2,7 +2,7 @@ import CerrarBtn from '../assets/icons/cerrar.svg'
 
 const ImageModal = ({ imageUrl, closeModal }) => {
     return (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-[.88] z-[1000]">
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-[.88] z-50">
             <div className="flex flex-col items-end bg-black p-4 rounded-lg shadow-lg">
                 <button
                     onClick={closeModal}
