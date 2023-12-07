@@ -94,45 +94,75 @@ const Maquinas = () => {
                         </button>
                     </div>
                 </div>
-
-
             </div>
 
-            <div className='flex justify-center flex-wrap sm:mx-2 '>
+
+            <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
                 <div className='flex justify-center'>
-                    <img
-                        src={sampleBanner}
-                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
-                        alt=""
+                    <div style={{
+                        backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg")`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        width: '100%', // Otra opción sería '100vw' para ocupar el ancho completo de la pantalla
+                        maxWidth: '700px', // Establece un máximo para evitar que se vuelva demasiado grande
+                        height: 'auto', // La altura se ajustará automáticamente según el ancho
+                        cursor: 'pointer',
+                    }}
                         onClick={() => openModal({ type: 'image', url: sampleBanner })}
-                    />
+                    >
+                        <div
+                            className=' bg-pale-red opacity-20 h-full w-full cursor-pointer'
+                        >
+                        </div>
+                    </div>
                     <div
-                        className=' w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
+                        style={{
+
+                            width: '100%', // Otra opción sería '100vw' para ocupar el ancho completo de la pantalla
+                            maxWidth: '700px', // Establece un máximo para evitar que se vuelva demasiado grande
+                            height: 'auto', // La altura se ajustará automáticamente según el ancho
+                            cursor: 'pointer',
+                        }}
+                        onClick={() => openModal({ type: 'video', url: 'https://www.masqueunefecto.com/wp-content/uploads/2023/11/main-mobile.mp4' })}
+                    >
+                        <img src={sampleImg} alt="" />
+
+                    </div>
+                    <div style={{
+                        backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg")`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        width: '100%', // Otra opción sería '100vw' para ocupar el ancho completo de la pantalla
+                        maxWidth: '700px', // Establece un máximo para evitar que se vuelva demasiado grande
+                        height: 'auto', // La altura se ajustará automáticamente según el ancho
+                        cursor: 'pointer',
+                    }}
+                        onClick={() => openModal({ type: 'image', url: sampleBanner })}
+                    >
+                        <div
+                            className=' bg-pale-red opacity-20 h-full w-full cursor-pointer'
+                        >
+                        </div>
+                    </div>
+                    <div
+                        style={{
+
+                            width: '100%', // Otra opción sería '100vw' para ocupar el ancho completo de la pantalla
+                            maxWidth: '700px', // Establece un máximo para evitar que se vuelva demasiado grande
+                            height: 'auto', // La altura se ajustará automáticamente según el ancho
+                            cursor: 'pointer',
+                        }}
                         onClick={() => openModal({ type: 'video', url: 'https://www.masqueunefecto.com/wp-content/uploads/2023/11/main-mobile.mp4' })}
                     >
                         <img src={sampleImg} alt="" />
 
                     </div>
                 </div>
-                <div className='flex justify-center'>
-                    <img
-                        src={sampleImg}
-                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
-                        alt=""
-                        onClick={() => openModal({ type: 'image', url: sampleImg })}
-                    />
-                    <img
-                        src={sampleBanner}
-                        className='w-[40%] sm:w-2/4 md:w-64 xl:w-[19rem] cursor-pointer'
-                        alt=""
-                        onClick={() => openModal({ type: 'image', url: sampleBanner })}
-                    />
-                </div>
-
                 {modalContent.type === 'image' && (
                     <ImageModal imageUrl={modalContent.url} closeModal={closeModal} />
                 )}
-
                 {modalContent.type === 'video' && (
                     <div className="p-20 flex-col z-[1000] fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
                         <button
