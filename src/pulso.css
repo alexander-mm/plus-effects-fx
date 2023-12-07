@@ -1,6 +1,6 @@
 .circle {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background: red;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -27,6 +27,6 @@
   
   @keyframes latido {
     0% { width:5px; height:5px; border:5px red; }
-    100% { width:20px; height:20px; border:5px solid transparent; }
+    100% { width:30px; height:30px; border:5px solid transparent; }
   }
   #button-0 { top: 35px; left: 10px; }

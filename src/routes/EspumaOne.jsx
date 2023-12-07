@@ -153,7 +153,7 @@ const Maquinas = () => {
                             <img src={detalle.background2} alt="" />
 
                             {/* Agrega TuComponente sobre la imagen */}
-                            <div className="absolute top-[-10%] left-[85%]">
+                            <div className="absolute top-[-12%] sm:top-[-10%] left-[85%]">
                                 <Pulso />
                             </div>
                         </div>
