@@ -1,11 +1,20 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { maquinasEspuma } from '../constants/index'
 import { arrowRight } from '../assets/icons/'
 
 const Maquinas = () => {
 
+    useEffect(() => {
+        // Puedes usar JavaScript para desplazarte al elemento específico al cargar la página
+        const elementoEspecifico = document.getElementById('miElementoEspecifico');
+        if (elementoEspecifico) {
+            elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     return (
-        <section className='bg-black'>
+        <section id="miElementoEspecifico" className='bg-black'>
 
             <h1 className='text-white text-center font-microflf pt-[3.5em] pb-[1em] text-[40px]'>CAÑÓNES DE ESPUMA</h1>
 

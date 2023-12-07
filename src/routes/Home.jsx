@@ -19,7 +19,7 @@ const Home = () => {
                             <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black hover:border hover:border-white'>
                                 <Link
                                     className='flex flex-row justify-center items-center text-black hover:text-white font-palanquin font-bold'
-                                    to="/maquinas"
+                                    to="/maquinas#miElementoEspecifico"
                                 >
                                     EXPLORAR
                                     <img src={arrowRight} className='w-9 ml-2' alt="go icon" />
