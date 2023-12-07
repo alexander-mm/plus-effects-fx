@@ -38,6 +38,51 @@ export const maquinasEspuma = [
         to:"/"
     },
 ];
+
+export const galeriaDetalles = [
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/conacoplesbanner.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg',
+        bottomText: 'INSTALACIÓN SIN HERRAMIENTAS!',
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/acoples.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemagrad1-1.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemagrad2.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemagrad1-1.jpg',
+        bottomText: 'SISTEMA DE GRADUACION',
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgradvid.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/mancuernas1.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/mancuernas2.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/mancuernas1.jpg',
+        bottomText: 'MANCUERNAS PARA OPERACION',
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/mancuernasvid.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgen1.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgen2.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgen1.jpg',
+        bottomText: 'SISTEMA GENERACION',
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgenvid.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/ventilador1.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/ventilador2.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/ventilador1.jpg',
+        bottomText: 'PROTECCIÓN VENTILADOR',
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/ventiladorvid.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable2.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable1.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable2.jpg',
+        bottomText: '10 METROS DE CABLE',
+    },
+];
+
 export const articulos = [
     {
         thumbnail: bidon,
