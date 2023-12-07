@@ -2,7 +2,6 @@ import canon1 from './canon1.png'
 import canon2 from './canon2.png'
 import canon3 from './canon3.png'
 
-import sample from './sample.png'
 
 import Logo from './logo.png'
 
@@ -15,8 +14,6 @@ export {
     canon1,
     canon2,
     canon3,
-
-    sample,
 
     Logo,
 

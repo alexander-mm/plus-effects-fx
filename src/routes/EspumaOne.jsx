@@ -4,7 +4,7 @@ import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
 import { machines } from '../constants'
 import CanonCard from '../routes/CanonCard'
-import { arrowRight, sampleBanner, sampleImg } from '../assets/icons/'
+import { arrowRight } from '../assets/icons/'
 import ImageModal from './ImageModal';
 import CerrarBtn from '../assets/icons/cerrar.svg'
 
@@ -99,22 +99,39 @@ const Maquinas = () => {
 
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
                 <div className='flex justify-center'>
-                    <div style={{
-                        backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg")`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat',
-                        width: '100%', // Otra opción sería '100vw' para ocupar el ancho completo de la pantalla
-                        maxWidth: '700px', // Establece un máximo para evitar que se vuelva demasiado grande
-                        height: 'auto', // La altura se ajustará automáticamente según el ancho
-                        cursor: 'pointer',
-                    }}
-                        onClick={() => openModal({ type: 'image', url: sampleBanner })}
+                    <div
+                        style={{
+                            backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg")`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            position: 'relative',
+                            maxWidth: '700px',
+                            width: '100%',
+                            cursor: 'pointer',
+                        }}
+                        onClick={() => openModal({ type: 'image', url: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg" })}
                     >
                         <div
-                            className=' bg-pale-red opacity-20 h-full w-full cursor-pointer'
-                        >
-                        </div>
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '100%',
+                                height: 'auto',
+                                backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg")`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat',
+                                zIndex: -1,
+                            }}
+                        ></div>
+                        <div
+                            className='bg-pale-red opacity-20 h-full w-full cursor-pointer'
+                        ></div>
+                        <span className='absolute top-[80%] left-0 p-4 text-white font-bold'>
+                            INSTALACIÓN SIN HERRAMIENTAS!
+                        </span>
                     </div>
                     <div
                         style={{
@@ -126,40 +143,7 @@ const Maquinas = () => {
                         }}
                         onClick={() => openModal({ type: 'video', url: 'https://www.masqueunefecto.com/wp-content/uploads/2023/11/main-mobile.mp4' })}
                     >
-                        <img src={sampleImg} alt="" />
-
-                    </div>
-
-                </div>
-                <div className='flex justify-center'>
-                    <div style={{
-                        backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg")`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat',
-                        width: '100%', // Otra opción sería '100vw' para ocupar el ancho completo de la pantalla
-                        maxWidth: '700px', // Establece un máximo para evitar que se vuelva demasiado grande
-                        height: 'auto', // La altura se ajustará automáticamente según el ancho
-                        cursor: 'pointer',
-                    }}
-                        onClick={() => openModal({ type: 'image', url: sampleBanner })}
-                    >
-                        <div
-                            className=' bg-pale-red opacity-20 h-full w-full cursor-pointer'
-                        >
-                        </div>
-                    </div>
-                    <div
-                        style={{
-
-                            width: '100%', // Otra opción sería '100vw' para ocupar el ancho completo de la pantalla
-                            maxWidth: '700px', // Establece un máximo para evitar que se vuelva demasiado grande
-                            height: 'auto', // La altura se ajustará automáticamente según el ancho
-                            cursor: 'pointer',
-                        }}
-                        onClick={() => openModal({ type: 'video', url: 'https://www.masqueunefecto.com/wp-content/uploads/2023/11/main-mobile.mp4' })}
-                    >
-                        <img src={sampleImg} alt="" />
+                        <img src="https://www.masqueunefecto.com/wp-content/uploads/2023/12/conacoplesbanner.jpg" alt="" />
 
                     </div>
 

@@ -6,8 +6,6 @@ import tiktok from './tiktok.svg'
 import linkedin from './linkedin.svg'
 import hamburger from './hamburger.svg'
 import instagram from './instagram.svg'
-import sampleImg from '../images/sampleimg.png'
-import sampleBanner from '../images/samplebanner.png'
 
 export {
     arrowRight,
@@ -18,6 +16,4 @@ export {
     youtube,
     tiktok,
     linkedin,
-    sampleImg,
-    sampleBanner
 }
