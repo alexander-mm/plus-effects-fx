@@ -7,6 +7,7 @@ import CanonCard from '../routes/CanonCard'
 import { arrowRight } from '../assets/icons/'
 import ImageModal from './ImageModal';
 import CerrarBtn from '../assets/icons/cerrar.svg'
+import Pulso from './Pulso'
 
 const Maquinas = () => {
 
@@ -91,7 +92,9 @@ const Maquinas = () => {
 
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
                 {galeriaDetalles.map((detalle, index) => (
+
                     <div key={index} className='flex justify-center'>
+
                         <div
                             style={{
                                 backgroundImage: `url("${detalle.background1}")`,
@@ -105,6 +108,7 @@ const Maquinas = () => {
                             }}
                             onClick={() => openModal({ type: 'image', url: detalle.imgExpand })}
                         >
+
                             <div
                                 style={{
                                     position: 'relative',
@@ -118,26 +122,40 @@ const Maquinas = () => {
                                     backgroundRepeat: 'no-repeat',
                                     zIndex: -1,
                                 }}
-                            ></div>
+                            >
+                            </div>
+
                             <div
                                 className='bg-pale-red opacity-20 h-full w-full cursor-pointer'
                             ></div>
+                            <div className='absolute top-[-12%] sm:top-[-10%] left-[85%]'>
+                                <Pulso />
+                            </div>
                             <div className='flex justify-center static'>
+
                                 <span className='  mb-[14px] absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px] text-white text-center font-semibold'>
                                     {detalle.bottomText}
                                 </span>
                             </div>
+
                         </div>
+
                         <div
                             style={{
                                 width: '100%',
                                 maxWidth: '700px',
                                 height: 'auto',
                                 cursor: 'pointer',
+                                position: 'relative', // Añade esta propiedad para que los elementos hijos se posicionen relativamente al contenedor
                             }}
                             onClick={() => openModal({ type: 'video', url: detalle.videoExpand })}
                         >
                             <img src={detalle.background2} alt="" />
+
+                            {/* Agrega TuComponente sobre la imagen */}
+                            <div className="absolute top-[-10%] left-[85%]">
+                                <Pulso />
+                            </div>
                         </div>
                     </div>
                 ))}
