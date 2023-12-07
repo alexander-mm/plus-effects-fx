@@ -129,6 +129,9 @@ const Maquinas = () => {
                         <img src={sampleImg} alt="" />
 
                     </div>
+
+                </div>
+                <div className='flex justify-center'>
                     <div style={{
                         backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg")`,
                         backgroundSize: 'cover',
@@ -159,6 +162,7 @@ const Maquinas = () => {
                         <img src={sampleImg} alt="" />
 
                     </div>
+
                 </div>
                 {modalContent.type === 'image' && (
                     <ImageModal imageUrl={modalContent.url} closeModal={closeModal} />
