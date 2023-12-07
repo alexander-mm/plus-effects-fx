@@ -8,6 +8,7 @@ import { arrowRight } from '../assets/icons/'
 import ImageModal from './ImageModal';
 import CerrarBtn from '../assets/icons/cerrar.svg'
 import Pulso from './Pulso'
+import FondoAnimado from './FondoAnimado'
 
 const Maquinas = () => {
 
@@ -125,12 +126,10 @@ const Maquinas = () => {
                             >
                             </div>
 
-                            <div
-                                className='bg-pale-red opacity-20 h-full w-full cursor-pointer'
-                            ></div>
-                            <div className='absolute top-[-12%] sm:top-[-10%] left-[85%]'>
+                            <FondoAnimado />
+                            {/* <div className='absolute top-[-12%] sm:top-[-10%] left-[88%] sm:left-[90%]'>
                                 <Pulso />
-                            </div>
+                            </div> */}
                             <div className='flex justify-center static'>
 
                                 <span className='  mb-[14px] absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px] text-white text-center font-semibold'>
@@ -146,14 +145,13 @@ const Maquinas = () => {
                                 maxWidth: '700px',
                                 height: 'auto',
                                 cursor: 'pointer',
-                                position: 'relative', // Añade esta propiedad para que los elementos hijos se posicionen relativamente al contenedor
+                                position: 'relative',
                             }}
                             onClick={() => openModal({ type: 'video', url: detalle.videoExpand })}
                         >
                             <img src={detalle.background2} alt="" />
 
-                            {/* Agrega TuComponente sobre la imagen */}
-                            <div className="absolute top-[-12%] sm:top-[-10%] left-[85%]">
+                            <div className="absolute top-[-12%] sm:top-[-10%] left-[88%] sm:left-[90%]">
                                 <Pulso />
                             </div>
                         </div>
