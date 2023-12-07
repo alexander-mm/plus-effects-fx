@@ -80,6 +80,7 @@ export const galeriaDetalles = [
         background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable1.jpg',
         imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable2.jpg',
         bottomText: '10 METROS DE CABLE',
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable1.jpg',
     },
 ];
 
