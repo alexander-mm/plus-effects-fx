@@ -94,9 +94,9 @@ const Maquinas = () => {
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
                 {galeriaDetalles.map((detalle, index) => (
 
-                    <div key={index} className='flex justify-center'>
+                    <div key={index} className='flex justify-center mb-[5px] mx-[2px]'>
 
-                        <div
+                        <div className=''
                             style={{
                                 backgroundImage: `url("${detalle.background1}")`,
                                 backgroundSize: 'cover',
@@ -125,13 +125,8 @@ const Maquinas = () => {
                                 }}
                             >
                             </div>
-
                             <FondoAnimado />
-                            {/* <div className='absolute top-[-12%] sm:top-[-10%] left-[88%] sm:left-[90%]'>
-                                <Pulso />
-                            </div> */}
                             <div className='flex justify-center static'>
-
                                 <span className='  mb-[14px] absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px] text-white text-center font-semibold'>
                                     {detalle.bottomText}
                                 </span>
@@ -151,7 +146,7 @@ const Maquinas = () => {
                         >
                             <img src={detalle.background2} alt="" />
 
-                            <div className="absolute top-[-12%] sm:top-[-10%] left-[88%] sm:left-[90%]">
+                            <div className="absolute top-[-14%] sm:top-[-10%] left-[83%] xs:left-[95%] sm:left-[90%]">
                                 <Pulso />
                             </div>
                         </div>
