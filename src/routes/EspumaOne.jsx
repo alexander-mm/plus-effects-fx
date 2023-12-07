@@ -30,6 +30,7 @@ const Maquinas = () => {
 
     return (
         <section className='bg-black pb-10'>
+
             <div className='flex justify-center'>
                 <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
             </div>
@@ -64,8 +65,8 @@ const Maquinas = () => {
                         ))}
                     </div>
                 </div>
-                <div className="flex flex-col justify-center mb-12 text-center xl:ml-96 gap-1">
 
+                <div className="flex flex-col justify-center mb-12 text-center xl:ml-96 gap-1">
                     <span className="text-white font-microflf text-[25px]">DESCRIPCIÓN:</span>
                     <span className="text-white font-montserrat text-[20px]">- Alcance real hasta 8 metros.</span>
                     <span className="text-white font-montserrat text-[20px]">- Conexión directa a llaves de agua.</span>
@@ -75,15 +76,9 @@ const Maquinas = () => {
                     <span className="text-white font-montserrat text-[20px]">- Baja presión de operación.</span>
                     <span className="text-white font-montserrat text-[20px]">- 10 metros de cable.</span>
                     <span className="text-white font-montserrat text-[20px]">- Bajo consumo de líquido espumante.</span>
-
-
-
                     <div className='hidden xl:flex xl:justify-center gap-2 xl:items-center mt-16'>
                         <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
-                            <Link
-                                className='flex justify-center items-center text-black font-palanquin font-bold'
-                                to="/maquinas"
-                            >
+                            <Link className='flex justify-center items-center text-black font-palanquin font-bold' to="/maquinas">
                                 <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                             </Link>
                         </button>
@@ -94,6 +89,7 @@ const Maquinas = () => {
                         </button>
                     </div>
                 </div>
+
             </div>
 
 
@@ -114,7 +110,7 @@ const Maquinas = () => {
                     >
                         <div
                             style={{
-                                position: 'absolute',
+                                position: 'relative',
                                 top: 0,
                                 left: 0,
                                 width: '100%',
@@ -125,13 +121,16 @@ const Maquinas = () => {
                                 backgroundRepeat: 'no-repeat',
                                 zIndex: -1,
                             }}
-                        ></div>
+                        >
+                        </div>
                         <div
                             className='bg-pale-red opacity-20 h-full w-full cursor-pointer'
                         ></div>
-                        <span className='absolute top-[80%] left-0 p-4 text-white font-bold'>
-                            INSTALACIÓN SIN HERRAMIENTAS!
-                        </span>
+                        <div className='flex justify-center static'>
+                            <span className='absolute inset-x-0 bottom-[-14px] p-4 text-[12px] sm:text-[15px] lg:text-[17px] text-white text-center font-semibold'>
+                                INSTALACIÓN SIN HERRAMIENTAS!
+                            </span>
+                        </div>
                     </div>
                     <div
                         style={{
