@@ -53,9 +53,9 @@ const Form = ({ setForm }) => {
                 <img className="w-full cursor-pointer" src={CerrarBtn} alt="cerrar form" onClick={ocultarModal} />
             </div>
             <div className='py-10'>
-                <p className='text-center font-montserrat leading-normal text-2xl text-white'>Contáctanos</p>
+                <p className='text-center font-century font-bold leading-normal text-2xl text-white'>Contáctanos</p>
             </div>
-            <div className='pb-[24em] sm:pb-[36em] md:pb-[34em] xl:pb-[20em]'>
+            <div className='pb-[50em] sm:pb-[30em] lg:pb-[5em]'>
                 <form
                     onSubmit={handleSubmit}
                     className="bg-black rounded-md py-10 px-8"

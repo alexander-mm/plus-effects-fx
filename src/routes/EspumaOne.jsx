@@ -66,24 +66,24 @@ const Maquinas = () => {
                         ))}
                     </div>
                 </div>
-                <div className="flex flex-col justify-center mb-12 text-center xl:ml-96 gap-1">
-                    <span className="text-white font-microflf text-[25px]">DESCRIPCIÓN:</span>
-                    <span className="text-white font-montserrat text-[20px]">- Alcance real hasta 8 metros.</span>
-                    <span className="text-white font-montserrat text-[20px]">- Conexión directa a llaves de agua.</span>
-                    <span className="text-white font-montserrat text-[20px]">- Sistema WAF MIX de agua y líquido de espuma.</span>
-                    <span className="text-white font-montserrat text-[20px]">- Fácil instalación, sin herramientas!.</span>
-                    <span className="text-white font-montserrat text-[20px]">- Espuma seca y voluminosa.</span>
-                    <span className="text-white font-montserrat text-[20px]">- Baja presión de operación.</span>
-                    <span className="text-white font-montserrat text-[20px]">- 10 metros de cable.</span>
-                    <span className="text-white font-montserrat text-[20px]">- Bajo consumo de líquido espumante.</span>
+                <div className="flex flex-col font-century justify-center mb-12 text-center xl:ml-96 gap-1">
+                    <span className="text-white font-bold text-[25px]">DESCRIPCIÓN:</span>
+                    <span className="text-white text-[20px]">- Alcance real hasta 8 metros.</span>
+                    <span className="text-white text-[20px]">- Conexión directa a llaves de agua.</span>
+                    <span className="text-white text-[20px]">- Sistema WAF MIX de agua y líquido de espuma.</span>
+                    <span className="text-white text-[20px]">- Fácil instalación, sin herramientas!.</span>
+                    <span className="text-white text-[20px]">- Espuma seca y voluminosa.</span>
+                    <span className="text-white text-[20px]">- Baja presión de operación.</span>
+                    <span className="text-white text-[20px]">- 10 metros de cable.</span>
+                    <span className="text-white text-[20px]">- Bajo consumo de líquido espumante.</span>
                     <div className='hidden xl:flex xl:justify-center gap-2 xl:items-center mt-16'>
                         <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
-                            <Link className='flex justify-center items-center text-black font-palanquin font-bold' to="/maquinas">
+                            <Link className='flex justify-center items-center text-black font-century font-bold' to="/maquinas">
                                 <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                             </Link>
                         </button>
                         <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer hover:bg-green-600'>
-                            <a className='flex flex-row justify-center items-center text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
+                            <a className='flex flex-row justify-center items-center text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
                                 <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
                             </a>
                         </button>
@@ -127,7 +127,7 @@ const Maquinas = () => {
                             </div>
                             <FondoAnimado />
                             <div className='flex justify-center static'>
-                                <span className='  mb-[14px] absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px] text-white text-center font-semibold'>
+                                <span className='mb-[14px]  text-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
                                     {detalle.bottomText}
                                 </span>
                             </div>
@@ -175,14 +175,14 @@ const Maquinas = () => {
             <div className='flex justify-center items-center gap-2 m-8 xl:hidden'>
                 <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
                     <Link
-                        className='flex flex-row-reverse justify-center items-center text-black font-palanquin font-bold'
+                        className='flex flex-row-reverse justify-center items-center text-black font-century font-bold'
                         to="/maquinas"
                     >
                         <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                     </Link>
                 </button>
                 <button type='button' className='bg-white py-2 px-6 rounded-2xl cursor-pointer'>
-                    <a className='flex flex-row justify-center items-center gap-3 text-black font-palanquin font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
+                    <a className='flex flex-row justify-center items-center gap-3 text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
                         <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
                     </a>
                 </button>

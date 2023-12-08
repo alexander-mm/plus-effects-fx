@@ -30,15 +30,15 @@ const Navbar = () => {
                         <li key={item.label}>
                             <Link
                                 to={item.to}
-                                className={`font-montserrat leading-normal text-lg 
-                                ${location.pathname === item.to ? 'text-pale-red hover:text-red-600/50 hover:border-0 border border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
+                                className={`font-century leading-normal text-lg 
+                                ${location.pathname === item.to ? 'text-pale-red hover:text-red-600/50  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
                                 `}
                             >
                                 {item.label}
                             </Link>
                         </li>
                     ))}
-                    <li className='font-montserrat leading-normal text-lg font-bold text-white hover:text-white/70'>
+                    <li className='font-century leading-normal text-lg font-bold text-white hover:text-white/70'>
                         <p className='cursor-pointer' onClick={handleForm}>Contacto</p>
                     </li>
                 </ul>

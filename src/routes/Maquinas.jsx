@@ -16,7 +16,7 @@ const Maquinas = () => {
     return (
         <section id="miElementoEspecifico" className='bg-black'>
 
-            <h1 className='text-white text-center font-microflf pt-[3.5em] pb-[1em] text-[40px]'>CAÑÓNES DE ESPUMA</h1>
+            <h1 className='text-white text-center font-century font-bold pt-[3.5em] pb-[1em] text-[40px]'>CAÑÓNES DE ESPUMA</h1>
 
             <div className='flex flex-row justify-center'>
                 <div className=''>
@@ -39,7 +39,7 @@ const Maquinas = () => {
 
                                 <div className='flex justify-end mr-6 mb-6'>
                                     {articulo.thumbnail && (<button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black border hover:border-white'>
-                                        <Link className=' flex flex-row justify-center items-center gap-2 text-black hover:text-white font-palanquin font-bold' to={articulo.to}>
+                                        <Link className=' flex flex-row justify-center items-center gap-2 text-black hover:text-white font-century font-bold' to={articulo.to}>
                                             <img src={arrowRight} className='w-7 ml-2' alt="back icon" />
                                             LEER MÁS...
                                         </Link>

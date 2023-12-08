@@ -19,6 +19,10 @@ export default {
         sterilict: ['Sterilict', 'sans-serif'],
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        century: ["Century Gothic Paneuropean", "sans-serif"],
+        nexa: ['Nexa', "sans-serif"],
+        gothamBold: ['Gotham Bold', 'sans-serif'],
+        gothamRegular: ["Gotham Regular", 'sans-serif'],
       },
       colors: {
         'primary': "#ECEEFF",

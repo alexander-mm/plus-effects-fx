@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 @import url('https://fonts.cdnfonts.com/css/sterilict');
 @import url('https://fonts.cdnfonts.com/css/microflf');
+@import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+@import url(https://db.onlinewebfonts.com/c/5d6f50ed2dde0e4ad455448f896c09f0?family=Gotham+Bold);
+@import url(https://db.onlinewebfonts.com/c/0ff8990774ec4865c7f45befbafd4910?family=Gotham+Regular);
 
 @tailwind base;
 @tailwind components;
