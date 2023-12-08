@@ -10,7 +10,7 @@ const Buildpage = () => {
                 <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer mt-16'>
                     <Link
                         className='flex justify-center items-center text-black font-palanquin font-bold'
-                        to="/"
+                        to="/#inicioHome"
                     >
                         VOLVER A INICIO
                         <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />

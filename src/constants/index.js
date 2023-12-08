@@ -4,8 +4,8 @@ import { bidon, colorante, colorantex6, sistemadebombeo } from "../assets/shop-i
 
 export const navLinks = [
     { to: "/", label: "Inicio" },
-    { to: "/maquinas", label: "Nuestros Equipos" },
-    { to: "/insumos&accs", label: "Insumos & Accs" },
+    { to: "/maquinas#inicioMaquinas", label: "Nuestros Equipos" },
+    { to: "/insumos&accs#inicioAccs", label: "Insumos & Accs" },
 ];
 
 
@@ -24,18 +24,42 @@ export const machines = [
     },
 ];
 
+
+export const bidones = [
+    {
+        thumbnail: bidon,
+        bigImg: bidon,
+        confirm: "Y"
+    },
+    {
+        thumbnail: colorante,
+        bigImg: colorante,
+        confirm: "N"
+    },
+    {
+        thumbnail: colorantex6,
+        bigImg: colorantex6,
+        confirm: "X"
+    },
+    {
+        thumbnail: sistemadebombeo,
+        bigImg: sistemadebombeo,
+        confirm: "bombeo"
+    },
+]
+
 export const maquinasEspuma = [
     {
         name1: 'Espuma ',
         name2: '- One',
         thumbnail: canon1,
-        to:"/espumaone"
+        to:"/espumaone#inicioOne"
     },
     {
         name1: 'Espuma ',
         name2: '- X',
         auxText: 'Muy Pronto / Coming Soon...',
-        to:"/"
+        to:"/#inicioHome"
     },
 ];
 
@@ -89,25 +113,7 @@ export const articulos = [
         thumbnail: bidon,
         nombre: 'Espuma XPLUS',
         descripcion: 'Bidon: 20 Litros',
-        to:"/bidon"
-    },
-    {
-        thumbnail: bidon,
-        nombre: 'Espuma XPLUS',
-        descripcion: 'Bidon: 20 Litros',
-        to:"/bidon"
-    },
-    {
-        thumbnail: bidon,
-        nombre: 'Espuma XPLUS',
-        descripcion: 'Bidon: 20 Litros',
-        to:"/bidon"
-    },
-    {
-        thumbnail: bidon,
-        nombre: 'Espuma XPLUS',
-        descripcion: 'Bidon: 20 Litros',
-        to:"/bidon"
+        to:"/bidon#inicioBidon"
     },
 ];
 
@@ -116,13 +122,13 @@ export const aditivos = [
         thumbnail: colorante,
         nombre: 'Espuma XCOLOR',
         descripcion: '1 UND',
-        to:"/aditivo"
+        to:"/aditivo#inicioAditivo"
     },
     {
         thumbnail: colorantex6,
         nombre: 'Espuma XCOLOR SIX PACK',
         descripcion: '6 UNDS',
-        to:"/aditivox6"
+        to:"/aditivox6#inicioAditivo6"
     },
 ];
 export const accesoriosRefaccion = [
@@ -130,7 +136,7 @@ export const accesoriosRefaccion = [
         thumbnail: sistemadebombeo,
         nombre: 'Kit de Bombeo AUX',
         equipo: 'ESPUMA ONE',
-        to:"/kitbombeo"
+        to:"/kitbombeo#inicioBombeo"
     },
 ];
 
@@ -172,7 +178,7 @@ export const contactLinks = [
         links: [
             { name: "ventas@masqueunefecto.com", link: "ventas@masqueunefecto.com" },
             { name: "Tel. (+593) 98 04 29 801", link: "https://api.whatsapp.com/send?phone=593980429801" },
-            { name: "Nicanor Gavilanes y Luis Padilla - Lote #6 - San Gabriel, Carchi", link: "https://maps.app.goo.gl/nrMm5zkETkZpvzWn7" },
+            { name: "Nicanor Gavilanes y Luis Padilla - Lote #6 - San Gabriel, Carchi - Ecuador", link: "https://maps.app.goo.gl/nrMm5zkETkZpvzWn7" },
         ],
     },
 ];

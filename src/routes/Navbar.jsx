@@ -8,6 +8,7 @@ import closeBtn from '../assets/icons/close.svg'
 
 const Navbar = () => {
 
+
     const location = useLocation()
 
     const [toggle, setToggle] = useState(false)
@@ -20,7 +21,7 @@ const Navbar = () => {
     return (
         <header className='px-4 py-2 lg:px-10 absolute z-10 w-full fondotest'>
             <nav className='py-4 flex justify-between items-center max-container'>
-                <a className='ml-4' href="/">
+                <a className='ml-4' href="/#inicioHome">
                     <img src={Logo} alt="Logo"
                         width={100}
                     />

@@ -1,11 +1,19 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
 import { arrowRight } from '../assets/icons/'
 
 const Home = () => {
 
+    useEffect(() => {
+        const elementoEspecifico = document.getElementById('inicioHome');
+        if (elementoEspecifico) {
+            elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     return (
-        <section className='bg-black pt-6'>
+        <section id='inicioHome' className='bg-black pt-6'>
             <div className="w-full flex xl:flex-row flex-col justify-center min-h-screen xl:min-h-[91vh] max-container gap-10 pb-8 sm:pb-14 xl:py-0">
 
                 <div className="w-full xl:w-2/5 relative flex flex-col justify-center items-start mt-28">
@@ -16,7 +24,7 @@ const Home = () => {
                         <span className="text-white font-sterilict text-[53px] md:whitespace-nowrap md:text-[75px]">ESPUMA<span className='text-pale-red font-sterilict xl:bg-black'> - One</span></span>
                         <div className='text-center mt-16 hidden xl:block'>
                             <p className="text-white text-lg font-century">Explore todo el catálogo de cañones de espuma.</p>
-                            <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black hover:border hover:border-white'>
+                            <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black border hover:border-white'>
                                 <Link
                                     className='flex flex-row justify-center items-center text-black hover:text-white font-century font-bold'
                                     to="/maquinas#miElementoEspecifico"
@@ -47,7 +55,7 @@ const Home = () => {
                     <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer'>
                         <Link
                             className='flex flex-row justify-center items-center text-black font-palanquin font-bold'
-                            to="/maquinas"
+                            to="/maquinas#inicioMaquinas"
                         >
                             EXPLORAR
                             <img src={arrowRight} className='w-9 ml-2' alt="shop icon" />

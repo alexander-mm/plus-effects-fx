@@ -6,15 +6,14 @@ import { arrowRight } from '../assets/icons/'
 const Maquinas = () => {
 
     useEffect(() => {
-        // Puedes usar JavaScript para desplazarte al elemento específico al cargar la página
-        const elementoEspecifico = document.getElementById('miElementoEspecifico');
+        const elementoEspecifico = document.getElementById('inicioMaquinas');
         if (elementoEspecifico) {
             elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
 
     return (
-        <section id="miElementoEspecifico" className='bg-black'>
+        <section id="inicioMaquinas" className='bg-black'>
 
             <h1 className='text-white text-center font-century font-bold pt-[3.5em] pb-[1em] text-[40px]'>CAÑÓNES DE ESPUMA</h1>
 

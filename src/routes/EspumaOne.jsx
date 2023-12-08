@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
@@ -12,7 +12,15 @@ import FondoAnimado from './FondoAnimado'
 
 const Maquinas = () => {
 
+    useEffect(() => {
+        const elementoEspecifico = document.getElementById('inicioAccs');
+        if (elementoEspecifico) {
+            elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     const [bigCanonImg, setBigCanonImg] = useState(canon1)
+
     const [modalContent, setModalContent] = useState({
         type: null, // "image" or "video"
         url: null,
@@ -31,7 +39,7 @@ const Maquinas = () => {
 
 
     return (
-        <section className='bg-black pb-10'>
+        <section id='inicioOne' className='bg-black pb-10'>
 
             <div className='flex justify-center'>
                 <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
@@ -59,7 +67,7 @@ const Maquinas = () => {
                                 <CanonCard
                                     index={index}
                                     imgURL={image}
-                                    changeBigCanonImage={(shoe) => setBigCanonImg(shoe)}
+                                    changeBigCanonImage={(canon) => setBigCanonImg(canon)}
                                     bigCanonImg={bigCanonImg}
                                 />
                             </div>

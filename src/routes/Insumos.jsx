@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { articulos } from '../constants'
 import { aditivos } from '../constants'
@@ -6,8 +7,15 @@ import shopIcon from '../assets/icons/shop-icon.png'
 
 const Insumos = () => {
 
+    useEffect(() => {
+        const elementoEspecifico = document.getElementById('inicioAccs');
+        if (elementoEspecifico) {
+            elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     return (
-        <section className='bg-black'>
+        <section id='inicioAccs' className='bg-black'>
 
             <h1 className='text-white text-center font-century font-bold pt-[3.5em] pb-[0.5em] text-[40px]'>INSUMOS</h1>
 
@@ -63,7 +71,7 @@ const Insumos = () => {
                 ))}
             </div>
 
-            <h1 className='text-white text-center font-century pt-[1em] pb-[0.5em] text-[40px]'>ACCESORIOS</h1>
+            <h1 className='text-white text-center font-century font-bold pt-[1em] pb-[0.5em] text-[40px]'>ACCESORIOS</h1>
             <h2 className='border-t border-white-400/10 text-white text-center font-century py-[1em] xl:pb-[0] text-[30px]'>REFACCIÓNES <span className='inline-block text-pale-red'>/ AUX</span> </h2>
 
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
