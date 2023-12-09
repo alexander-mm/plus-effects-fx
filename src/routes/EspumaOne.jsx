@@ -74,20 +74,22 @@ const Maquinas = () => {
                         ))}
                     </div>
                 </div>
-                <div className="flex flex-col font-century justify-center mb-12 text-center xl:ml-96 gap-1">
-                    <span className="text-white font-bold text-[25px]">DESCRIPCIÓN:</span>
-                    <span className="text-white text-[20px]">- Alcance real hasta 8 metros.</span>
-                    <span className="text-white text-[20px]">- Conexión directa a llaves de agua.</span>
-                    <span className="text-white text-[20px]">- Sistema WAF MIX de agua y líquido de espuma.</span>
-                    <span className="text-white text-[20px]">- Fácil instalación, sin herramientas!.</span>
-                    <span className="text-white text-[20px]">- Espuma seca y voluminosa.</span>
-                    <span className="text-white text-[20px]">- Baja presión de operación.</span>
-                    <span className="text-white text-[20px]">- 10 metros de cable.</span>
-                    <span className="text-white text-[20px]">- Bajo consumo de líquido espumante.</span>
-                    <div className='hidden xl:flex xl:justify-center gap-2 xl:items-center mt-16'>
-                        <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
+                <div className="flex justify-center items-center flex-col ml-16">
+                    <div className='flex flex-col font-century justify-center mb-12 xl:mb-0 text-start gap-1 xl:ml-52'>
+                        <span className="text-white font-bold text-[25px]">DESCRIPCIÓN:</span>
+                        <span className="text-white text-[20px]">- Alcance real hasta 8 metros.</span>
+                        <span className="text-white text-[20px]">- Conexión directa a llaves de agua.</span>
+                        <span className="text-white text-[20px]">- Sistema WAF MIX de agua y líquido de espuma.</span>
+                        <span className="text-white text-[20px]">- Fácil instalación, sin herramientas!.</span>
+                        <span className="text-white text-[20px]">- Espuma seca y voluminosa.</span>
+                        <span className="text-white text-[20px]">- Baja presión de operación.</span>
+                        <span className="text-white text-[20px]">- 10 metros de cable.</span>
+                        <span className="text-white text-[20px]">- Bajo consumo de líquido espumante.</span>
+                    </div>
+                    <div className='hidden xl:flex gap-2 mt-16'>
+                        <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
                             <Link className='flex justify-center items-center text-black font-century font-bold' to="/maquinas">
-                                <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
+                                <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" /> VOLVER
                             </Link>
                         </button>
                         <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer hover:bg-green-600'>

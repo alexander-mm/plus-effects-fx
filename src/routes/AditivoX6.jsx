@@ -27,9 +27,9 @@ const Aditivo = () => {
                     <div className="text-white text-center">
                         <p className="font-century mb-8 text-3xl">COLORANTE 6 UNIDADES</p>
                         <div className="bg-black flex relative justify-center items-center border-2 border-white/50 rounded-2xl px-[1em] xl:px-[2em] pb-[9em] sm:pb-[12em] pt-[1em] md:pt-[3em] xl:pt-[1em] mx-8 md:mx-[7em] mb-8 mt-[2em]">
-                            <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1" />
+                            <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
 
-                            <div className='flex sm:gap-6 gap-4 absolute -bottom-[-5%] max-sm:px-6 '>
+                            <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
                                 {bidones.map((image, index) => (
                                     <div key={index}>
                                         <BidonCard
@@ -37,7 +37,7 @@ const Aditivo = () => {
                                             imgURL={image}
                                             changeBigImage={(canon) => setBigImg(canon)}
                                             bigImg={bigImg}
-                                            shouldRender={(bidon) => bidon.confirm === "X6"}
+                                            shouldRender={(bidon) => bidon.confirm === "coloranteX6"}
                                         />
                                     </div>
                                 ))}

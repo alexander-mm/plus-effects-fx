@@ -22,12 +22,12 @@ const Home = () => {
                         <span className="text-white font-century font-thin text-[25px] md:text-[35px] lg:whitespace-nowrap">Equipos a la vanguardia mundial !</span>
                         <span className="text-white font-century font-bold text-[51px] md:whitespace-nowrap md:text-[75px] xl:mt-2 xl:bg-black">Nuestra Estrella</span>
                         <span className="text-white font-sterilict text-[53px] md:whitespace-nowrap md:text-[75px]">ESPUMA<span className='text-pale-red font-sterilict xl:bg-black'> - One</span></span>
-                        <div className='text-center mt-16 hidden xl:block'>
-                            <p className="text-white text-lg font-century">Explore todo el catálogo de cañones de espuma.</p>
-                            <button type='button' className='bg-white mt-8 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black border hover:border-white'>
+                        <div className='text-center mt-8 hidden xl:block'>
+                            <p className="text-white text-lg font-century">Explore todo el catálogo de nuestros equipos.</p>
+                            <button type='button' className='bg-white mt-4 py-2 px-4 rounded-2xl cursor-pointer hover:bg-black border hover:border-white'>
                                 <Link
                                     className='flex flex-row justify-center items-center text-black hover:text-white font-century font-bold'
-                                    to="/maquinas#miElementoEspecifico"
+                                    to="/maquinas#inicioMaquina"
                                 >
                                     EXPLORAR
                                     <img src={arrowRight} className='w-9 ml-2' alt="go icon" />
@@ -36,19 +36,22 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
-
-                <div className="
+                <div className='flex justify-center items-center mx-10 md:mx-40 xl:mr-10 xl:ml-16 xl:mt-32'>
+                    <div className="
                     bg-black
-                        flex flex-1 relative 
-                        justify-center items-center
-                        border-2 border-white/50 rounded-2xl
-                        px-[1em] 
-                        mx-[1em] sm:mx-[2em] md:mx-[8em] xl:mx-[4em]
-                        xl:mt-[8rem]
+                    flex flex-1
+                    justify-center items-center
+                    border-2 border-white/50 rounded-2xl
+                    p-10
+                    
+                    
+                    
                     ">
-                    <img src={canon1} alt="canon collection" width={610} height={500} className=" object-contain relative z-1" />
+                        <img src={canon1} alt="canon collection" width={610} height={500} className=" object-contain relative z-1" />
+                    </div>
                 </div>
+
+
 
                 <div className='text-center mt-4 xl:hidden'>
                     <p className="text-white text-lg font-montserrat">Explore todo el catálogo de nuestros equipos.</p>

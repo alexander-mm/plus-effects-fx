@@ -27,17 +27,17 @@ const Aditivo = () => {
                     <div className="text-white text-center">
                         <p className="font-century mb-8 text-3xl">COLORANTE 1 UNIDAD</p>
                         <div className="bg-black flex relative justify-center items-center border-2 border-white/50 rounded-2xl px-[1em] xl:px-[2em] pb-[9em] sm:pb-[12em] pt-[1em] md:pt-[3em] xl:pt-[1em] mx-8 md:mx-[7em] mb-8 mt-[2em]">
-                            <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1" />
+                            <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
 
-                            <div className='flex sm:gap-6 gap-4 absolute -bottom-[-5%] max-sm:px-6 '>
+                            <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
                                 {bidones.map((image, index) => (
                                     <div key={index}>
                                         <BidonCard
                                             index={index}
                                             imgURL={image}
-                                            changeBigImage={(canon) => setBigImg(canon)}
+                                            changeBigImage={(colorante) => setBigImg(colorante)}
                                             bigImg={bigImg}
-                                            shouldRender={(bidon) => bidon.confirm === "N"}
+                                            shouldRender={(bidon) => bidon.confirm === "colorante"}
                                         />
                                     </div>
                                 ))}
@@ -47,6 +47,7 @@ const Aditivo = () => {
                         <h1 className="font-century text-xl font-bold mb-2">DESCRIPCION:</h1>
                         <p className="font-century text-lg">Aditivo de color para líquido de espuma. Soluble en 3 o 4 bidones de Espuma XPLUS.</p>
                         <p className="font-century text-lg font-bold mt-8">Disponibles en 6 colores:</p>
+
                         <div className='flex flex-row flex-wrap xl:flex-nowrap gap-12 justify-center mt-4'>
                             <div className='p-6 w-2 bg-pale-red rounded-full'>
                             </div>

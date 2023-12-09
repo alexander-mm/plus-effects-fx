@@ -29,7 +29,7 @@ export default {
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
-        "pale-red": "#FF0000",
+        "pale-red": "#FF3B3B",
         "white-400": "rgba(255, 255, 255, 0.80)"
       },
       boxShadow: {

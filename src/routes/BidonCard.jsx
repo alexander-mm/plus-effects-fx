@@ -1,5 +1,3 @@
-// BidonCard.js
-
 const BidonCard = ({ imgURL, changeBigImage, bigImg, shouldRender }) => {
     const handleClick = () => {
         if (shouldRender(imgURL)) {

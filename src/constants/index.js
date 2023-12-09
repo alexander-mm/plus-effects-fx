@@ -29,17 +29,17 @@ export const bidones = [
     {
         thumbnail: bidon,
         bigImg: bidon,
-        confirm: "Y"
+        confirm: "bidon"
     },
     {
         thumbnail: colorante,
         bigImg: colorante,
-        confirm: "N"
+        confirm: "colorante"
     },
     {
         thumbnail: colorantex6,
         bigImg: colorantex6,
-        confirm: "X"
+        confirm: "coloranteX6"
     },
     {
         thumbnail: sistemadebombeo,

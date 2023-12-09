@@ -27,27 +27,28 @@ const Bidon = () => {
                     <div className="text-white text-center ">
                         <p className="font-century text-3xl">BIDON DE 20 LITROS</p>
                         <div className="bg-black flex relative justify-center items-center border-2 border-white/50 rounded-2xl px-[1em] xl:px-[2em] pb-[9em] sm:pb-[12em] pt-[1em] md:pt-[3em] xl:pt-[1em] mx-8 md:mx-[7em] mb-8 mt-[2em]">
-                            <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1" />
+                            <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
 
-                            <div className='flex sm:gap-6 gap-4 absolute -bottom-[-5%] max-sm:px-6 '>
+                            <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
                                 {bidones.map((image, index) => (
                                     <div key={index}>
                                         <BidonCard
                                             index={index}
                                             imgURL={image}
-                                            changeBigImage={(canon) => setBigImg(canon)}
+                                            changeBigImage={(bidon) => setBigImg(bidon)}
                                             bigImg={bigImg}
-                                            shouldRender={(bidon) => bidon.confirm === "Y"}
+                                            shouldRender={(bidon) => bidon.confirm === "bidon"}
                                         />
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <h1 className="font-century text-xl font-bold mb-2">DESCRIPCION:</h1>
-                        <p className="font-century text-lg">Más de 20 litros de líquido para cañon y máquina de Espuma</p>
 
-                        <div className='flex justify-center items-center mt-10 gap-4 mx-4'>
-                            <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
+                        <h1 className="font-century text-xl font-bold mb-2">DESCRIPCION:</h1>
+                        <p className="font-century text-lg">Más de 20 litros de líquido para cañón y máquina de Espuma</p>
+
+                        <div className='flex justify-center items-center mt-10'>
+                            <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer mx-2'>
                                 <Link
                                     className='flex flex-row-reverse justify-center items-center text-black font-century font-bold'
                                     to="/insumos&accs#inicioAccs"
@@ -56,7 +57,7 @@ const Bidon = () => {
                                     <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                                 </Link>
                             </button>
-                            <button type='button' className='bg-white  py-2 px-6 rounded-2xl cursor-pointer'>
+                            <button type='button' className='bg-white py-2 px-6 rounded-2xl cursor-pointer mx-2'>
                                 <a className='flex flex-row justify-center items-center gap-3 text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=573186441844&text=Hola,%20estoy%20interesad@%20en%20el%20liquido%20para%20Cañones%20de%20Espuma" target="_blank" rel="noopener noreferrer">COMPRAR
                                     <img src={shopIcon} className='w-9' alt="shop icon" />
                                 </a>
