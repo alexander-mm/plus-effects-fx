@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Error from './Error'
 import CerrarBtn from '../assets/icons/cerrar.svg'
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 const Form = ({ setForm }) => {
 
@@ -34,17 +34,17 @@ const Form = ({ setForm }) => {
         setCiudad('')
         setMensaje('')
 
-        // const serviceID = 'service_d99y3qp';
-        // const templateID = 'template_q1yikkr';
-        // const userID = 'm4GtP4AbjXmTTcQPI';
+        const serviceID = 'service_x62427p';
+        const templateID = 'template_x2wx4ye';
+        const userID = 'bvahDzKpDYIhGFTkD';
 
-        // emailjs.sendForm(serviceID, templateID, e.target, userID)
-        //     .then((result) => {
-        //         console.log('Correo electrónico enviado con éxito', result.text);
-        //     })
-        //     .catch((error) => {
-        //         console.error('Error al enviar el correo electrónico', error);
-        //     });
+        emailjs.sendForm(serviceID, templateID, e.target, userID)
+            .then((result) => {
+                console.log('Correo electrónico enviado con éxito', result.text);
+            })
+            .catch((error) => {
+                console.error('Error al enviar el correo electrónico', error);
+            });
     };
 
     return (
