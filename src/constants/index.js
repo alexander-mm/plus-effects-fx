@@ -1,5 +1,5 @@
 import { facebook, instagram, whatsapp, tiktok, youtube } from "../assets/icons";
-import { canon1,canon2,canon3, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { canon1,canon2,fxinterno, wafmix } from "../assets/images";
 import { bidon, colorante, colorantex6, sistemadebombeo } from "../assets/shop-items";
 
 export const navLinks = [
@@ -11,16 +11,20 @@ export const navLinks = [
 
 export const machines = [
     {
-        thumbnail: thumbnailShoe1,
+        thumbnail: canon1,
         bigCanon: canon1,
     },
     {
-        thumbnail: thumbnailShoe2,
+        thumbnail: canon2,
         bigCanon: canon2,
     },
     {
-        thumbnail: thumbnailShoe3,
-        bigCanon: canon3,
+        thumbnail: fxinterno,
+        bigCanon: fxinterno,
+    },
+    {
+        thumbnail: wafmix,
+        bigCanon: wafmix,
     },
 ];
 

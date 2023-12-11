@@ -9,11 +9,11 @@ const CanonCard = ({ imgURL, changeBigCanonImage, bigCanonImg }) => {
         <div
             className={`rounded-lg ${bigCanonImg === imgURL.bigCanon
                 ? "border-pale-red border-2"
-                : "border-white/50 border opacity-30"
+                : "border-white/50 border opacity-70"
                 } cursor-pointer max-sm:flex-1`}
             onClick={handleClick}
         >
-            <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-lg max-sm:p-4'>
+            <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-30 sm:h-30 rounded-lg max-sm:p-4'>
                 <img
                     src={imgURL.thumbnail}
                     alt='canon collection'
