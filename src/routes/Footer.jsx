@@ -118,7 +118,9 @@ const Footer = () => {
 
 
             </div>
-
+            <div className='text-white font-century flex justify-center items-center text-xs mt-6 mb-2 text-center'>
+                <p>Todos los Derechos Reservados © 2024 - +FX™ - Una División de Plus Group</p>
+            </div>
 
         </footer >
     );
