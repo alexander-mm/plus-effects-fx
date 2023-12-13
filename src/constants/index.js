@@ -1,5 +1,5 @@
 import { facebook, instagram, whatsapp, tiktok, youtube } from "../assets/icons";
-import { canon1,canon2,fxinterno, wafmix } from "../assets/images";
+import { wafmix } from "../assets/images";
 import { bidon, colorante, colorantex6, sistemadebombeo } from "../assets/shop-items";
 
 export const navLinks = [
@@ -11,16 +11,16 @@ export const navLinks = [
 
 export const machines = [
     {
-        thumbnail: canon1,
-        bigCanon: canon1,
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
     },
     {
-        thumbnail: canon2,
-        bigCanon: canon2,
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canon2.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canon2.png",
     },
     {
-        thumbnail: fxinterno,
-        bigCanon: fxinterno,
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canon3.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canon3.png",
     },
     {
         thumbnail: wafmix,
@@ -56,7 +56,7 @@ export const maquinasEspuma = [
     {
         name1: 'Espuma ',
         name2: '- One',
-        thumbnail: canon1,
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
         to:"/espumaone#inicioOne"
     },
     {
