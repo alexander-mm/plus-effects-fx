@@ -15,6 +15,7 @@ import Aditivo from './routes/Aditivo'
 import AditivoX6 from './routes/AditivoX6'
 import KitBombeo from './routes/KitBombeo'
 import Buildpage from "./routes/Buildpage";
+import UserManual from "./routes/UserManual";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: '/buildpage',
     element: <Buildpage />
+  },
+  {
+    path: '/usermanual',
+    element: <UserManual />
   },
 
 ])
