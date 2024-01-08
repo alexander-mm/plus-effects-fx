@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { arrowRight } from '../assets/icons/'
+import FloatingButton from './FloatingButton'
 
 const Buildpage = () => {
     return (
         <div className="flex items-center justify-center h-screen bg-black text-white">
+            <FloatingButton />
             <div className="text-center">
                 <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">Lo sentimos...</h1>
                 <p className="mt-4 text-lg md:text-xl lg:text-2xl">Sitio en Construcción</p>

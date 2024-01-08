@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+// import FloatingButton from './FloatingButton';
 
 const Home = () => {
     useEffect(() => {
@@ -13,8 +14,8 @@ const Home = () => {
     };
 
     return (
-        <section id='inicioHome' style={sectionStyle} className='relative py-[450px] bg-left bg-no-repeat bg-cover'>
-            {/* Contenido de tu sección */}
+        <section id='inicioHome' style={sectionStyle} className='relative py-[500px] bg-center bg-no-repeat bg-cover'>
+
         </section>
     );
 };

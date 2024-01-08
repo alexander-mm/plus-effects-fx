@@ -1,0 +1,20 @@
+/* FloatingButton.css */
+.floating-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: url('./assets/icons/whatsapp-floating.svg') no-repeat center center; /* Ruta de tu imagen */
+    background-size: cover;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .floating-button:hover {
+    transform: scale(1.1);
+  }
+  

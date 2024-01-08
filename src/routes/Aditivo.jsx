@@ -5,6 +5,7 @@ import { arrowRight } from '../assets/icons/'
 import shopIcon from '../assets/icons/shop-icon.png'
 import { bidones } from '../constants'
 import BidonCard from './BidonCard';
+import FloatingButton from './FloatingButton';
 
 const Aditivo = () => {
 
@@ -19,6 +20,7 @@ const Aditivo = () => {
 
     return (
         <section id='inicioAditivo' className='bg-black'>
+            <FloatingButton />
             <div className="w-full flex flex-col justify-center gap-y-10 min-h-screen max-container py-4">
                 <h1 className='text-white text-center font-century text-[40px]'>ESPUMA <span className="text-pale-red">XCOLOR</span></h1>
 

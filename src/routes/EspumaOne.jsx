@@ -9,6 +9,7 @@ import ImageModal from './ImageModal';
 import CerrarBtn from '../assets/icons/cerrar.svg'
 import Pulso from './Pulso'
 import FondoAnimado from './FondoAnimado'
+import FloatingButton from './FloatingButton'
 
 const Maquinas = () => {
 
@@ -40,7 +41,7 @@ const Maquinas = () => {
 
     return (
         <section id='inicioOne' className='bg-black pb-10'>
-
+            <FloatingButton />
             <div className='flex justify-center'>
                 <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
             </div>
