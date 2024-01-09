@@ -8,7 +8,6 @@ const FloatingButton = () => {
             target="_blank"
             rel="noopener noreferrer"
         >
-            <i className="fab fa-whatsapp"></i>
         </a>
     );
 };
