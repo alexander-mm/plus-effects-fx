@@ -14,7 +14,7 @@ const Home = () => {
     };
 
     return (
-        <section id='inicioHome' style={sectionStyle} className='relative py-[500px] bg-center bg-no-repeat bg-cover'>
+        <section id='inicioHome' style={sectionStyle} className='relative py-[550px] bg-center bg-no-repeat bg-cover'>
 
         </section>
     );
