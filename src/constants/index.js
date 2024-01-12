@@ -3,9 +3,9 @@ import { wafmix } from "../assets/images";
 import { bidon, colorante, colorantex6, sistemadebombeo } from "../assets/shop-items";
 
 export const navLinks = [
-    { to: "/", label: "Inicio", translationKey: "home" },
-    { to: "/maquinas#inicioMaquinas", label: "Nuestros Equipos", translationKey: "ourMachines" },
-    { to: "/insumos&accs#inicioAccs", label: "Insumos & Accs", translationKey: "suppliesAccessories" },
+    { to2: "/", label: "Inicio", translationKey: "home" },
+    { to: "/maquinas#inicioMaquinas", to2: "/maquinas", label: "Nuestros Equipos", translationKey: "ourMachines" },
+    { to: "/insumos&accs#inicioAccs", to2: "/insumos&accs", label: "Insumos & Accs", translationKey: "suppliesAccessories" },
 ];
 
 

@@ -57,9 +57,9 @@ const Navbar = () => {
                     {navLinks.map((item) => (
                         <li key={item.label}>
                             <Link
-                                to={item.to}
+                                to={item.to2}
                                 className={`font-century leading-normal text-lg 
-                                ${location.pathname === item.to ? 'text-pale-red hover:text-red-600/50  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
+                                ${location.pathname === item.to2 ? 'text-pale-red hover:text-red-600/50  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
                                 `}
                             >
                                 {t(item.translationKey)}
@@ -94,10 +94,11 @@ const Navbar = () => {
                             {navLinks.map((item) => (
                                 <li key={item.label}>
                                     <Link
-                                        to={item.to}
+                                        onClick={() => setToggle((prev) => !prev)}
+                                        to={item.to2}
                                         className={`font-century leading-normal text-lg 
-            ${location.pathname === item.to ? 'text-pale-red hover:text-red-600/50  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
-            `}
+                                        ${location.pathname === item.to2 ? 'text-pale-red  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
+                                        `}
                                     >
                                         {t(item.translationKey)}
                                     </Link>

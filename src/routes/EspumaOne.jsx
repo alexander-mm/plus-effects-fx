@@ -199,14 +199,16 @@ const Maquinas = () => {
             <div className='flex justify-center items-center gap-2 m-8 xl:hidden'>
                 <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
                     <Link
-                        className='flex flex-row-reverse justify-center items-center text-black font-century font-bold'
+                        className='flex flex-row-reverse justify-center items-center text-black font-century font-bold pr-2'
                         to="/maquinas"
                     >
+                        {t('back-button')}
                         <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                     </Link>
                 </button>
                 <button type='button' className='bg-white py-2 px-6 rounded-2xl cursor-pointer'>
-                    <a className='flex flex-row justify-center items-center gap-3 text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
+                    <a className='flex flex-row justify-center items-center gap-1 text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
+                        {t('buy-button')}
                         <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
                     </a>
                 </button>
