@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Error from './Error'
 import CerrarBtn from '../assets/icons/cerrar.svg'
 import emailjs from 'emailjs-com';
 
 const Form = ({ setForm }) => {
+
+    const { t, i18n } = useTranslation();
+
+    useEffect(() => {
+        // Recupera la preferencia de idioma almacenada en localStorage
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+    }, [i18n]);
 
     const ocultarModal = () => {
         setForm(false)
@@ -52,8 +63,8 @@ const Form = ({ setForm }) => {
             <div className='border rounded-full p-1 right-10 sm:right-[2em] md:right-[10em] lg:right-[15em] cerrar-modal'>
                 <img className="w-full cursor-pointer" src={CerrarBtn} alt="cerrar form" onClick={ocultarModal} />
             </div>
-            <div className='py-10'>
-                <p className='text-center font-century font-bold leading-normal text-2xl text-white'>Contáctanos</p>
+            <div className='pt-20 pb-0'>
+                <p className='text-center font-century font-bold leading-normal text-2xl text-white'>{t('contact-us')}</p>
             </div>
             <div className='pb-[50em] sm:pb-[30em] lg:pb-[5em]'>
                 <form
@@ -63,13 +74,13 @@ const Form = ({ setForm }) => {
 
                     <div className="mb-5">
                         <label htmlFor="nombres" className="block text-white uppercase font-bold">
-                            Nombres:
+                            {t('name')}
                         </label>
                         <input
                             id="nombres"
                             type="text"
                             name="nombres"
-                            placeholder="Escribe tus nombres"
+                            placeholder={t('w-name')}
                             className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
                             value={nombres}
                             onChange={(e) => setNombres(e.target.value)}
@@ -78,13 +89,13 @@ const Form = ({ setForm }) => {
 
                     <div className="mb-5">
                         <label htmlFor="apellidos" className="block text-white uppercase font-bold">
-                            Apellidos:
+                            {t('lastname')}
                         </label>
                         <input
                             id="apellidos"
                             type="text"
                             name="apellidos"
-                            placeholder="Escribe tus apellidos"
+                            placeholder={t('w-lastname')}
                             className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
                             value={apellidos}
                             onChange={(e) => setApellidos(e.target.value)}
@@ -99,7 +110,7 @@ const Form = ({ setForm }) => {
                             id="whatsapp"
                             type="text"
                             name="whatsapp"
-                            placeholder="Escribe tu número de WhatsApp"
+                            placeholder={t('w-whatsapp')}
                             className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
                             value={whatsapp}
                             onChange={(e) => setWhatsApp(e.target.value)}
@@ -114,7 +125,7 @@ const Form = ({ setForm }) => {
                             id="email"
                             type="email"
                             name="email"
-                            placeholder="Escribe tu dirección de correo electrónico"
+                            placeholder={t('w-e-mail')}
                             className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -123,13 +134,13 @@ const Form = ({ setForm }) => {
 
                     <div className="mb-5">
                         <label htmlFor="ciudad" className="block text-white uppercase font-bold">
-                            Ciudad:
+                            {t('city')}
                         </label>
                         <input
                             id="ciudad"
                             type="text"
                             name="ciudad"
-                            placeholder="Escribe tu ciudad"
+                            placeholder={t('w-city')}
                             className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
                             value={ciudad}
                             onChange={(e) => setCiudad(e.target.value)}
@@ -138,7 +149,7 @@ const Form = ({ setForm }) => {
 
                     <div className="mb-5">
                         <label htmlFor="pais" className="block text-white uppercase font-bold">
-                            Déjanos un mensaje:
+                            {t('msj')}
                         </label>
                         <textarea
                             id="pais"
@@ -155,7 +166,7 @@ const Form = ({ setForm }) => {
 
                     <input
                         type="submit"
-                        className="bg-black border hover:bg-green-600 w-full p-3 text-white rounded-md mt-8 uppercase font-bold cursor-pointer" value="ENVIAR" />
+                        className="bg-black border hover:bg-green-600 w-full p-3 text-white rounded-md mt-8 uppercase font-bold cursor-pointer" value={t('send-button')} />
                 </form>
             </div>
         </div>

@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 import { Logo } from "../assets/images";
 import { contactLinks, footerLinks, helpLinks, socialMedia } from "../constants";
 
 const Footer = () => {
+
+    const { t } = useTranslation();
+
+
     return (
         <footer className=' bg-black pt-10 xl:pt-20 pb-6 px-10'>
             <div className='flex items-center flex-col lg:flex-row justify-around'>
@@ -16,7 +21,7 @@ const Footer = () => {
                         />
                     </a>
                     <p className='text-base font-century text-white-400 sm:max-w-sm mb-2'>
-                        Síguenos en redes sociales!
+                        {t('follow-us')}
                     </p>
                     <div className='flex items-center gap-4'>
                         {socialMedia.map((icon) => (
@@ -36,7 +41,7 @@ const Footer = () => {
                     {footerLinks.map((section) => (
                         <div key={section.title}>
                             <h4 className='font-century font-bold text-lg leading-normal mb-4 text-center text-white'>
-                                {section.title}
+                                {t(section.translationKey)}
                             </h4>
                             <ul>
                                 {section.links.map((link) => (
@@ -44,7 +49,7 @@ const Footer = () => {
                                         className='mt-1 font-century text-sm leading-normal text-center text-white-400 hover:text-slate-gray'
                                         key={link.name}
                                     >
-                                        <Link to={link.link}>{link.name}</Link>
+                                        <Link to={link.link}>{t(link.translationKey)}</Link>
                                     </li>
 
                                 ))}
@@ -55,7 +60,7 @@ const Footer = () => {
                         {helpLinks.map((section) => (
                             <div key={section.title}>
                                 <h4 className='font-century text-lg leading-normal font-bold mb-4 text-center text-white'>
-                                    {section.title}
+                                    {t(section.translationKey)}
                                 </h4>
                                 <ul>
                                     {section.links.map((link) => (
@@ -63,7 +68,7 @@ const Footer = () => {
                                             className='mt-1 font-century text-sm leading-normal text-center text-white-400 hover:text-slate-gray'
                                             key={link.name}
                                         >
-                                            <Link to={link.link}>{link.name}</Link>
+                                            <Link to={link.link}>{t(link.translationKey)}</Link>
                                         </li>
 
                                     ))}
@@ -77,7 +82,7 @@ const Footer = () => {
                     {helpLinks.map((section) => (
                         <div key={section.title}>
                             <h4 className='font-century text-lg leading-normal font-bold mb-4 text-center text-white'>
-                                {section.title}
+                                {t(section.translationKey)}
                             </h4>
                             <ul>
                                 {section.links.map((link) => (
@@ -85,7 +90,7 @@ const Footer = () => {
                                         className='mt-1 font-century text-sm leading-normal text-center text-white-400 hover:text-slate-gray'
                                         key={link.name}
                                     >
-                                        <Link to={link.link}>{link.name}</Link>
+                                        <Link to={link.link}>{t(link.translationKey)}</Link>
                                     </li>
 
                                 ))}
@@ -99,7 +104,7 @@ const Footer = () => {
                     {contactLinks.map((section) => (
                         <div key={section.title}>
                             <h4 className='font-century text-lg leading-normal font-bold mb-4 text-center text-white'>
-                                {section.title}
+                                {t(section.translationKey)}
                             </h4>
                             <ul>
                                 {section.links.map((link) => (
@@ -119,7 +124,7 @@ const Footer = () => {
 
             </div>
             <div className='text-white font-century flex justify-center items-center text-xs mt-6 mb-2 text-center'>
-                <p>Todos los Derechos Reservados © 2024 - +FX™ - Una División de Plus Group</p>
+                <p>{t('all-right')}</p>
             </div>
 
         </footer >

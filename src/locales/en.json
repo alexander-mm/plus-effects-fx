@@ -1,0 +1,88 @@
+{
+  "home": "Home",
+  "ourMachines": "Machines",
+  "suppliesAccessories": "Supplies & Accessories",
+  "contact-nav": "Contact",
+
+  "follow-us": "Follow Us!",
+
+  "section": "Machines",
+  "foam": "Foam",
+  "snow": "Snow",
+  "bubbles": "Bubbles",
+
+  "section-help": "Help",
+  "p-warranty": "Warraty Policies",
+  "p-return": "Return Policies",
+  "sites-aso": "Partner Sites",
+
+  "section-contact": "Contact",
+
+  "all-right": "All Rights Reserved © 2024 - +FX™ - A Division of Plus Group",
+
+  "cannon-title": "FOAM CANNONS",
+  "auxText": "COMING SOON",
+
+  "read-more-button": "READ MORE",
+  "back-button": "GO BACK",
+  "buy-button": "BUY PRODUCT",
+
+  "cannon-description": "DESCRIPTION",
+  "cannon-range": "- Real range up to 8 meters.",
+  "cannon-conex": "- Direct connection to water taps.",
+  "cannon-waf": "- WAF MIX system of water and foam fluid.",
+  "cannon-insta": "- Easy installation, without tools!",
+  "cannon-foam": "- Dry and voluminous foam.",
+  "cannon-op": "- Low operating pressure.",
+  "cannon-wire": "- 10 meters of wire.",
+  "cannon-liquid": "- Low usage of foaming fluid.",
+
+  "no-tools": "INSTALLATION WITHOUT TOOLS!",
+  "inclination": "INCLINATION SYSTEM",
+  "dumbbells": "OPERATION DUMBBELLS",
+  "gen-system": "GENERATION SYSTEM",
+  "protection": "FAN PROTECTION",
+  "wire": "10 METERS OF WIRE",
+
+  "supplies": "SUPPLIES",
+  "fluid": "FOAM ",
+  "foam2": "FLUID",
+  "color": "COLOR ",
+  "adds": "ADDITIVES",
+  "accs": "ACCESSORIES",
+  "refax": "REPAIR PARTS ",
+  "bidon20": "CONTAINER 20 LITERS",
+  "1-unit": "1 UNT",
+  "6-unit": "6 UNTS",
+  "pump": "AUX Pump Kit",
+
+  "machine": "FOR MACHINE: ",
+  "descrip-bidon": "More than 20 liters of liquid for foam cannon and machine",
+
+  "colorx1": "1 UNIT OF COLORANT",
+  "colorx6": "6 UNITS OF COLORANT",
+  "aditivo-desc": "Color additive for foam fluid. Soluble in 3 or 4 liters of ESPUMA XPLUS.",
+  "available": "Available in 6 colors:",
+
+  "aux-pump": "AUXILIARY PUMPING SYSTEM",
+  "750w": "- 750W surface pump.",
+  "switch": "- Built-in switch.",
+  "cable": "- Connection cable to electrical outlet.",
+  "3m-hose": "- 4 Meters of 1 Inch hose with steel reinforcement.",
+  "filter": "- Built-in textile filter.",
+
+
+  "contact-us": "Contact Us",
+  "name": "NAMES:",
+  "w-name": "Write your names",
+  "lastname": "LASTNAMES:",
+  "w-lastname": "Write your lastnames",
+  "whatsapp": "WHATSAPP:",
+  "w-whatsapp": "Write your WhatsApp number",
+  "e-mail": "E-MAIL:",
+  "w-e-mail": "Write your e-mail address",
+  "city": "CITY:",
+  "w-city": "Write your city",
+  "msj": "MESSAGE:",
+  "send-button": "SEND"
+}

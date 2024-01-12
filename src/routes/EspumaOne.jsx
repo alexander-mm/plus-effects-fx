@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
@@ -13,6 +14,16 @@ import FloatingButton from './FloatingButton'
 
 const Maquinas = () => {
 
+    const { t, i18n } = useTranslation();
+
+    useEffect(() => {
+        // Recupera la preferencia de idioma almacenada en localStorage
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            i18n.changeLanguage(savedLanguage);
+        }
+    }, [i18n]);
+
     useEffect(() => {
         const elementoEspecifico = document.getElementById('inicioAccs');
         if (elementoEspecifico) {
@@ -23,7 +34,7 @@ const Maquinas = () => {
     const [bigCanonImg, setBigCanonImg] = useState(canon1)
 
     const [modalContent, setModalContent] = useState({
-        type: null, // "image" or "video"
+        type: null,
         url: null,
     });
 
@@ -77,24 +88,26 @@ const Maquinas = () => {
                 </div>
                 <div className="flex justify-center items-center flex-col ml-16">
                     <div className='flex flex-col font-century justify-center mb-12 xl:mb-0 text-start gap-1 xl:ml-52'>
-                        <span className="text-white font-bold text-[25px]">DESCRIPCIÓN:</span>
-                        <span className="text-white text-[20px]">- Alcance real hasta 8 metros.</span>
-                        <span className="text-white text-[20px]">- Conexión directa a llaves de agua.</span>
-                        <span className="text-white text-[20px]">- Sistema WAF MIX de agua y líquido de espuma.</span>
-                        <span className="text-white text-[20px]">- Fácil instalación, sin herramientas!.</span>
-                        <span className="text-white text-[20px]">- Espuma seca y voluminosa.</span>
-                        <span className="text-white text-[20px]">- Baja presión de operación.</span>
-                        <span className="text-white text-[20px]">- 10 metros de cable.</span>
-                        <span className="text-white text-[20px]">- Bajo consumo de líquido espumante.</span>
+                        <span className="text-white font-bold text-[25px]">{t('cannon-description')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-range')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-conex')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-waf')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-insta')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-foam')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-liquid')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-op')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-wire')}</span>
                     </div>
                     <div className='hidden xl:flex gap-2 mt-16'>
                         <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
                             <Link className='flex justify-center items-center text-black font-century font-bold' to="/maquinas">
-                                <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" /> VOLVER
+                                <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
+                                {t('back-button')}
                             </Link>
                         </button>
                         <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer hover:bg-green-600'>
-                            <a className='flex flex-row justify-center items-center text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">COMPRAR
+                            <a className='flex flex-row justify-center items-center text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
+                                {t('buy-button')}
                                 <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
                             </a>
                         </button>
@@ -139,7 +152,7 @@ const Maquinas = () => {
                             <FondoAnimado />
                             <div className='flex justify-center static'>
                                 <span className='mb-[14px]  text-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
-                                    {detalle.bottomText}
+                                    {t(detalle.translationKey)}
                                 </span>
                             </div>
 

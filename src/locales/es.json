@@ -1,0 +1,85 @@
+{
+  "home": "Inicio",
+  "ourMachines": "Máquinas",
+  "suppliesAccessories": "Insumos y Accesorios",
+  "contact-nav": "Contacto",
+
+  "follow-us": "Síguenos en redes sociales!",
+
+  "section": "Máquinas",
+  "foam": "Espuma",
+  "snow": "Nieve",
+  "bubbles": "Burbujas",
+
+  "section-help": "Ayuda",
+  "p-warranty": "Políticas de Garantía",
+  "p-return": "Políticas de Devolución",
+  "sites-aso": "Sitios Asociados",
+
+  "section-contact": "Contacto",
+
+  "all-right": "Todos los Derechos Reservados © 2024 - +FX™ - Una División de Plus Group",
+
+  "cannon-title": "CAÑONES DE ESPUMA",
+  "auxText": "MUY PRONTO",
+
+  "read-more-button": "LEER MÁS",
+  "back-button": "ATRÁS",
+  "buy-button": "COMPRAR",
+
+  "cannon-description": "DESCRIPCIÓN",
+  "cannon-range": "- Alcance real hasta 8 metros.",
+  "cannon-conex": "- Conexión directa a llaves de agua.",
+  "cannon-waf": "-Sistema WAF MIX de agua y líquido de espuma.",
+  "cannon-insta": "- Fácil instalación, sin herramientas!.",
+  "cannon-foam": "- Espuma seca y voluminosa.",
+  "cannon-op": "- Baja presión de operación.",
+  "cannon-wire": "- 10 metros de cable.",
+  "cannon-liquid": "- Bajo consumo de líquido espumante.",
+
+  "no-tools": "INSTALLATION WITHOUT TOOLS!",
+  "inclination": "SISTEMA DE INCLINACIÓN",
+  "dumbbells": "MANCUERNAS DE OPERACIÓN",
+  "gen-system": "SISTEMA DE GENERACIÓN",
+  "protection": "FAN PROTECTION",
+  "wire": "10 METROS DE CABLE",
+
+  "supplies": "INSUMOS",
+  "fluid": "LIQUIDO DE ",
+  "foam2": "ESPUMA",
+  "color": "ADITIVOS DE ",
+  "adds": " COLOR",
+  "accs": "ACCESORIOS",
+  "refax": "REFACCIÓNES ",
+  "bidon20": "Bidon: 20 Litros",
+  "1-unit": "1 UND",
+  "6-unit": "6 UNDS",
+  "pump": "Kit de Bombeo AUX",
+
+  "machine": "MÁQUINA: ",
+  "descrip-bidon": "Más de 20 litros de líquido para cañón y máquina de Espuma",
+
+  "colorx1": "1 UNIDAD DE COLORANTE",
+  "colorx6": "6 UNIDADES DE COLORANTE",
+  "aditivo-desc": "Aditivo de color para líquido de espuma. Soluble en 3 o 4 bidones de Espuma XPLUS.",
+  "available": "Disponible en 6 colores:",
+
+  "aux-pump": "SISTEMA AUXILIAR DE BOMBEO",
+  "750w": "- Bomba de superficie 750W.",
+  "switch": "- Interruptor incorporado.",
+  "cable": "- Cable de conexión a toma corriente eléctrico.",
+  "3m-hose": "- 4 Metros de manguera de 1 Pulgada con refuerzo en acero.",
+  "filter": "- Filtro textil incorporado.",
+
+  "contact-us": "Contáctanos",
+  "name": "NOMBRES:",
+  "w-name": "Escribe tus nombres",
+  "lastname": "APELLIDOS:",
+  "w-lastname": "Escribe tus apellidos",
+  "w-whatsapp": "Escribe tu número de WhatsApp",
+  "w-e-mail": "Escribe tu dirección de correo electrónico",
+  "city": "CIUDAD:",
+  "w-city": "Escribe tu ciudad",
+  "msj": "DÉJANOS UN MENSAJE:",
+  "send-button": "ENVIAR"
+}
