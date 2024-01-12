@@ -84,5 +84,8 @@
   "city": "CITY:",
   "w-city": "Write your city",
   "msj": "MESSAGE:",
-  "send-button": "SEND"
+  "send-button": "SEND",
+
+  "sorry": "We're sorry",
+  "building": "Building Site"
 }

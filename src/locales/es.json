@@ -81,5 +81,8 @@
   "city": "CIUDAD:",
   "w-city": "Escribe tu ciudad",
   "msj": "DÉJANOS UN MENSAJE:",
-  "send-button": "ENVIAR"
+  "send-button": "ENVIAR",
+
+  "sorry": "Lo sentimos",
+  "building": "Sitio en Construcción"
 }
