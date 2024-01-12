@@ -34,10 +34,10 @@ const Navbar = () => {
     };
 
     return (
-        <header className='px-4 py-2 lg:px-10 absolute z-10 w-full fondotest'>
+        <header className='px-4 py-2 lg:px-10 absolute z-10 w-full bg-black'>
             <FloatingButton />
 
-            <nav className='py-4 flex justify-between items-center max-container'>
+            <nav className='py-2 flex justify-between items-center max-container'>
 
                 <a className='ml-4' href="/#inicioHome">
                     <img src={Logo} alt="Logo"
