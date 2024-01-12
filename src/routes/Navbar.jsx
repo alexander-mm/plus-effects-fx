@@ -96,7 +96,7 @@ const Navbar = () => {
                                     <Link
                                         onClick={() => setToggle((prev) => !prev)}
                                         to={item.to2}
-                                        className={`font-century leading-normal text-lg 
+                                        className={`font-century leading-normal text-2xl 
                                         ${location.pathname === item.to2 ? 'text-pale-red  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
                                         `}
                                     >
