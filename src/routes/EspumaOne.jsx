@@ -17,7 +17,6 @@ const Maquinas = () => {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
-        // Recupera la preferencia de idioma almacenada en localStorage
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
@@ -117,7 +116,6 @@ const Maquinas = () => {
 
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
                 {galeriaDetalles.map((detalle, index) => (
-
                     <div key={index} className='flex justify-center mb-[5px] mx-[2px]'>
 
                         <div className=''
@@ -133,7 +131,6 @@ const Maquinas = () => {
                             }}
                             onClick={() => openModal({ type: 'image', url: detalle.imgExpand })}
                         >
-
                             <div
                                 style={{
                                     position: 'relative',
@@ -155,9 +152,7 @@ const Maquinas = () => {
                                     {t(detalle.translationKey)}
                                 </span>
                             </div>
-
                         </div>
-
                         <div
                             style={{
                                 width: '100%',

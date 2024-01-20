@@ -112,6 +112,23 @@ export const galeriaDetalles = [
     },
 ];
 
+export const userManual = [
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2024/01/min-manual-canon.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2024/01/min-manual-canon.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2024/01/min-manual-canon.jpg',
+        bottomText: 'INSTALACIÓN SIN HERRAMIENTAS!', translationKey: "no-tools",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2024/01/MANUAL-INSTALACION.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2024/01/min-manual-box.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2024/01/min-manual-box.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2024/01/min-manual-box.jpg',
+        bottomText: 'SISTEMA DE INCLINACION',translationKey: "inclination",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2024/01/QR-MANUAL.mp4',
+    },
+];
+
 export const articulos = [
     {
         thumbnail: bidon,

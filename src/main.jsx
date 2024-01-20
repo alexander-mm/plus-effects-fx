@@ -37,6 +37,11 @@ const router = createBrowserRouter([
         path: '/insumos&accs',
         element: <Insumos />
       },
+
+      {
+        path: '/usermanual',
+        element: <UserManual />
+      },
     ],
   },
   {
@@ -63,10 +68,6 @@ const router = createBrowserRouter([
   {
     path: '/buildpage',
     element: <Buildpage />
-  },
-  {
-    path: '/usermanual',
-    element: <UserManual />
   },
 
 ])
