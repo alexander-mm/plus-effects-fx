@@ -33,7 +33,7 @@ const CanonInstallVideo = () => {
     return (
         <div>
             <div>
-                <h1 className='font-century text-2xl text-white text-center pt-8 pb-2'>
+                <h1 className='font-century text-2xl text-white text-center pt-10 pb-2 mx-4'>
                     {t('canon-video')}
                 </h1>
             </div>

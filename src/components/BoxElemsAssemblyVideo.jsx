@@ -34,7 +34,7 @@ const BoxElementsAssembly = () => {
     return (
         <div>
             <div>
-                <h1 className='font-century text-2xl text-white text-center pt-8 pb-2'>{t('box-video')}</h1>
+                <h1 className='font-century text-2xl text-white text-center pt-8 pb-2 mx-4'>{t('box-video')}</h1>
             </div>
             <div className='flex justify-center sm:mx-2 pb-12'>
 
