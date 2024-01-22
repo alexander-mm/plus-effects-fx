@@ -6,7 +6,7 @@ import { navLinks } from '../constants'
 import { logo } from '../assets/images'
 import { hamburger } from '../assets/icons'
 import closeBtn from '../assets/icons/close.svg'
-import FloatingButton from './FloatingButton';
+import FloatingButton from '../components/FloatingButton';
 import flagEn from '../assets/icons/ingles.png';
 import flagEs from '../assets/icons/español.png';
 

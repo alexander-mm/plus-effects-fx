@@ -39,27 +39,9 @@ const BoxElementsAssembly = () => {
             <div className='flex justify-center sm:mx-2 pb-12'>
 
                 <div className='flex justify-center mb-[5px] mx-[2px]'>
-
-                    <div>
-                        <div
-                            style={{
-                                position: 'relative',
-                                top: 0,
-                                left: 0,
-                                width: '100%',
-                                height: 'auto',
-                                backgroundImage: `url("")`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                                zIndex: -1,
-                            }}
-                        >
-                        </div>
-                        <div className='flex justify-center static'>
-                            <span className='mb-[14px]  text-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
-                            </span>
-                        </div>
+                    <div className='flex justify-center static'>
+                        <span className='mb-[14px]  text-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
+                        </span>
                     </div>
                     <div
                         style={{

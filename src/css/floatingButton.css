@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background: url('./assets/icons/whatsapp-floating.svg') no-repeat center center;
+    background: url('../assets/icons/whatsapp-floating.svg') no-repeat center center;
     background-size: cover;
     width: 65px;
     height: 65px;
@@ -10,4 +10,5 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-  }  
+    z-index: 1000;
+  }
