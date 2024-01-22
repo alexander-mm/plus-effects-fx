@@ -195,7 +195,6 @@ export const contactLinks = [
 ];
 
 export const socialMedia = [
-    { src: whatsapp, alt: "whatsapp logo", href: "https://api.whatsapp.com/send?phone=593980429801" },
     { src: facebook, alt: "facebook logo", href: "https://www.facebook.com/masqueunefecto"},
     { src: instagram, alt: "instagram logo", href: "https://www.instagram.com/masqueunefecto/" },
     { src: tiktok, alt: "tiktok logo", href: "https://www.tiktok.com/@masqueunefecto" },
