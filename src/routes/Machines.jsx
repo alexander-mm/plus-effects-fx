@@ -1,22 +1,22 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
-import { maquinasEspuma } from '../constants/index'
-import { arrowRight } from '../assets/icons/'
+import { foamMachines } from '../constants/index'
+import { arrowRight } from '../assets/icons'
 
-const Maquinas = () => {
+const Machines = () => {
 
     const { t } = useTranslation();
 
     useEffect(() => {
-        const elementoEspecifico = document.getElementById('inicioMaquinas');
+        const elementoEspecifico = document.getElementById('machines');
         if (elementoEspecifico) {
             elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
 
     return (
-        <section id="inicioMaquinas" className='bg-black'>
+        <section id="machines" className='bg-black'>
 
             <h1 className='text-white text-center font-century font-bold pt-[3.5em] pb-[1em] text-[40px]'>{t('cannon-title')}</h1>
 
@@ -24,7 +24,7 @@ const Maquinas = () => {
                 <div className=''>
 
                     <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container pb-[2em]">
-                        {maquinasEspuma.map((articulo, index) => (
+                        {foamMachines.map((articulo, index) => (
                             <div key={index} className="flex flex-col border mx-4 md:mx-0 pt-4 rounded-md">
                                 <span className="text-white text-center font-sterilict text-[35px] mb-6">{articulo.name1}<span className='text-pale-red font-sterilict'>{articulo.name2}</span></span>
                                 <Link to={articulo.to}>
@@ -57,4 +57,4 @@ const Maquinas = () => {
     )
 }
 
-export default Maquinas;
+export default Machines;

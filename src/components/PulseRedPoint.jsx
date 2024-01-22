@@ -1,10 +1,10 @@
-import '../pulso.css'
+import '../css/pulso.css'
 
-const Pulso = () => {
+const Pulse = () => {
     return (
         <div className="circle button" id="button-0">
         </div>
     )
 }
 
-export default Pulso
+export default Pulse

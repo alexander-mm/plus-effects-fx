@@ -1,14 +1,14 @@
-import { sistemadebombeo } from "../assets/shop-items";
+import { pumpKit } from "../assets/shop-items";
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { arrowRight } from '../assets/icons/'
+import { arrowRight } from '../assets/icons'
 import shopIcon from '../assets/icons/shop-icon.png'
-import { bidones } from '../constants'
-import BidonCard from './BidonCard';
-import FloatingButton from "./FloatingButton";
+import { supplies } from '../constants'
+import ItemShowCard from '../components/ItemShowCard';
+import FloatingButton from '../components/FloatingButton';
 
-const KitBombeo = () => {
+const PumpKit = () => {
 
     const { t, i18n } = useTranslation();
 
@@ -27,7 +27,7 @@ const KitBombeo = () => {
         }
     }, []);
 
-    const [bigImg, setBigImg] = useState(sistemadebombeo)
+    const [bigImg, setBigImg] = useState(pumpKit)
 
     return (
         <section id="inicioBombeo" className='bg-black'>
@@ -45,9 +45,9 @@ const KitBombeo = () => {
                             <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
 
                             <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
-                                {bidones.map((image, index) => (
+                                {supplies.map((image, index) => (
                                     <div key={index}>
-                                        <BidonCard
+                                        <ItemShowCard
                                             index={index}
                                             imgURL={image}
                                             changeBigImage={(canon) => setBigImg(canon)}
@@ -67,7 +67,7 @@ const KitBombeo = () => {
                                 <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
                                     <Link
                                         className='flex flex-row-reverse justify-center items-center text-black font-century font-bold'
-                                        to="/insumos&accs#inicioAccs"
+                                        to="/supplies#supplies"
                                     >
                                         {t('back-button')}
                                         <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
@@ -88,4 +88,4 @@ const KitBombeo = () => {
     );
 }
 
-export default KitBombeo
+export default PumpKit

@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
-import { colorantex6 } from "../assets/shop-items";
-import { arrowRight } from '../assets/icons/'
+import { colorantSix } from "../assets/shop-items";
+import { arrowRight } from '../assets/icons'
 import shopIcon from '../assets/icons/shop-icon.png'
-import { bidones } from '../constants'
-import BidonCard from './BidonCard';
-import FloatingButton from './FloatingButton';
+import { supplies } from '../constants'
+import ItemShowCard from '../components/ItemShowCard';
+import FloatingButton from '../components/FloatingButton';
 
-const Aditivo = () => {
+const EspumaColorSix = () => {
 
     const { t, i18n } = useTranslation();
 
@@ -21,16 +21,16 @@ const Aditivo = () => {
     }, [i18n]);
 
     useEffect(() => {
-        const elementoEspecifico = document.getElementById('inicioAditivo6');
+        const elementoEspecifico = document.getElementById('espumacolorsix');
         if (elementoEspecifico) {
             elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
 
-    const [bigImg, setBigImg] = useState(colorantex6)
+    const [bigImg, setBigImg] = useState(colorantSix)
 
     return (
-        <section id='inicioAditivo6' className='bg-black'>
+        <section id='espumacolorsix' className='bg-black'>
             <FloatingButton />
             <div className="w-full flex flex-col justify-center gap-y-10 min-h-screen max-container py-4">
                 <h1 className='text-white text-center font-century text-[40px]'>ESPUMA <span className="text-pale-red">XCOLOR</span></h1>
@@ -45,9 +45,9 @@ const Aditivo = () => {
                             <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
 
                             <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
-                                {bidones.map((image, index) => (
+                                {supplies.map((image, index) => (
                                     <div key={index}>
-                                        <BidonCard
+                                        <ItemShowCard
                                             index={index}
                                             imgURL={image}
                                             changeBigImage={(canon) => setBigImg(canon)}
@@ -85,7 +85,7 @@ const Aditivo = () => {
                             <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
                                 <Link
                                     className='flex flex-row-reverse justify-center items-center text-black font-century font-bold'
-                                    to="/insumos&accs#inicioAccs"
+                                    to="/supplies#supplies"
                                 >
                                     {t('back-button')}
                                     <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
@@ -105,4 +105,4 @@ const Aditivo = () => {
     );
 }
 
-export default Aditivo
+export default EspumaColorSix

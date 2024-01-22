@@ -1,4 +1,4 @@
-import '../floatingButton.css';
+import '../css/floatingButton.css';
 
 const FloatingButton = () => {
     return (

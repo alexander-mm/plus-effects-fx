@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
-// import FloatingButton from './FloatingButton';
 
 const Home = () => {
     useEffect(() => {
-        const elementoEspecifico = document.getElementById('inicioHome');
+        const elementoEspecifico = document.getElementById('home');
         if (elementoEspecifico) {
             elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
         }
@@ -14,7 +13,7 @@ const Home = () => {
     };
 
     return (
-        <section id='inicioHome' style={sectionStyle} className='relative py-[550px] bg-center bg-no-repeat bg-cover'>
+        <section id='home' style={sectionStyle} className='relative py-[550px] bg-center bg-no-repeat bg-cover'>
 
         </section>
     );

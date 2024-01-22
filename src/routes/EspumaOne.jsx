@@ -3,14 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
-import { machines, galeriaDetalles } from '../constants'
-import CanonCard from '../routes/CanonCard'
+import { machines, detailsGalery } from '../constants'
+import CanonCard from '../components/CanonCard'
 import { arrowRight } from '../assets/icons/'
-import ImageModal from './ImageModal';
-import CerrarBtn from '../assets/icons/cerrar.svg'
-import Pulso from './Pulso'
-import FondoAnimado from './FondoAnimado'
-import FloatingButton from './FloatingButton'
+import ImageModal from '../components/ImageModal';
+import closeButton from '../assets/icons/red-close-button.svg'
+import PulseRedPoint from '../components/PulseRedPoint'
+import RedBackground from '../components/RedBackground'
+import FloatingButton from '../components/FloatingButton';
 
 const Maquinas = () => {
 
@@ -99,7 +99,7 @@ const Maquinas = () => {
                     </div>
                     <div className='hidden xl:flex gap-2 mt-16'>
                         <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
-                            <Link className='flex justify-center items-center text-black font-century font-bold' to="/maquinas">
+                            <Link className='flex justify-center items-center text-black font-century font-bold' to="/machines#machines">
                                 <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                                 {t('back-button')}
                             </Link>
@@ -115,7 +115,7 @@ const Maquinas = () => {
             </div>
 
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
-                {galeriaDetalles.map((detalle, index) => (
+                {detailsGalery.map((detalle, index) => (
                     <div key={index} className='flex justify-center mb-[5px] mx-[2px]'>
 
                         <div className=''
@@ -146,7 +146,7 @@ const Maquinas = () => {
                                 }}
                             >
                             </div>
-                            <FondoAnimado />
+                            <RedBackground />
                             <div className='flex justify-center static'>
                                 <span className='mb-[14px]  text-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
                                     {t(detalle.translationKey)}
@@ -166,7 +166,7 @@ const Maquinas = () => {
                             <img src={detalle.background2} alt="" />
 
                             <div className="absolute top-[-14%] sm:top-[-10%] left-[83%] xs:left-[95%] sm:left-[90%]">
-                                <Pulso />
+                                <PulseRedPoint />
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@ const Maquinas = () => {
                             className="self-end w-[60px] mt-[em] text-white p-[14px] rounded-md"
                         >
                             <div className='border rounded-full p-[3px]'>
-                                <img className="w-full cursor-pointer" src={CerrarBtn} alt="cerrar form" />
+                                <img className="w-full cursor-pointer" src={closeButton} alt="cerrar form" />
                             </div>
                         </button>
                         <video className="w-full md:h-full" autoPlay controls>
@@ -195,7 +195,7 @@ const Maquinas = () => {
                 <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
                     <Link
                         className='flex flex-row-reverse justify-center items-center text-black font-century font-bold pr-2'
-                        to="/maquinas"
+                        to="/machines#machines"
                     >
                         {t('back-button')}
                         <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />

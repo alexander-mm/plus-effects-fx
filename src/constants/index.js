@@ -1,11 +1,11 @@
 import { facebook, instagram, whatsapp, tiktok, youtube } from "../assets/icons";
 import { wafmix } from "../assets/images";
-import { bidon, colorante, colorantex6, sistemadebombeo } from "../assets/shop-items";
+import { containerImg, colorant, colorantSix, pumpKit } from "../assets/shop-items";
 
 export const navLinks = [
-    { to2: "/", label: "Inicio", translationKey: "home" },
-    { to: "/maquinas#inicioMaquinas", to2: "/maquinas", label: "Nuestros Equipos", translationKey: "ourMachines" },
-    { to: "/insumos&accs#inicioAccs", to2: "/insumos&accs", label: "Insumos & Accs", translationKey: "suppliesAccessories" },
+    { to:"/", to2: "/", label: "Inicio", translationKey: "home" },
+    { to: "/machines#machines", to2: "/machines", label: "Nuestros Equipos", translationKey: "ourMachines" },
+    { to: "/supplies#supplies", to2: "/supplies", label: "Insumos & Accs", translationKey: "suppliesAccessories" },
 ];
 
 
@@ -29,30 +29,30 @@ export const machines = [
 ];
 
 
-export const bidones = [
+export const supplies = [
     {
-        thumbnail: bidon,
-        bigImg: bidon,
+        thumbnail: containerImg,
+        bigImg: containerImg,
         confirm: "bidon"
     },
     {
-        thumbnail: colorante,
-        bigImg: colorante,
+        thumbnail: colorant,
+        bigImg: colorant,
         confirm: "colorante"
     },
     {
-        thumbnail: colorantex6,
-        bigImg: colorantex6,
+        thumbnail: colorantSix,
+        bigImg: colorantSix,
         confirm: "coloranteX6"
     },
     {
-        thumbnail: sistemadebombeo,
-        bigImg: sistemadebombeo,
+        thumbnail: pumpKit,
+        bigImg: pumpKit,
         confirm: "bombeo"
     },
 ]
 
-export const maquinasEspuma = [
+export const foamMachines = [
     {
         name1: 'Espuma ',
         name2: '- One',
@@ -67,7 +67,7 @@ export const maquinasEspuma = [
     },
 ];
 
-export const galeriaDetalles = [
+export const detailsGalery = [
     {
         background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sinacoplesbanner.jpg',
         background2:'https://www.masqueunefecto.com/wp-content/uploads/2023/12/conacoplesbanner.jpg',
@@ -129,34 +129,34 @@ export const userManual = [
     },
 ];
 
-export const articulos = [
+export const foamFluid= [
     {
-        thumbnail: bidon,
+        thumbnail: containerImg,
         nombre: 'Espuma XPLUS',
         descripcion: 'Bidon: 20 Litros', translationKey: "bidon20",
-        to:"/bidon#inicioBidon"
+        to:"/container#container"
     },
 ];
 
-export const aditivos = [
+export const additives = [
     {
-        thumbnail: colorante,
+        thumbnail: colorant,
         nombre: 'Espuma XCOLOR',
         descripcion: '1 UND', translationKey: "1-unit",
-        to:"/aditivo#inicioAditivo"
+        to:"/espumacolor#espumacolor"
     },
     {
-        thumbnail: colorantex6,
+        thumbnail: colorantSix,
         nombre: 'Espuma XCOLOR SIX PACK',
         descripcion: '6 UNDS', translationKey: "6-unit",
-        to:"/aditivox6#inicioAditivo6"
+        to:"/espumacolorsix#espumacolorsix"
     },
 ];
-export const accesoriosRefaccion = [
+export const accesories = [
     {
-        thumbnail: sistemadebombeo,
+        thumbnail: pumpKit,
         nombre: 'Kit de Bombeo AUX', translationKey: "pump",        equipo: 'ESPUMA ONE',
-        to:"/kitbombeo#inicioBombeo"
+        to:"/pumpkit#pumpkit"
     },
 ];
 
@@ -164,7 +164,7 @@ export const footerLinks = [
     {
         title: "Máquinas", translationKey: "section",
         links: [
-            { name: "Espuma", link: "/maquinas", translationKey:"foam" },
+            { name: "Espuma", link: "/machines#machines", translationKey:"foam" },
             { name: "Nieve", link: "/buildpage", translationKey:"snow" },
             { name: "CO2", link: "/buildpage" },
             { name: "Burbujas", link: "/buildpage", translationKey:"bubbles" },

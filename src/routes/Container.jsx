@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
-import { bidon } from "../assets/shop-items";
-import { arrowRight } from '../assets/icons/'
+import { containerImg } from "../assets/shop-items";
+import { arrowRight } from '../assets/icons'
 import shopIcon from '../assets/icons/shop-icon.png'
-import { bidones } from '../constants'
-import BidonCard from './BidonCard';
-import FloatingButton from './FloatingButton';
+import { supplies } from '../constants'
+import ItemShowCard from '../components/ItemShowCard';
+import FloatingButton from '../components/FloatingButton';
 
-const Bidon = () => {
+const Container = () => {
 
     const { t, i18n } = useTranslation();
 
@@ -20,16 +20,16 @@ const Bidon = () => {
     }, [i18n]);
 
     useEffect(() => {
-        const elementoEspecifico = document.getElementById('inicioBidon');
+        const elementoEspecifico = document.getElementById('container');
         if (elementoEspecifico) {
             elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
 
-    const [bigImg, setBigImg] = useState(bidon)
+    const [bigImg, setBigImg] = useState(containerImg)
 
     return (
-        <section id='inicioBidon' className='bg-black'>
+        <section id='container' className='bg-black'>
             <FloatingButton />
             <div className="w-full flex flex-col justify-center gap-y-10 min-h-screen max-container py-4">
                 <h1 className='text-white text-center font-century text-[40px]'>ESPUMA <span className="text-pale-red">XPLUS</span></h1>
@@ -42,9 +42,9 @@ const Bidon = () => {
                             <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
 
                             <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
-                                {bidones.map((image, index) => (
+                                {supplies.map((image, index) => (
                                     <div key={index}>
-                                        <BidonCard
+                                        <ItemShowCard
                                             index={index}
                                             imgURL={image}
                                             changeBigImage={(bidon) => setBigImg(bidon)}
@@ -63,7 +63,7 @@ const Bidon = () => {
                             <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer mx-2'>
                                 <Link
                                     className='flex flex-row-reverse justify-center items-center text-black font-century font-bold'
-                                    to="/insumos&accs#inicioAccs"
+                                    to="/supplies#supplies"
                                 >
                                     {t('back-button')}
                                     <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
@@ -82,4 +82,4 @@ const Bidon = () => {
     );
 }
 
-export default Bidon
+export default Container

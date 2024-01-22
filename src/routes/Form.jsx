@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import Error from './Error'
-import CerrarBtn from '../assets/icons/cerrar.svg'
+import Error from '../components/Error'
+import CerrarBtn from '../assets/icons/red-close-button.svg'
 import emailjs from 'emailjs-com';
 
+// eslint-disable-next-line react/prop-types
 const Form = ({ setForm }) => {
 
     const { t, i18n } = useTranslation();

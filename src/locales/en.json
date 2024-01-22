@@ -87,5 +87,9 @@
   "send-button": "SEND",
 
   "sorry": "We're sorry",
-  "building": "Building Site"
+  "building": "Building Site",
+
+  "user-guide": "VIDEO TUTORIALS",
+  "canon-video": "EQUIPMENT INSTALLATION MANUAL",
+  "box-video": "COMPONENT ASSEMBLY MANUAL"
 }

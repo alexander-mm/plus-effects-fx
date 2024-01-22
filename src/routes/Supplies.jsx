@@ -1,31 +1,31 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
-import { articulos } from '../constants'
-import { aditivos } from '../constants'
-import { accesoriosRefaccion } from '../constants'
+import { foamFluid } from '../constants'
+import { additives } from '../constants'
+import { accesories } from '../constants'
 import shopIcon from '../assets/icons/shop-icon.png'
 
-const Insumos = () => {
+const Supplies = () => {
 
     const { t } = useTranslation();
 
     useEffect(() => {
-        const elementoEspecifico = document.getElementById('inicioAccs');
+        const elementoEspecifico = document.getElementById('supplies');
         if (elementoEspecifico) {
             elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
 
     return (
-        <section id='inicioAccs' className='bg-black'>
+        <section id='supplies' className='bg-black'>
 
             <h1 className='text-white text-center font-century font-bold pt-[3.5em] pb-[0.5em] text-[40px]'>{t('supplies')}</h1>
 
             <h2 className='border-t border-white-400/10 text-white text-center font-century py-[1em] xl:pb-[0] text-[30px]'>{t('fluid')}<span className='inline-block text-pale-red'>{t('foam2')}</span></h2>
 
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
-                {articulos.map((articulo, index) => (
+                {foamFluid.map((articulo, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
                         <Link to={articulo.to}>
                             <img
@@ -51,7 +51,7 @@ const Insumos = () => {
             <h2 className='border-t border-white-400/10 text-white text-center font-century py-[1em] xl:pb-[0] text-[30px]'>{t('color')}<span className='inline-block text-pale-red'>{t('adds')}</span> </h2>
 
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
-                {aditivos.map((aditivo, index) => (
+                {additives.map((aditivo, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
                         <Link to={aditivo.to}>
                             <img
@@ -78,7 +78,7 @@ const Insumos = () => {
             <h2 className='border-t border-white-400/10 text-white text-center font-century py-[1em] xl:pb-[0] text-[30px]'>{t('refax')}<span className='inline-block text-pale-red'>/ AUX</span> </h2>
 
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
-                {accesoriosRefaccion.map((accs, index) => (
+                {accesories.map((accs, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
                         <Link className='flex justify-center items-center' to={accs.to}>
                             <img
@@ -109,4 +109,4 @@ const Insumos = () => {
 
 
 
-export default Insumos;
+export default Supplies;

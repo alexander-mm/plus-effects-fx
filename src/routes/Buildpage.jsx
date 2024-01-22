@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import { arrowRight } from '../assets/icons/'
-import FloatingButton from './FloatingButton'
+import FloatingButton from '../components/FloatingButton';
 
 const Buildpage = () => {
 

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
-import Form from './Form'
+import Form from '../routes/Form'
 import { Link, useLocation } from 'react-router-dom'
 import { navLinks } from '../constants'
-import { Logo } from '../assets/images'
+import { logo } from '../assets/images'
 import { hamburger } from '../assets/icons'
 import closeBtn from '../assets/icons/close.svg'
-import FloatingButton from './FloatingButton'
+import FloatingButton from './FloatingButton';
 import flagEn from '../assets/icons/ingles.png';
 import flagEs from '../assets/icons/español.png';
 
@@ -24,7 +24,6 @@ const Navbar = () => {
     }, [i18n]);
 
     const changeLanguage = (language) => {
-        // Cambia el idioma y guarda la preferencia en localStorage
         i18n.changeLanguage(language);
         localStorage.setItem('language', language);
     };
@@ -39,8 +38,8 @@ const Navbar = () => {
 
             <nav className='py-2 flex justify-between items-center max-container'>
 
-                <a className='ml-4' href="/#inicioHome">
-                    <img src={Logo} alt="Logo"
+                <a className='ml-4' href="/#home">
+                    <img src={logo} alt="Logo"
                         width={100}
                     />
                 </a>
@@ -57,7 +56,7 @@ const Navbar = () => {
                     {navLinks.map((item) => (
                         <li key={item.label}>
                             <Link
-                                to={item.to2}
+                                to={item.to}
                                 className={`font-century leading-normal text-lg 
                                 ${location.pathname === item.to2 ? 'text-pale-red hover:text-red-600/50  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
                                 `}
@@ -95,7 +94,7 @@ const Navbar = () => {
                                 <li key={item.label}>
                                     <Link
                                         onClick={() => setToggle((prev) => !prev)}
-                                        to={item.to2}
+                                        to={item.to}
                                         className={`font-century leading-normal text-2xl 
                                         ${location.pathname === item.to2 ? 'text-pale-red  border-white/30 py-1 px-2 rounded-lg' : 'text-white-400/50 hover:text-white'}
                                         `}

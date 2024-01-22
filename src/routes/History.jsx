@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { arrowRight } from '../assets/icons/'
+import { arrowRight } from '../assets/icons'
 
-const Historia = () => {
+const History = () => {
     return (
         <section>
             <div className="w-full flex flex-col justify-center items-center min-h-screen xl:min-h-[91vh] max-container pb-8 sm:pb-14 xl:py-0">
@@ -104,4 +104,4 @@ const Historia = () => {
     )
 }
 
-export default Historia
+export default History

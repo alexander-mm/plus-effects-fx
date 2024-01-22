@@ -1,6 +1,6 @@
-import '../fondo.css'; // Asegúrate de ajustar la ruta según tu estructura de carpetas
+import '../css/fondo.css';
 
-const FondoAnimado = () => {
+const RedBackground = () => {
     return (
         <div className="relative h-full w-full cursor-pointer">
             <div className="bg-pale-red opacity-20 h-full w-full animate-fade-in-out"></div>
@@ -8,4 +8,4 @@ const FondoAnimado = () => {
     );
 }
 
-export default FondoAnimado;
+export default RedBackground;

@@ -3,20 +3,17 @@ import { Suspense } from 'react';
 import * as ReactDOM from "react-dom/client";
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
 import Home from './routes/Home'
-import Maquinas from './routes/Maquinas'
+import Machines from './routes/Machines'
 import EspumaOne from './routes/EspumaOne'
-import Insumos from './routes/Insumos'
-import Bidon from './routes/Bidon'
-import Aditivo from './routes/Aditivo'
-import AditivoX6 from './routes/AditivoX6'
-import KitBombeo from './routes/KitBombeo'
+import Supplies from './routes/Supplies'
+import Container from './routes/Container'
+import EspumaColor from './routes/EspumaColor'
+import EspumaColorSix from './routes/EspumaColorSix'
+import PumpKit from './routes/PumpKit'
 import Buildpage from "./routes/Buildpage";
 import UserManual from "./routes/UserManual";
 
@@ -30,12 +27,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/maquinas',
-        element: <Maquinas />
+        path: '/machines',
+        element: <Machines />
       },
       {
-        path: '/insumos&accs',
-        element: <Insumos />
+        path: '/supplies',
+        element: <Supplies />
       },
 
       {
@@ -50,20 +47,20 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/bidon',
-    element: <Bidon />
+    path: '/container',
+    element: <Container />
   },
   {
-    path: '/aditivo',
-    element: <Aditivo />
+    path: '/espumaColor',
+    element: <EspumaColor />
   },
   {
-    path: '/aditivox6',
-    element: <AditivoX6 />
+    path: '/espumacolorsix',
+    element: <EspumaColorSix />
   },
   {
-    path: '/kitbombeo',
-    element: <KitBombeo />
+    path: '/pumpkit',
+    element: <PumpKit />
   },
   {
     path: '/buildpage',

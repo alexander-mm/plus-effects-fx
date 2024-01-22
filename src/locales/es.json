@@ -84,5 +84,9 @@
   "send-button": "ENVIAR",
 
   "sorry": "Lo sentimos",
-  "building": "Sitio en Construcción"
+  "building": "Sitio en Construcción",
+
+  "userGuide": "VIDEO TUTORIALES",
+  "canon-video": "MANUAL DE INSTALACIÓN DEL EQUIPO",
+  "box-video": "MANUAL DE ENSAMBLAJE DE COMPONENTES"
 }

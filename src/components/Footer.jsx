@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
-import { Logo } from "../assets/images";
+import { logo } from "../assets/images";
 import { contactLinks, footerLinks, helpLinks, socialMedia } from "../constants";
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className='flex flex-col items-center my-4 lg:my-0'>
                     <a href='/'>
                         <img
-                            src={Logo}
+                            src={logo}
                             alt='logo'
                             width={120}
                         />
