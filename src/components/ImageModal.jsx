@@ -34,8 +34,9 @@ const ImageModal = ({ imageUrl, closeModal }) => {
                     alt="modal image"
                     className="w-full h-auto"
                     style={{
-                        objectFit: 'contain',
-                        maxHeight: '80vh',
+                        objectFit: 'cover',
+                        maxHeight: '95vh',
+                        maxWidth: '100%', // Ajusta según sea necesario
                     }}
                 />
             </div>
