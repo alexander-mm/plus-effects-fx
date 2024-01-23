@@ -1,11 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import ImageModal from '../components/ImageModal';
 import closeButton from '../assets/icons/red-close-button.svg';
 import playButton from '../assets/icons/play-button.svg';
+import screenfull from 'screenfull';
 
 const CanonInstallVideo = () => {
+
     const { t, i18n } = useTranslation();
+    const videoRef = useRef(null);
 
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
@@ -30,6 +33,12 @@ const CanonInstallVideo = () => {
         });
     };
 
+    const handlePlay = () => {
+        if (screenfull.isEnabled) {
+            screenfull.request(videoRef.current);
+        }
+    };
+
     return (
         <div>
             <div>
@@ -39,22 +48,6 @@ const CanonInstallVideo = () => {
             </div>
             <div className='flex justify-center sm:mx-2 pb-12'>
                 <div className='flex justify-center mb-[5px] mx-[2px]'>
-                    <div>
-                        <div
-                            style={{
-                                position: 'relative',
-                                top: 0,
-                                left: 0,
-                                width: '100%',
-                                height: 'auto',
-                                backgroundImage: `url("")`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                                zIndex: -1,
-                            }}
-                        ></div>
-                    </div>
                     <div
                         style={{
                             position: 'relative',
@@ -80,14 +73,14 @@ const CanonInstallVideo = () => {
                                 cursor: 'pointer',
                                 zIndex: 2,
                                 width: '80px',
-                                height: '80px'
+                                height: '80px',
                             }}
-                            onClick={() =>
+                            onClick={() => {
                                 openModal({
                                     type: 'video',
                                     url: 'https://www.masqueunefecto.com/wp-content/uploads/2024/01/MANUAL-INSTALACION.mp4',
-                                })
-                            }
+                                });
+                            }}
                         >
                             <img src={playButton} alt='Play' />
                         </div>
@@ -101,7 +94,13 @@ const CanonInstallVideo = () => {
                                 <img className='w-full cursor-pointer' src={closeButton} alt='cerrar form' />
                             </div>
                         </button>
-                        <video className='w-full md:h-full' autoPlay controls>
+                        <video
+                            ref={videoRef}
+                            className='w-full md:h-full'
+                            autoPlay
+                            controls
+                            onPlay={handlePlay}
+                        >
                             <source src={modalContent.url} type='video/mp4' />
                         </video>
                     </div>

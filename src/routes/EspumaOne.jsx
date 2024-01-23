@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
 import { canon1 } from '../assets/images'
@@ -11,10 +11,12 @@ import closeButton from '../assets/icons/red-close-button.svg'
 import PulseRedPoint from '../components/PulseRedPoint'
 import RedBackground from '../components/RedBackground'
 import FloatingButton from '../components/FloatingButton';
+import screenfull from 'screenfull';
 
 const Maquinas = () => {
 
     const { t, i18n } = useTranslation();
+    const videoRef = useRef(null);
 
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
@@ -48,7 +50,11 @@ const Maquinas = () => {
         });
     };
 
-
+    const handlePlay = () => {
+        if (screenfull.isEnabled) {
+            screenfull.request(videoRef.current);
+        }
+    };
     return (
         <section id='inicioOne' className='bg-black pb-10'>
             <FloatingButton />
@@ -184,7 +190,13 @@ const Maquinas = () => {
                                 <img className="w-full cursor-pointer" src={closeButton} alt="cerrar form" />
                             </div>
                         </button>
-                        <video className="w-full md:h-full" autoPlay controls>
+                        <video
+                            ref={videoRef}
+                            className='w-full md:h-full'
+                            autoPlay
+                            controls
+                            onPlay={handlePlay}
+                        >
                             <source src={modalContent.url} type='video/mp4' />
                         </video>
                     </div>

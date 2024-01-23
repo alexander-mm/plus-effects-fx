@@ -1,4 +1,4 @@
-import { facebook, instagram, whatsapp, tiktok, youtube } from "../assets/icons";
+import { facebook, instagram,  tiktok, youtube } from "../assets/icons";
 import { wafmix } from "../assets/images";
 import { containerImg, colorant, colorantSix, pumpKit } from "../assets/shop-items";
 

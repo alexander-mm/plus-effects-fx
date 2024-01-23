@@ -1,12 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next';
 import ImageModal from './ImageModal';
 import closeButton from '../assets/icons/red-close-button.svg'
 import playButton from '../assets/icons/play-button.svg';
+import screenfull from 'screenfull';
 
 const BoxElementsAssembly = () => {
 
     const { t, i18n } = useTranslation();
+    const videoRef = useRef(null);
+
 
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
@@ -29,6 +32,12 @@ const BoxElementsAssembly = () => {
             type: null,
             url: null,
         });
+    };
+
+    const handlePlay = () => {
+        if (screenfull.isEnabled) {
+            screenfull.request(videoRef.current);
+        }
     };
 
     return (
@@ -91,7 +100,13 @@ const BoxElementsAssembly = () => {
                                 <img className="w-full cursor-pointer" src={closeButton} alt="cerrar form" />
                             </div>
                         </button>
-                        <video className="w-full md:h-full" autoPlay controls>
+                        <video
+                            ref={videoRef}
+                            className='w-full md:h-full'
+                            autoPlay
+                            controls
+                            onPlay={handlePlay}
+                        >
                             <source src={modalContent.url} type='video/mp4' />
                         </video>
                     </div>
