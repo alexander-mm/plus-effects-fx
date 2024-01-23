@@ -61,7 +61,6 @@ const Maquinas = () => {
             <div className='flex justify-center'>
                 <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
             </div>
-
             <div className="w-full flex flex-col xl:flex-row justify-around max-container">
                 <div className="
                     bg-black
@@ -77,7 +76,6 @@ const Maquinas = () => {
                         xl:ml-[2em]
                     ">
                     <img src={bigCanonImg} alt="canon collection" width={610} height={500} className=" object-contain relative z-1" />
-
                     <div className='flex sm:gap-6 gap-4 absolute -bottom-[-5%]  max-sm:px-6'>
                         {machines.map((image, index) => (
                             <div key={index}>
@@ -119,7 +117,6 @@ const Maquinas = () => {
                     </div>
                 </div>
             </div>
-
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
                 {detailsGalery.map((detalle, index) => (
                     <div key={index} className='flex justify-center mb-[5px] mx-[2px]'>
@@ -202,7 +199,6 @@ const Maquinas = () => {
                     </div>
                 )}
             </div>
-
             <div className='flex justify-center items-center gap-2 m-8 xl:hidden'>
                 <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
                     <Link
@@ -220,7 +216,6 @@ const Maquinas = () => {
                     </a>
                 </button>
             </div>
-
         </section >
     );
 };

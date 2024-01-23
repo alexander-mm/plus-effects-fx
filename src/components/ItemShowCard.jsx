@@ -1,5 +1,6 @@
 // eslint-disable-next-line react/prop-types
 const ContainerCard = ({ imgURL, changeBigImage, bigImg, shouldRender }) => {
+
     const handleClick = () => {
         if (shouldRender(imgURL)) {
             // eslint-disable-next-line react/prop-types

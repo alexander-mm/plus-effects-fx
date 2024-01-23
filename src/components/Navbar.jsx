@@ -35,16 +35,13 @@ const Navbar = () => {
     return (
         <header className='px-4 py-2 lg:px-10 absolute z-10 w-full bg-black'>
             <FloatingButton />
-
             <nav className='py-2 flex justify-between items-center max-container'>
-
                 <a className='ml-4' href="/#home">
                     <img src={logo} alt="Logo"
                         width={100}
                     />
                 </a>
                 <ul className='flex-1 flex justify-end items-center gap-16 max-lg:hidden'>
-
                     <div className='mt-2 mr-8 self-center'>
                         <button className='text-white' onClick={() => changeLanguage('en')}>
                             <img className='w-8 h-8 mr-8' src={flagEn} alt="English Flag" />
@@ -69,8 +66,6 @@ const Navbar = () => {
                         <p className='cursor-pointer' onClick={handleForm}>{t('contact-nav')}</p>
                     </li>
                 </ul>
-
-
                 <div className='hidden max-lg:flex'>
 
                     <div className='mt-2 mr-12 self-center'>
@@ -87,7 +82,6 @@ const Navbar = () => {
                         alt="Hamburger" width={28} height={28}
                         onClick={() => setToggle((prev) => !prev)}
                     />
-
                     <div className={`${toggle ? 'flex' : 'hidden'} bg-black border border-white/30 text-white-400 rounded-md p-4 absolute top-20 right-1 z-[1000]`}>
                         <ul className='flex flex-col gap-4 justify-end items-center'>
                             {navLinks.map((item) => (
@@ -109,7 +103,6 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-
             </nav>
             <div className='flex justify-center'>
                 {form && <Form setForm={setForm} />}

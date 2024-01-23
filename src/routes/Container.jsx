@@ -55,10 +55,8 @@ const Container = () => {
                                 ))}
                             </div>
                         </div>
-
                         <h1 className="font-century text-xl font-bold mb-2">{t('cannon-description')}:</h1>
                         <p className="font-century text-lg">{t('descrip-bidon')}</p>
-
                         <div className='flex justify-center items-center mt-10'>
                             <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer mx-2'>
                                 <Link

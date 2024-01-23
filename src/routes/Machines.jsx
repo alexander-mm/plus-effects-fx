@@ -17,12 +17,9 @@ const Machines = () => {
 
     return (
         <section id="machines" className='bg-black'>
-
             <h1 className='text-white text-center font-century font-bold pt-[3.5em] pb-[1em] text-[40px]'>{t('cannon-title')}</h1>
-
             <div className='flex flex-row justify-center'>
-                <div className=''>
-
+                <div>
                     <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container pb-[2em]">
                         {foamMachines.map((articulo, index) => (
                             <div key={index} className="flex flex-col border mx-4 md:mx-0 pt-4 rounded-md">
@@ -36,7 +33,6 @@ const Machines = () => {
                                         />
                                     )}
                                 </Link>
-
                                 {articulo.auxText && <span className='text-white text-center text-[20px] font-sterilict px-[65px] md:px-[105px] my-44'>{t(articulo.translationKey)}</span>}
 
                                 <div className='flex justify-end mr-6 mb-6'>
@@ -50,7 +46,6 @@ const Machines = () => {
                             </div>
                         ))}
                     </div>
-
                 </div>
             </div>
         </section>

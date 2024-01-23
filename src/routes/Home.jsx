@@ -9,11 +9,11 @@ const Home = () => {
     }, []);
 
     const sectionStyle = {
-        backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2024/01/portada-scaled.jpg")`,
+        backgroundImage: `url("https://www.masqueunefecto.com/wp-content/uploads/2024/01/portada.jpg")`,
     };
 
     return (
-        <section id='home' style={sectionStyle} className='relative py-[550px] bg-center bg-no-repeat bg-cover'>
+        <section id='home' style={sectionStyle} className='relative py-[500px] bg-center bg-no-repeat bg-cover'>
 
         </section>
     );

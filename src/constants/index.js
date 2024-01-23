@@ -8,7 +8,6 @@ export const navLinks = [
     { to: "/supplies#supplies", to2: "/supplies", label: "Insumos & Accs", translationKey: "suppliesAccessories" },
 ];
 
-
 export const machines = [
     {
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
@@ -27,7 +26,6 @@ export const machines = [
         bigCanon: wafmix,
     },
 ];
-
 
 export const supplies = [
     {
@@ -152,6 +150,7 @@ export const additives = [
         to:"/espumacolorsix#espumacolorsix"
     },
 ];
+
 export const accesories = [
     {
         thumbnail: pumpKit,

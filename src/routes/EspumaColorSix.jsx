@@ -34,16 +34,13 @@ const EspumaColorSix = () => {
             <FloatingButton />
             <div className="w-full flex flex-col justify-center gap-y-10 min-h-screen max-container py-4">
                 <h1 className='text-white text-center font-century text-[40px]'>ESPUMA <span className="text-pale-red">XCOLOR</span></h1>
-
                 <div className="flex flex-col justify-center items-center mb-12">
-
                     <div className="text-white text-center">
                         <p className="font-century mb-8 text-3xl">
                             {t('colorx6')}
                         </p>
                         <div className="bg-black flex relative justify-center items-center border-2 border-white/50 rounded-2xl px-[1em] xl:px-[2em] pb-[9em] sm:pb-[12em] pt-[1em] md:pt-[3em] xl:pt-[1em] mx-8 md:mx-[7em] mb-8 mt-[2em]">
                             <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
-
                             <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
                                 {supplies.map((image, index) => (
                                     <div key={index}>
@@ -80,7 +77,6 @@ const EspumaColorSix = () => {
                             <div className='p-6 w-2 bg-purple-700 rounded-full'>
                             </div>
                         </div>
-
                         <div className='flex justify-center items-center mt-10 gap-4 mx-4'>
                             <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
                                 <Link

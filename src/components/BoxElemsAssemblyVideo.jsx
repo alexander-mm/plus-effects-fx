@@ -10,7 +10,6 @@ const BoxElementsAssembly = () => {
     const { t, i18n } = useTranslation();
     const videoRef = useRef(null);
 
-
     useEffect(() => {
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {

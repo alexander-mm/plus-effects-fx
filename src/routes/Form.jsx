@@ -38,7 +38,6 @@ const Form = ({ setForm }) => {
             return;
         }
         setError(false)
-
         setNombres('')
         setApellidos('')
         setWhatsApp('')
@@ -68,11 +67,7 @@ const Form = ({ setForm }) => {
                 <p className='text-center font-century font-bold leading-normal text-2xl text-white'>{t('contact-us')}</p>
             </div>
             <div className='pb-[50em] sm:pb-[30em] lg:pb-[5em]'>
-                <form
-                    onSubmit={handleSubmit}
-                    className="bg-black rounded-md py-10 px-8"
-                >
-
+                <form onSubmit={handleSubmit} className="bg-black rounded-md py-10 px-8">
                     <div className="mb-5">
                         <label htmlFor="nombres" className="block text-white uppercase font-bold">
                             {t('name')}
@@ -87,7 +82,6 @@ const Form = ({ setForm }) => {
                             onChange={(e) => setNombres(e.target.value)}
                         />
                     </div>
-
                     <div className="mb-5">
                         <label htmlFor="apellidos" className="block text-white uppercase font-bold">
                             {t('lastname')}
@@ -102,7 +96,6 @@ const Form = ({ setForm }) => {
                             onChange={(e) => setApellidos(e.target.value)}
                         />
                     </div>
-
                     <div className="mb-5">
                         <label htmlFor="whatsapp" className="block text-white uppercase font-bold">
                             WhatsApp:
@@ -117,7 +110,6 @@ const Form = ({ setForm }) => {
                             onChange={(e) => setWhatsApp(e.target.value)}
                         />
                     </div>
-
                     <div className="mb-5">
                         <label htmlFor="email" className="block text-white uppercase font-bold">
                             E-mail:
@@ -132,7 +124,6 @@ const Form = ({ setForm }) => {
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
-
                     <div className="mb-5">
                         <label htmlFor="ciudad" className="block text-white uppercase font-bold">
                             {t('city')}
@@ -147,7 +138,6 @@ const Form = ({ setForm }) => {
                             onChange={(e) => setCiudad(e.target.value)}
                         />
                     </div>
-
                     <div className="mb-5">
                         <label htmlFor="pais" className="block text-white uppercase font-bold">
                             {t('msj')}
@@ -162,9 +152,7 @@ const Form = ({ setForm }) => {
                             onChange={(e) => setMensaje(e.target.value)}
                         />
                     </div>
-
                     {error && <Error />}
-
                     <input
                         type="submit"
                         className="bg-black border hover:bg-green-600 w-full p-3 text-white rounded-md mt-8 uppercase font-bold cursor-pointer" value={t('send-button')} />

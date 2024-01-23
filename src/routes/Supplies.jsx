@@ -19,11 +19,8 @@ const Supplies = () => {
 
     return (
         <section id='supplies' className='bg-black'>
-
             <h1 className='text-white text-center font-century font-bold pt-[3.5em] pb-[0.5em] text-[40px]'>{t('supplies')}</h1>
-
             <h2 className='border-t border-white-400/10 text-white text-center font-century py-[1em] xl:pb-[0] text-[30px]'>{t('fluid')}<span className='inline-block text-pale-red'>{t('foam2')}</span></h2>
-
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
                 {foamFluid.map((articulo, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
@@ -35,7 +32,6 @@ const Supplies = () => {
                             />
                         </Link>
                         <p className='text-white text-center text-[14px] font-century font-bold'>{articulo.nombre}</p>
-
                         <div className='flex flex-row justify-around items-center'>
                             <p className='text-white text-center font-century text-sm md:text-[16px]'>{t(articulo.translationKey)}</p>
                             <button type='button' className='bg-white px-2 rounded-lg w-9 h-8  cursor-pointer'>
@@ -47,9 +43,7 @@ const Supplies = () => {
                     </div>
                 ))}
             </div>
-
             <h2 className='border-t border-white-400/10 text-white text-center font-century py-[1em] xl:pb-[0] text-[30px]'>{t('color')}<span className='inline-block text-pale-red'>{t('adds')}</span> </h2>
-
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
                 {additives.map((aditivo, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
@@ -61,7 +55,6 @@ const Supplies = () => {
                             />
                         </Link>
                         <p className='text-white text-center text-[14px] font-century font-bold'>{aditivo.nombre}</p>
-
                         <div className='flex flex-row justify-around items-center'>
                             <p className='text-white text-center font-century text-sm md:text-[16px]'>{t(aditivo.translationKey)}</p>
                             <button type='button' className='bg-white px-2 rounded-lg w-9 h-8  cursor-pointer'>
@@ -73,10 +66,8 @@ const Supplies = () => {
                     </div>
                 ))}
             </div>
-
             <h1 className='text-white text-center font-century font-bold pt-[1em] pb-[0.5em] text-[40px]'>{t('accs')}</h1>
             <h2 className='border-t border-white-400/10 text-white text-center font-century py-[1em] xl:pb-[0] text-[30px]'>{t('refax')}<span className='inline-block text-pale-red'>/ AUX</span> </h2>
-
             <div className="w-full flex flex-wrap gap-6 sm:gap-10 justify-center max-container xl:pt-[4em] pb-[6em]">
                 {accesories.map((accs, index) => (
                     <div key={index} className="flex flex-col gap-y-2 mx-2 border px-2 md:px-0 py-4 rounded-md">
@@ -89,8 +80,6 @@ const Supplies = () => {
                         </Link>
                         <p className='text-white text-center font-century font-bold'>
                             {t(accs.translationKey)}</p>
-
-
                         <div className='flex flex-row justify-around items-center px-4'>
                             <p className='text-white text-center font-century font-bold'>{t('machine')}<span className=' font-normal'>{accs.equipo}</span></p>
                             <button type='button' className='bg-white ml-2 px-2 rounded-lg w-9 h-8  cursor-pointer'>
@@ -102,7 +91,6 @@ const Supplies = () => {
                     </div>
                 ))}
             </div>
-
         </section>
     )
 }

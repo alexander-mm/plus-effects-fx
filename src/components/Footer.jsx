@@ -7,7 +7,6 @@ const Footer = () => {
 
     const { t } = useTranslation();
 
-
     return (
         <footer className=' bg-black pt-10 xl:pt-20 pb-6 px-10'>
             <div className='flex items-center flex-col lg:flex-row justify-around'>
@@ -36,7 +35,6 @@ const Footer = () => {
                         ))}
                     </div>
                 </div>
-
                 <div className="flex flex-row items-center gap-14 my-4 lg-my-0 mx-8">
                     {footerLinks.map((section) => (
                         <div key={section.title}>
@@ -70,14 +68,12 @@ const Footer = () => {
                                         >
                                             <Link to={link.link}>{t(link.translationKey)}</Link>
                                         </li>
-
                                     ))}
                                 </ul>
                             </div>
                         ))}
                     </div>
                 </div>
-
                 <div className="hidden lg:flex flex-row items-center gap-14 my-4 lg-my-0 mx-8">
                     {helpLinks.map((section) => (
                         <div key={section.title}>
@@ -98,8 +94,6 @@ const Footer = () => {
                         </div>
                     ))}
                 </div>
-
-
                 <div className="flex flex-row items-center">
                     {contactLinks.map((section) => (
                         <div key={section.title}>
@@ -114,19 +108,15 @@ const Footer = () => {
                                     >
                                         <Link to={link.link}>{link.name}</Link>
                                     </li>
-
                                 ))}
                             </ul>
                         </div>
                     ))}
                 </div>
-
-
             </div>
             <div className='text-white font-century flex justify-center items-center text-xs mt-6 mb-2 text-center'>
                 <p>{t('all-right')}</p>
             </div>
-
         </footer >
     );
 };

@@ -66,7 +66,6 @@ const router = createBrowserRouter([
     path: '/buildpage',
     element: <Buildpage />
   },
-
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(

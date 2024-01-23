@@ -1,5 +1,6 @@
 // eslint-disable-next-line react/prop-types
 const CanonCard = ({ imgURL, changeBigCanonImage, bigCanonImg }) => {
+
     const handleClick = () => {
         // eslint-disable-next-line react/prop-types
         if (bigCanonImg !== imgURL.bigCanon) {
