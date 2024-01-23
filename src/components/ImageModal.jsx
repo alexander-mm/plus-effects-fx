@@ -1,6 +1,7 @@
 import closeButton from '../assets/icons/red-close-button.svg';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const ImageModal = ({ imageUrl, closeModal }) => {
     const imgRef = useRef(null);
 

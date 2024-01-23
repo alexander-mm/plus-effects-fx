@@ -55,13 +55,13 @@ export const foamMachines = [
         name1: 'Espuma ',
         name2: '- One',
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
-        to:"/espumaone#inicioOne"
+        to:"/espumaone#one"
     },
     {
         name1: 'Espuma ',
         name2: '- X',
         auxText: 'Muy Pronto', translationKey: "auxText",
-        to:"/#inicioHome"
+        to:"/#home"
     },
 ];
 

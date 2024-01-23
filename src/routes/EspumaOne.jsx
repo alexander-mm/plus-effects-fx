@@ -13,7 +13,7 @@ import RedBackground from '../components/RedBackground'
 import FloatingButton from '../components/FloatingButton';
 import screenfull from 'screenfull';
 
-const Maquinas = () => {
+const EspumaOne = () => {
 
     const { t, i18n } = useTranslation();
     const videoRef = useRef(null);
@@ -26,7 +26,7 @@ const Maquinas = () => {
     }, [i18n]);
 
     useEffect(() => {
-        const elementoEspecifico = document.getElementById('inicioAccs');
+        const elementoEspecifico = document.getElementById('one');
         if (elementoEspecifico) {
             elementoEspecifico.scrollIntoView({ behavior: 'smooth' });
         }
@@ -55,8 +55,9 @@ const Maquinas = () => {
             screenfull.request(videoRef.current);
         }
     };
+
     return (
-        <section id='inicioOne' className='bg-black pb-10'>
+        <section id='one' className='bg-black pb-10'>
             <FloatingButton />
             <div className='flex justify-center'>
                 <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
@@ -116,6 +117,9 @@ const Maquinas = () => {
                         </button>
                     </div>
                 </div>
+            </div>
+            <div>
+                <h1 className='font-century font-bold text-white text-center my-8 text-3xl'>{t('galery')}</h1>
             </div>
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
                 {detailsGalery.map((detalle, index) => (
@@ -220,4 +224,4 @@ const Maquinas = () => {
     );
 };
 
-export default Maquinas;
+export default EspumaOne;
