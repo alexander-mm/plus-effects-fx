@@ -10,7 +10,55 @@
 
 <body>
   <div id="root"></div>
+  <div id="pp-button"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script src="https://pay.payphonetodoesposible.com/api/button/js?appId=VsL6y2I4gUS7mcKUppJ0kQ"></script>
+
+  <script>
+    window.onload = function () {
+      payphone.Button({
+
+        //token obtenido desde la consola de developer
+        token: "SirZNwYUQje5mQ4E8UPHstJP9NwyPq_NJ8G-meck9t4CIm6lZXrzoJWP6I6Yu3DrUnZqY3AGwJyFe8E1L3rVqTV2v8MAwASt9IJwPUJB45OJZrpl-bENpU_Iv9FcERypNpBYcpiMhKn4YWPylxaBaNx2RWxfNLUHufkh9T0hTVy45C4WTMbWmEUJAzVyi0MllPxlYpNmSCat15yKpo5eZCWsgt3tMmxcSTgPjRh9GRa9A5_pTLVOiiEO8qm0gBJS4iHwFFSM4KBOHRG6Y7uu4pmpckgBamU_Y93XDcSJF3v-Vq-P3p_WS5GFix6chiIr1iD_lw",
+
+        //PARÁMETROS DE CONFIGURACIÓN
+        btnHorizontal: true,
+        btnCard: true,
+
+        createOrder: function (actions) {
+          //Se ingresan los datos de la transaccion ej. monto, impuestos, etc
+
+          return actions.prepare({
+
+            amount: 110000,
+            amountWithoutTax: 110000,
+            currency: "USD",
+            clientTransactionId: "canon-pay_1",
+            lang: "es"
+
+          }).then(function (paramlog) {
+            return paramlog;
+          }).catch(function (paramlog2) {
+            return paramlog2;
+          });
+        },
+
+        onComplete: function (model, actions) {
+          actions.confirm({
+            id: model.id,
+            clientTxId: model.clientTxId
+          }).then(function (value) {
+            if (value.transactionStatus == "Approved") {
+              alert("Pago" + value.transactionId + "RECIBIDO, estado" + value.transactionStatus);
+            }
+          }).catch(function (err) {
+            return;
+          });
+        }
+
+      }).render("#pp-button");
+    }
+  </script>
 </body>
 
 </html>
