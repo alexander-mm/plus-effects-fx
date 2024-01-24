@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,43 +10,7 @@
 
 <body>
   <div id="root"></div>
-  <div id="pp-button"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script src="https://pay.payphonetodoesposible.com/api/button/js?appId=qV7lSzuEuTGp2aZrvw"></script>
-
-  <script>
-    window.onload = function () {
-      payphone.Button({
-        token: "hNorVxVvpjSSF13D1XMOlbXs0rJG6Dpb7lYHlY76nlpc5NmzdwSyyDHKkg79D2bvvFS543ezrhL55bTzgAk8NSQu9cfIu235PIRdOo3kqRy5sbCQ7hoKn47cuUbq5LffPb1NAsh1t-EK-frdWcehkDl1dkG1_ulLZ6FuuXMdJA-b6b777qoJTaeaHymWcfaFQ4dCq9Taa6zhUHmLkyu0NW-tUuvN1uNJKvWocfuI_V7n1HHeUf2CkNhjW5lpaSAUILyJLGBWL2V4IcT3FGRy706wXUKTlBuFhd6ytlwrYcS4LeSqS8FABeshsVOvVydnDLSINg",
-        btnHorizontal: true,
-        btnCard: true,
-
-        createOrder: function (actions) {
-          return actions.prepare({
-            amount: 110000,
-            amountWithoutTax: 110000,
-            currency: "USD",
-            clientTransactionId: "canon-pay_1",
-            lang: "es"
-          });
-        },
-
-        onComplete: function (model, actions) {
-          actions.confirm({
-            id: model.id,
-            clientTxId: model.clientTxId
-          }).then(function (value) {
-            if (value.transactionStatus === "Approved") {
-              alert("Pago " + value.transactionId + " RECIBIDO, estado " + value.transactionStatus);
-            }
-          }).catch(function (err) {
-            console.error(err);
-          });
-        }
-
-      }).render("#pp-button");
-    }
-  </script>
 </body>
 
 </html>
