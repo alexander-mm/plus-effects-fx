@@ -8,6 +8,24 @@ export const navLinks = [
     { to: "/supplies#supplies", to2: "/supplies", label: "Insumos & Accs", translationKey: "suppliesAccessories" },
 ];
 
+export const homeDetails = [
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgen1.jpg",
+        bigCanon:  "https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgen1.jpg",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/ventilador2.jpg",
+        bigCanon:  "https://www.masqueunefecto.com/wp-content/uploads/2023/12/ventilador2.jpg",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgen2.jpg",
+        bigCanon:  "https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgen2.jpg",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/conacoplesbanner.jpg",
+        bigCanon:  "https://www.masqueunefecto.com/wp-content/uploads/2023/12/conacoplesbanner.jpg",
+    },
+];
 export const machines = [
     {
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
