@@ -60,14 +60,14 @@ const Form = ({ setForm }) => {
 
     return (
         <div className="mx-4 w-4/5 md:w-3/5 xl:w-3/6">
-            <div className='border rounded-full p-1 right-10 sm:right-[2em] md:right-[10em] lg:right-[15em] cerrar-modal'>
+            <div className='border p-1 right-10 sm:right-[2em] md:right-[10em] lg:right-[15em] cerrar-modal'>
                 <img className="w-full cursor-pointer" src={CerrarBtn} alt="cerrar form" onClick={ocultarModal} />
             </div>
             <div className='pt-20 pb-0'>
                 <p className='text-center font-century font-bold leading-normal text-2xl text-white'>{t('contact-us')}</p>
             </div>
             <div className='pb-[50em] sm:pb-[30em] lg:pb-[5em]'>
-                <form onSubmit={handleSubmit} className="bg-black rounded-md py-10 px-8">
+                <form onSubmit={handleSubmit} className="bg-black py-10 px-8">
                     <div className="mb-5">
                         <label htmlFor="nombres" className="block text-white uppercase font-bold">
                             {t('name')}
@@ -77,7 +77,7 @@ const Form = ({ setForm }) => {
                             type="text"
                             name="nombres"
                             placeholder={t('w-name')}
-                            className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                            className="w-full p-2 mt-2 placeholder-gray-400"
                             value={nombres}
                             onChange={(e) => setNombres(e.target.value)}
                         />
@@ -91,7 +91,7 @@ const Form = ({ setForm }) => {
                             type="text"
                             name="apellidos"
                             placeholder={t('w-lastname')}
-                            className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                            className="w-full p-2 mt-2 placeholder-gray-400"
                             value={apellidos}
                             onChange={(e) => setApellidos(e.target.value)}
                         />
@@ -105,7 +105,7 @@ const Form = ({ setForm }) => {
                             type="text"
                             name="whatsapp"
                             placeholder={t('w-whatsapp')}
-                            className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                            className="w-full p-2 mt-2 placeholder-gray-400"
                             value={whatsapp}
                             onChange={(e) => setWhatsApp(e.target.value)}
                         />
@@ -119,7 +119,7 @@ const Form = ({ setForm }) => {
                             type="email"
                             name="email"
                             placeholder={t('w-e-mail')}
-                            className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                            className="w-full p-2 mt-2 placeholder-gray-400"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
@@ -133,7 +133,7 @@ const Form = ({ setForm }) => {
                             type="text"
                             name="ciudad"
                             placeholder={t('w-city')}
-                            className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                            className="w-full p-2 mt-2 placeholder-gray-400"
                             value={ciudad}
                             onChange={(e) => setCiudad(e.target.value)}
                         />
@@ -147,7 +147,7 @@ const Form = ({ setForm }) => {
                             type="text"
                             name="pais"
                             placeholder=""
-                            className="w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                            className="w-full p-2 mt-2 placeholder-gray-400"
                             value={mensaje}
                             onChange={(e) => setMensaje(e.target.value)}
                         />
@@ -155,7 +155,7 @@ const Form = ({ setForm }) => {
                     {error && <Error />}
                     <input
                         type="submit"
-                        className="bg-black border hover:bg-green-600 w-full p-3 text-white rounded-md mt-8 uppercase font-bold cursor-pointer" value={t('send-button')} />
+                        className="bg-black border hover:bg-green-600 w-full p-3 text-white mt-8 uppercase font-bold cursor-pointer" value={t('send-button')} />
                 </form>
             </div>
         </div>

@@ -10,7 +10,7 @@ import Home from './routes/Home'
 import Machines from './routes/Machines'
 import EspumaOne from './routes/EspumaOne'
 import Supplies from './routes/Supplies'
-import Container from './routes/Container'
+import FluidContainer from './routes/FluidContainer'
 import EspumaColor from './routes/EspumaColor'
 import EspumaColorSix from './routes/EspumaColorSix'
 import PumpKit from './routes/PumpKit'
@@ -47,8 +47,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/container',
-    element: <Container />
+    path: '/fluidcontainer',
+    element: <FluidContainer />
   },
   {
     path: '/espumaColor',

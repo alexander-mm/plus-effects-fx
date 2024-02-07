@@ -67,7 +67,7 @@ const EspumaOne = () => {
                     bg-black
                         flex relative 
                         justify-center items-center
-                        border-2 border-white/50 rounded-2xl
+                        border-2 border-white/50
                         px-[1em]  xl:px-[2em]
                         pb-[9em] sm:pb-[12em] md:pb-[12em] lg:pb-[12em] xl:pb-[em]
                         pt-[1em] md:pt-[3em]  xl:pt-[1em]
@@ -103,13 +103,13 @@ const EspumaOne = () => {
                         <span className="text-white text-[20px]">{t('cannon-wire')}</span>
                     </div>
                     <div className='hidden xl:flex gap-2 mt-16'>
-                        <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
+                        <button type='button' className='bg-white py-2 px-4 cursor-pointer'>
                             <Link className='flex justify-center items-center text-black font-century font-bold' to="/machines#machines">
                                 <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                                 {t('back-button')}
                             </Link>
                         </button>
-                        <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer hover:bg-green-600'>
+                        <button type='button' className='bg-white py-2 px-4 cursor-pointer hover:bg-green-600'>
                             <a className='flex flex-row justify-center items-center text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
                                 {t('buy-button')}
                                 <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
@@ -185,9 +185,9 @@ const EspumaOne = () => {
                     <div className="p-20 flex-col z-[1000] fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
                         <button
                             onClick={closeModal}
-                            className="self-end w-[60px] mt-[em] text-white p-[14px] rounded-md"
+                            className="self-end w-[60px] mt-[em] text-white p-[14px]"
                         >
-                            <div className='border rounded-full p-[3px]'>
+                            <div className='border p-[3px]'>
                                 <img className="w-full cursor-pointer" src={closeButton} alt="cerrar form" />
                             </div>
                         </button>
@@ -204,7 +204,7 @@ const EspumaOne = () => {
                 )}
             </div>
             <div className='flex justify-center items-center gap-2 m-8 xl:hidden'>
-                <button type='button' className='bg-white py-2 px-2 rounded-2xl cursor-pointer'>
+                <button type='button' className='bg-white py-2 px-2 cursor-pointer'>
                     <Link
                         className='flex flex-row-reverse justify-center items-center text-black font-century font-bold pr-2'
                         to="/machines#machines"
@@ -213,7 +213,7 @@ const EspumaOne = () => {
                         <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
                     </Link>
                 </button>
-                <button type='button' className='bg-white py-2 px-6 rounded-2xl cursor-pointer'>
+                <button type='button' className='bg-white py-2 px-6 cursor-pointer'>
                     <a className='flex flex-row justify-center items-center gap-1 text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
                         {t('buy-button')}
                         <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />

@@ -12,20 +12,20 @@ const CanonCard = ({ imgURL, changeBigCanonImage, bigCanonImg }) => {
     return (
         <div
             // eslint-disable-next-line react/prop-types
-            className={`rounded-lg ${bigCanonImg === imgURL.bigCanon
+            className={`${bigCanonImg === imgURL.bigCanon
                 ? "border-pale-red border-2"
-                : "border-white/50 border opacity-70"
+                : "border-white/50 border opacity-80"
                 } cursor-pointer max-sm:flex-1`}
             onClick={handleClick}
         >
-            <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-30 sm:h-30 rounded-lg p-1'>
+            <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-30 sm:h-30 p-1'>
                 <img
                     // eslint-disable-next-line react/prop-types
                     src={imgURL.thumbnail}
                     alt='canon collection'
                     width={127}
                     height={103.34}
-                    className='object-contain rounded-sm'
+                    className='object-contain'
                 />
             </div>
         </div>

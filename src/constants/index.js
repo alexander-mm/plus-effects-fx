@@ -150,7 +150,7 @@ export const foamFluid= [
         thumbnail: containerImg,
         nombre: 'Espuma XPLUS',
         descripcion: 'Bidon: 20 Litros', translationKey: "bidon20",
-        to:"/container#container"
+        to:"/fluidcontainer#container"
     },
 ];
 

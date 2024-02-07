@@ -8,7 +8,7 @@ import { supplies } from '../constants'
 import ItemShowCard from '../components/ItemShowCard';
 import FloatingButton from '../components/FloatingButton';
 
-const Container = () => {
+const FluidContainer = () => {
 
     const { t, i18n } = useTranslation();
 
@@ -38,7 +38,7 @@ const Container = () => {
 
                     <div className="text-white text-center ">
                         <p className="font-century text-3xl">{t('bidon20')}</p>
-                        <div className="bg-black flex relative justify-center items-center border-2 border-white/50 rounded-2xl px-[1em] xl:px-[2em] pb-[9em] sm:pb-[12em] pt-[1em] md:pt-[3em] xl:pt-[1em] mx-8 md:mx-[7em] mb-8 mt-[2em]">
+                        <div className="bg-black flex relative justify-center items-center border-2 border-white/50 px-[1em] xl:px-[2em] pb-[9em] sm:pb-[12em] pt-[1em] md:pt-[3em] xl:pt-[1em] mx-8 md:mx-[7em] mb-8 mt-[2em]">
                             <img src={bigImg} alt="canon collection" width={400} height={500} className="object-contain relative z-1 mb-16 md:mb-8" />
 
                             <div className='flex absolute -bottom-[-5%] max-sm:px-6 '>
@@ -57,17 +57,17 @@ const Container = () => {
                         </div>
                         <h1 className="font-century text-xl font-bold mb-2">{t('cannon-description')}:</h1>
                         <p className="font-century text-lg">{t('descrip-bidon')}</p>
-                        <div className='flex justify-center items-center mt-10'>
-                            <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer mx-2'>
+                        <div className='flex justify-center items-center mt-10 gap-x-4'>
+                            <button type='button' className='bg-white py-2 px-2 cursor-pointer'>
                                 <Link
-                                    className='flex flex-row-reverse justify-center items-center text-black font-century font-bold'
+                                    className='flex justify-center items-center text-black font-century font-bold'
                                     to="/supplies#supplies"
                                 >
-                                    {t('back-button')}
                                     <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
+                                    <p className='mr-2'>{t('back-button')}</p>
                                 </Link>
                             </button>
-                            <button type='button' className='bg-white py-2 px-6 rounded-2xl cursor-pointer mx-2'>
+                            <button type='button' className='bg-white py-2 px-4 cursor-pointer hover:bg-green-600'>
                                 <a className='flex flex-row justify-center items-center gap-3 text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20liquido%20para%20Cañones%20de%20Espuma" target="_blank" rel="noopener noreferrer">{t('buy-button')}
                                     <img src={shopIcon} className='w-9' alt="shop icon" />
                                 </a>
@@ -80,4 +80,4 @@ const Container = () => {
     );
 }
 
-export default Container
+export default FluidContainer

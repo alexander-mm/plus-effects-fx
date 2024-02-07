@@ -12,10 +12,10 @@ const ImageModal = ({ imageUrl, closeModal }) => {
         >
             <button
                 onClick={closeModal}
-                className="self-end w-[60px] mt-[em] text-white p-[14px] rounded-md"
+                className="self-end w-[60px] mt-[em] text-white p-[14px]"
             >
-                <div className='border rounded-full p-[3px] relative left-16 bottom-2'>
-                    <img className="w-full cursor-pointer" src={closeButton} alt="cerrar form" />
+                <div className='border p-[3px] relative left-16 bottom-2'>
+                    <img className="w-full cursor-pointer" src={closeButton} alt="close" />
                 </div>
             </button>
             <div

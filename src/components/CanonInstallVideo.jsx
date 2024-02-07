@@ -89,8 +89,8 @@ const CanonInstallVideo = () => {
                 {modalContent.type === 'image' && <ImageModal imageUrl={modalContent.url} closeModal={closeModal} />}
                 {modalContent.type === 'video' && (
                     <div className='p-20 flex-col z-[1000] fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75' onClick={closeModal}>
-                        <button onClick={closeModal} className='self-end w-[60px] mt-[em] text-white p-[14px] rounded-md'>
-                            <div className='border rounded-full p-[3px]'>
+                        <button onClick={closeModal} className='self-end w-[60px] mt-[em] text-white p-[14px]'>
+                            <div className='border p-[3px]'>
                                 <img className='w-full cursor-pointer' src={closeButton} alt='cerrar form' />
                             </div>
                         </button>

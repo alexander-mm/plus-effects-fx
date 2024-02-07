@@ -30,10 +30,9 @@ const Home = () => {
             <div className="w-full flex flex-col xl:flex-row justify-center max-container pt-28">
                 <div className="
                       bg-black
-                        bg-opacity-100
+                        bg-opacity-80
                         flex relative 
-                        justify-center items-center
-                        border-2 border-white/50 rounded-2xl
+                        justify-center items-center                        
                         px-[1em]  xl:px-[2em]
                         pb-[9em] sm:pb-[12em] md:pb-[12em] lg:pb-[12em] xl:pb-[em]
                         pt-[1em] md:pt-[3em]  xl:pt-[1em]
@@ -58,13 +57,12 @@ const Home = () => {
             </div>
             <div className="w-full flex flex-col xl:flex-row justify-center max-container">
                 <div className='
-                    bg-opacity-100 bg-black
+                    bg-black bg-opacity-75
                     flex flex-col
                     justify-around items-center
                     font-century text-white text-lg
-                    border-2 border-white/50 rounded-2xl
                     px-20
-                    mx-8 md:mx-28 lg:mx-60 xl:mx-20 mt-0 xl:mt-[9em] mb-10 xl:mb-20'
+                    mx-8 md:mx-28 lg:mx-60 xl:mx-32 mt-0 xl:mt-36 mb-10 xl:mb-20'
                 >
                     <p className='py-8'>
                         {t('first-text')}
@@ -72,14 +70,14 @@ const Home = () => {
                         {t('second-text')}<br /><br />
                         {t('third-text')}
                     </p>
-                    <div className='flex flex-col gap-2 mt-0 text-base py-8'>
-                        <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer'>
+                    <div className='flex flex-col gap-4 text-base pb-8'>
+                        <button type='button' className='bg-white py-2 px-2 cursor-pointer'>
                             <Link className='flex justify-center items-center text-black font-century font-bold' to="/espumaone#one">
+                                <p className='ml-2'>{t('more-info-button')}</p>
                                 <img src={arrowRight} className='w-9' alt="shop icon" />
-                                {t('more-info-button')}
                             </Link>
                         </button>
-                        <button type='button' className='bg-white py-2 px-4 rounded-2xl cursor-pointer hover:bg-green-600'>
+                        <button type='button' className='bg-white py-2 px-2 cursor-pointer hover:bg-green-600'>
                             <a className='flex flex-row justify-center items-center text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
                                 {t('buy-button')}
                                 <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
