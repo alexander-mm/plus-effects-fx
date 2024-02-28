@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { swiperInventory } from '../constants'
+import { swiperHome } from '../constants'
 import 'swiper/css/navigation';
 import '../css/swiperHome.css';
 import 'swiper/css';
@@ -14,15 +14,15 @@ const SwiperHome = () => {
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
-                    autoplay={{ delay: 3000, disableOnInteraction: false, }}
+                    autoplay={{ delay: 2000, disableOnInteraction: false, }}
                     pagination={{ clickable: true, }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper z-0 text-white font-avenir"
+                    className="mySwiper"
                 >
-                    {swiperInventory.map((item) => (
+                    {swiperHome.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <div className='h-[300px] md:h-[400px] xl:h-[500px] flex justify-center items-end' style={{ backgroundImage: `url(${item.src})`, backgroundSize: 'cover', backgroundPosition: item.aspect }}>
+                            <div className='h-[300px] md:h-[500px] xl:h-[600px] flex justify-center items-end' style={{ backgroundImage: `url(${item.src})`, backgroundSize: 'cover', backgroundPosition: item.aspect }}>
                             </div>
                         </SwiperSlide>
                     ))}

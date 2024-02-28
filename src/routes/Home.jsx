@@ -39,7 +39,7 @@ const Home = () => {
                 <SwiperHome />
             </div>
             <div className="w-full flex flex-row justify-center max-container">
-                <div className='flex flex- md:flex-row gap-4 text-base py-8'>
+                <div className='flex flex-col md:flex-row gap-4 text-base py-8'>
                     <button type='button' className='bg-white py-2 px-2 cursor-pointer'>
                         <Link className='flex justify-center items-center text-black font-century font-bold' to="/espumaone#one">
                             <p className='ml-2'>{t('more-info-button')}</p>

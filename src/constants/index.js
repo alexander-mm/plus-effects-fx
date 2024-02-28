@@ -2,33 +2,6 @@ import { facebook, instagram,  tiktok, youtube } from "../assets/icons";
 import { wafmix } from "../assets/images";
 import { containerImg, colorant, colorantSix, pumpKit } from "../assets/shop-items";
 
-export const swiperInventory = [
-    {
-        src:"https://www.masqueunefecto.com/wp-content/uploads/2023/11/4.jpg",
-        aspect: 'center',
-        id:"y"
-    },
-    {
-        aspect: 'center',
-        src:"https://www.masqueunefecto.com/wp-content/uploads/2023/11/20.jpg",
-        id:"w"
-    },
-    {
-        aspect: 'center',
-        src:"https://www.masqueunefecto.com/wp-content/uploads/2023/11/19.jpg",
-        id:"u"
-    },
-    {
-        aspect: 'center',
-        src:"https://www.masqueunefecto.com/wp-content/uploads/2023/11/12.jpg",
-        id:"x"
-    },
-    {
-        src:"https://www.masqueunefecto.com/wp-content/uploads/2023/11/17.jpg",
-        aspect: 'center',
-        id:"z"
-    },
-]
 
 export const navLinks = [
     { to:"/", to2: "/", label: "Inicio", translationKey: "home" },
@@ -54,6 +27,60 @@ export const homeDetails = [
         bigCanon:  "https://www.masqueunefecto.com/wp-content/uploads/2023/12/conacoplesbanner.jpg",
     },
 ];
+
+export const swiperHome = [
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-7.jpg",
+        aspect: 'center',
+        id:"z"
+    },
+    {
+        aspect: 'center',
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-8-scaled.jpg",
+        id:"y"
+    },
+    {
+        aspect: 'center',
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-4-scaled.jpg",
+        id:"x"
+    },
+    {
+        aspect: 'center',
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-9-scaled.jpg",
+        id:"w"
+    },
+    {
+        aspect: 'center',
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-3-scaled.jpg",
+        id:"v"
+    },
+    {
+        aspect: 'center',
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-11-scaled.jpg",
+        id:"u"
+    },
+    {
+        aspect: 'center',
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-1-scaled.jpg",
+        id:"t"
+    },
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-12-scaled.jpg",
+        aspect: 'center',
+        id:"s"
+    },
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/slider-2-scaled.jpg",
+        aspect: 'center',
+        id:"r"
+    },
+    {
+        aspect: 'center',
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-10-scaled.jpg",
+        id:"q"
+    },
+]
+
 export const machines = [
     {
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
