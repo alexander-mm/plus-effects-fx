@@ -22,6 +22,9 @@ const Home = () => {
             <div className='flex justify-center'>
                 <span className="text-white text-center font-century text-[30px] md:text-[45px] xl:text-[55px] mt-[3em] md:mt-[2em]">{t('welcome')}</span>
             </div>
+            <div>
+                <SwiperHome />
+            </div>
             <div className='flex justify-center'>
                 <span className="text-white font-sterilict text-[40px] md:text-[55px] xl:text-[65px] mt-10">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
             </div>
@@ -34,9 +37,6 @@ const Home = () => {
                         {t('third-text')}
                     </p>
                 </div>
-            </div>
-            <div>
-                <SwiperHome />
             </div>
             <div className="w-full flex flex-row justify-center max-container">
                 <div className='flex flex-col md:flex-row gap-4 text-base py-8'>

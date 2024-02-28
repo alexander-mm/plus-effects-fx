@@ -31,7 +31,7 @@ export const homeDetails = [
 export const swiperHome = [
     {
         src:"https://www.masqueunefecto.com/wp-content/uploads/2024/02/swiper-7.jpg",
-        aspect: 'center',
+        aspect: 'right',
         id:"z"
     },
     {
