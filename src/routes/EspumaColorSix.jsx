@@ -13,7 +13,6 @@ const EspumaColorSix = () => {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
-        // Recupera la preferencia de idioma almacenada en localStorage
         const savedLanguage = localStorage.getItem('language');
         if (savedLanguage) {
             i18n.changeLanguage(savedLanguage);
