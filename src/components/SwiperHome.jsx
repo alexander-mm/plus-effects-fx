@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { swiperHome } from '../constants'
@@ -7,6 +8,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const SwiperHome = () => {
+
+    useEffect(() => {
+        // Cambiar el color de la variable --swiper-pagination-color
+        document.documentElement.style.setProperty('--swiper-pagination-color', '#FF3B3B');
+    }, []);
 
     return (
         <>
