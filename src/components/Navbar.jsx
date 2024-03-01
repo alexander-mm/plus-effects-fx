@@ -7,6 +7,7 @@ import { logo } from '../assets/images'
 import { hamburger } from '../assets/icons'
 import closeBtn from '../assets/icons/close.svg'
 import FloatingButton from '../components/FloatingButton';
+import FloatingChat from '../components/FloatingChat';
 import flagEn from '../assets/icons/ingles.png';
 import flagEs from '../assets/icons/español.png';
 
@@ -14,6 +15,8 @@ const Navbar = () => {
     const { t, i18n } = useTranslation();
     const location = useLocation();
     const [toggle, setToggle] = useState(false);
+    const [showWhat, setShowWhat] = useState(true)
+    const [showChat, setShowChat] = useState(false)
     const [form, setForm] = useState(false);
 
     useEffect(() => {
@@ -28,13 +31,38 @@ const Navbar = () => {
         localStorage.setItem('language', language);
     };
 
+    useEffect(() => {
+        const timeoutShow = setTimeout(() => {
+            setShowChat(true);
+            setShowWhat(false);
+        }, 5000);
+
+        const timeoutHidde = setTimeout(() => {
+            setShowChat(false);
+            setShowWhat(true);
+        }, 15000);
+        return () => {
+            clearTimeout(timeoutShow)
+            clearTimeout(timeoutHidde)
+        };
+    }, []);
+
     const handleForm = () => {
         setForm(true);
     };
 
     return (
         <header className='px-4 py-2 lg:px-10 absolute z-10 w-full bg-black'>
-            <FloatingButton />
+            {showWhat && (
+                <div className='transition-opacity duration-3000 opacity-100'>
+                    <FloatingButton />
+                </div>
+            )}
+            {showChat && (
+                <div className='transition-opacity duration-3000 opacity-100'>
+                    <FloatingChat />
+                </div>
+            )}
             <nav className='py-2 flex justify-between items-center max-container'>
                 <a className='ml-4' href="/#home">
                     <img src={logo} alt="Logo"

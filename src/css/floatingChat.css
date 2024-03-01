@@ -1,0 +1,14 @@
+.floating-chat {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: url('../assets/icons/send.svg') no-repeat center center;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+  }
