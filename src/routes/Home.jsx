@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import shopIcon from '../assets/icons/shop-icon.png'
 import { arrowRight } from '../assets/icons/'
-import '../css/backHome.css'
 import SwiperHome from '../components/SwiperHome';
 
 const Home = () => {
