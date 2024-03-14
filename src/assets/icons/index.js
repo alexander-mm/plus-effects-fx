@@ -6,6 +6,7 @@ import tiktok from './tiktok.svg'
 import linkedin from './linkedin.svg'
 import hamburger from './hamburger.svg'
 import instagram from './instagram.svg'
+import manual from './manual.png'
 
 export {
     arrowRight,
@@ -16,4 +17,5 @@ export {
     youtube,
     tiktok,
     linkedin,
+    manual
 }

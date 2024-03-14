@@ -5,7 +5,7 @@ import { canon1 } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
 import { machines, detailsGalery } from '../constants'
 import CanonCard from '../components/CanonCard'
-import { arrowRight } from '../assets/icons/'
+import { arrowRight, manual } from '../assets/icons/'
 import ImageModal from '../components/ImageModal';
 import closeButton from '../assets/icons/red-close-button.svg'
 import PulseRedPoint from '../components/PulseRedPoint'
@@ -90,7 +90,7 @@ const EspumaOne = () => {
                         ))}
                     </div>
                 </div>
-                <div className="flex justify-center items-center flex-col ml-16">
+                <div className="flex justify-center items-center flex-col lg:ml-[12em] mx-8">
                     <div className='flex flex-col font-century justify-center mb-12 xl:mb-0 text-start gap-1 xl:ml-52'>
                         <span className="text-white font-bold text-[25px]">{t('cannon-description')}</span>
                         <span className="text-white text-[20px]">{t('cannon-range')}</span>
@@ -101,20 +101,26 @@ const EspumaOne = () => {
                         <span className="text-white text-[20px]">{t('cannon-liquid')}</span>
                         <span className="text-white text-[20px]">{t('cannon-op')}</span>
                         <span className="text-white text-[20px]">{t('cannon-wire')}</span>
-                    </div>
-                    <div className='hidden xl:flex gap-2 mt-16'>
-                        <button type='button' className='bg-white py-2 px-4 cursor-pointer'>
-                            <Link className='flex justify-center items-center text-black font-century font-bold' to="/machines#machines">
-                                <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
-                                {t('back-button')}
-                            </Link>
-                        </button>
-                        <button type='button' className='bg-white py-2 px-4 cursor-pointer hover:bg-green-600'>
-                            <a className='flex flex-row justify-center items-center text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
-                                {t('buy-button')}
-                                <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
-                            </a>
-                        </button>
+                        <div className='flex flex-col md:flex-row justify-center items-center gap-2 mt-16'>
+                            <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
+                                <Link className='flex justify-center items-center text-black font-century font-bold' to="/machines#machines">
+                                    <img src={arrowRight} className='w-8 rotate-180' alt="shop icon" />
+                                    {t('back-button')}
+                                </Link>
+                            </button>
+                            <button type='button' className='bg-white py-2 cursor-pointer w-[13em] hover:bg-green-600'>
+                                <a className='flex flex-row justify-center items-center text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
+                                    {t('buy-button')}
+                                    <img src={shopIcon} className='w-8 ml-2' alt="shop icon" />
+                                </a>
+                            </button>
+                            <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
+                                <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/usermanual">
+                                    {t('manual-button')}
+                                    <img src={manual} className='w-8 ml-2' alt="shop icon" />
+                                </Link>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,21 +209,27 @@ const EspumaOne = () => {
                     </div>
                 )}
             </div>
-            <div className='flex justify-center items-center gap-2 m-8 xl:hidden'>
-                <button type='button' className='bg-white py-2 px-2 cursor-pointer'>
+            <div className='flex flex-col lg:flex-row justify-center items-center gap-y-4 xl:hidden'>
+                <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
                     <Link
                         className='flex flex-row-reverse justify-center items-center text-black font-century font-bold pr-2'
                         to="/machines#machines"
                     >
                         {t('back-button')}
-                        <img src={arrowRight} className='w-9 rotate-180' alt="shop icon" />
+                        <img src={arrowRight} className='w-8 rotate-180' alt="shop icon" />
                     </Link>
                 </button>
-                <button type='button' className='bg-white py-2 px-6 cursor-pointer'>
+                <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
                     <a className='flex flex-row justify-center items-center gap-1 text-black font-century font-bold' href="https://api.whatsapp.com/send?phone=593980429801&text=Hola,%20estoy%20interesad@%20en%20el%20cañon%20de%20Espuma%20One" target="_blank" rel="noopener noreferrer">
                         {t('buy-button')}
-                        <img src={shopIcon} className='w-9 ml-2' alt="shop icon" />
+                        <img src={shopIcon} className='w-8 ml-2' alt="shop icon" />
                     </a>
+                </button>
+                <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
+                    <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/usermanual">
+                        {t('manual-button')}
+                        <img src={manual} className='w-8 ml-2' alt="shop icon" />
+                    </Link>
                 </button>
             </div>
         </section >
