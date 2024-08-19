@@ -33,7 +33,7 @@ const Machines = () => {
                                         />
                                     )}
                                 </Link>
-                                {articulo.auxText && <span className='text-white text-center text-[20px] font-sterilict px-[65px] md:px-[105px] my-44'>{t(articulo.translationKey)}</span>}
+                                
 
                                 <div className='flex justify-end mr-6 mb-6'>
                                     {articulo.thumbnail && (

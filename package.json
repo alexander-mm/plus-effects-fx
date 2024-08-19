@@ -19,7 +19,7 @@
     "react-i18next": "^14.0.0",
     "react-router-dom": "^6.20.1",
     "screenfull": "^6.0.2",
-    "sort-by": "^1.2.0",
+    "sort-by": "^0.0.2",
     "swiper": "^11.0.7"
   },
   "devDependencies": {

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import shopIcon from '../assets/icons/shop-icon.png'
 import { arrowRight } from '../assets/icons/'
 import SwiperHome from '../components/SwiperHome';
+// import SwiperFooter from '../components/SwiperFooter';
 
 const Home = () => {
 
@@ -25,7 +26,7 @@ const Home = () => {
                 <SwiperHome />
             </div>
             <div className='flex justify-center'>
-                <span className="text-white font-sterilict text-[40px] md:text-[55px] xl:text-[65px] mt-10">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
+                <span className="text-white font-sterilict text-[35px] md:text-[55px] xl:text-[65px] mt-10">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
             </div>
             <div className="w-full flex flex-col xl:flex-row justify-center max-container">
                 <div className='flex flex-col justify-around items-center font-century text-white text-lg mx-10 md:mx-32'>
@@ -53,6 +54,9 @@ const Home = () => {
                     </button>
                 </div>
             </div>
+            {/* <div>
+                <SwiperFooter />
+            </div> */}
         </section>
     );
 };

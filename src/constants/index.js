@@ -1,5 +1,5 @@
 import { facebook, instagram,  tiktok, youtube } from "../assets/icons";
-import { wafmix } from "../assets/images";
+import { wafmix, profile, fivestars, fourstars, threestars } from "../assets/images";
 import { containerImg, colorant, colorantSix, pumpKit } from "../assets/shop-items";
 
 
@@ -80,6 +80,32 @@ export const swiperHome = [
         id:"q"
     },
 ]
+export const swiperFooter = [
+    {
+        src: profile,
+        name: 'User Plus Machines 1',
+        company:'ForExample Entertainment 1',
+        opinion:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium libero natus fugit quidem cumque! Fugit excepturi libero qui autem minus, exercitationem temporibus ex ratione, quis fugiat accusantium eius inventore?',
+        stars: fivestars,
+        id:"1"
+    },
+    {
+        src: profile,
+        name: 'User Plus Machines 2',
+        company:'ForExample Entertainment 2',
+        opinion:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium libero natus fugit quidem cumque! Fugit excepturi libero qui autem minus, exercitationem temporibus ex ratione, quis fugiat accusantium eius inventore?',
+        stars: fourstars,
+        id:"2"
+    },
+    {
+        src: profile,
+        name: 'User Plus Machines 3',
+        company:'ForExample Entertainment 3',
+        opinion:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium libero natus fugit quidem cumque! Fugit excepturi libero qui autem minus, exercitationem temporibus ex ratione, quis fugiat accusantium eius inventore?',
+        stars: threestars,
+        id:"2"
+    },
+]
 
 export const machines = [
     {
@@ -127,14 +153,15 @@ export const foamMachines = [
     {
         name1: 'Espuma ',
         name2: '- One',
-        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2024/08/one.png",
         to:"/espumaone#one"
     },
     {
         name1: 'Espuma ',
-        name2: '- X',
+        name2: '- Neo',
         auxText: 'Muy Pronto', translationKey: "auxText",
-        to:"/#home"
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2024/08/neo-web.png",
+        to:"/"
     },
 ];
 

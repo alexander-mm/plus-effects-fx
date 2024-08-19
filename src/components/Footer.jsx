@@ -20,7 +20,7 @@ const Footer = () => {
                         />
                     </a>
                     <p className='text-base font-century text-white-400 sm:max-w-sm mb-2'>
-                        {t('follow-us')}
+                        {t("follow-us")}
                     </p>
                     <div className='flex items-center gap-4'>
                         {socialMedia.map((icon) => (
