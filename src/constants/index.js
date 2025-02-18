@@ -80,6 +80,38 @@ export const swiperHome = [
         id:"q"
     },
 ]
+export const swiperNeo = [
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2025/02/neobannerred.jpg",
+        aspect: 'top',
+        id:"z"
+    },
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2025/02/neobanneryellow.jpg",
+        aspect: 'top',
+        id:"y"
+    },
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2025/02/neobannerpurple.jpg",
+        aspect: 'top',
+        id:"x"
+    },
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2025/02/neobannergray.jpg",
+        aspect: 'top',
+        id:"w"
+    },
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2025/02/neobannerblue.jpg",
+        aspect: 'top',
+        id:"v"
+    },
+    {
+        src:"https://www.masqueunefecto.com/wp-content/uploads/2025/02/neobannergreen.jpg",
+        aspect: 'top',
+        id:"u"
+    },
+]
 export const swiperFooter = [
     {
         src: profile,
@@ -107,7 +139,7 @@ export const swiperFooter = [
     },
 ]
 
-export const machines = [
+export const machineOne = [
     {
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
         bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2023/12/canonone.png",
@@ -123,6 +155,32 @@ export const machines = [
     {
         thumbnail: wafmix,
         bigCanon: wafmix,
+    },
+];
+export const machineNeo = [
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-RED.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-RED.png",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-BLUE.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-BLUE.png",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-PURPLE.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-PURPLE.png",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-GREEN.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-GREEN.png",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-YELLOW.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-YELLOW.png",
+    },
+    {
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-GRAY.png",
+        bigCanon: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/NEO-GRAY.png",
     },
 ];
 
@@ -160,8 +218,8 @@ export const foamMachines = [
         name1: 'Espuma ',
         name2: '- Neo',
         auxText: 'Muy Pronto', translationKey: "auxText",
-        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2024/08/neo-web.png",
-        to:"/"
+        thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/neo-foam.png",
+        to:"/espumaNeo#neo"
     },
 ];
 
@@ -207,6 +265,50 @@ export const detailsGalery = [
         imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable2.jpg',
         bottomText: '10 METROS DE CABLE', translationKey: "wire",
         videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable1.jpg',
+    },
+];
+export const detailsGaleryNeo = [
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neoacoples.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2025/02/switch.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neoacoples.jpg',
+        bottomText: 'INSTALACIÓN SIN HERRAMIENTAS!', translationKey: "no-tools",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/acoples.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neoinclination2.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2025/02/onefoam2.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neoinclination2.jpg',
+        bottomText: 'SISTEMA DE INCLINACION',translationKey: "inclination",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgradvid.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neoinclination.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2025/02/onefoam.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neoinclination.jpg',
+        bottomText: 'MANCUERNAS PARA OPERACIÓN', translationKey: "dumbbells",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/mancuernasvid.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neogeneration.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neogeneration2.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neogeneration.jpg',
+        bottomText: 'SISTEMA DE GENERACIÓN', translationKey: "gen-system",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/sistemgenvid.mp4',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable2.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neoacoples.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable2.jpg',
+        bottomText: '10 METROS DE CABLE', translationKey: "wire",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/cable1.jpg',
+    },
+    {
+        background1: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neogrid.jpg',
+        background2:'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neosupport2.jpg',
+        imgExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2025/02/neogrid.jpg',
+        bottomText: 'PROTECCIÓN VENTILADOR', translationKey: "protectionneo",
+        videoExpand: 'https://www.masqueunefecto.com/wp-content/uploads/2023/12/ventiladorvid.mp4',
     },
 ];
 

@@ -9,6 +9,7 @@ import Root from "./routes/root";
 import Home from './routes/Home'
 import Machines from './routes/Machines'
 import EspumaOne from './routes/EspumaOne'
+import EspumaNeo from './routes/EspumaNeo'
 import Supplies from './routes/Supplies'
 import FluidContainer from './routes/FluidContainer'
 import EspumaColor from './routes/EspumaColor'
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: '/espumaone',
     element: <EspumaOne />
+  },
+  {
+    path: '/espumaneo',
+    element: <EspumaNeo />
   },
 
   {

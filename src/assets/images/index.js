@@ -1,3 +1,4 @@
+import neofoam from './neofoam.png'
 import canon1 from './canon1.png'
 import fxinterno from './fx interno.png'
 import wafmix from './waf mix.png'
@@ -11,6 +12,7 @@ import thumbnailBackground from './thumbnail-background.svg'
 import profile from './profile.jpg'
 
 export {
+    neofoam,
     canon1,
     profile,
     fxinterno,

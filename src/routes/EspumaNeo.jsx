@@ -1,19 +1,18 @@
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'
-import { canon1 } from '../assets/images'
+import { neofoam } from '../assets/images'
 import shopIcon from '../assets/icons/shop-icon.png'
-import { machineOne, detailsGalery } from '../constants'
+import { machineNeo, detailsGaleryNeo } from '../constants'
 import CanonCard from '../components/CanonCard'
 import { arrowRight, manual } from '../assets/icons/'
 import ImageModal from '../components/ImageModal';
 import closeButton from '../assets/icons/red-close-button.svg'
-import PulseRedPoint from '../components/PulseRedPoint'
-import RedBackground from '../components/RedBackground'
+import BlackBackground from '../components/BlackBackground'
 import FloatingButton from '../components/FloatingButton';
 import screenfull from 'screenfull';
 
-const EspumaOne = () => {
+const EspumaNeo = () => {
 
     const { t, i18n } = useTranslation();
     const videoRef = useRef(null);
@@ -32,7 +31,7 @@ const EspumaOne = () => {
         }
     }, []);
 
-    const [bigCanonImg, setBigCanonImg] = useState(canon1)
+    const [bigCanonImg, setBigCanonImg] = useState(neofoam)
 
     const [modalContent, setModalContent] = useState({
         type: null,
@@ -60,7 +59,7 @@ const EspumaOne = () => {
         <section id='one' className='bg-black pb-10'>
             <FloatingButton />
             <div className='flex justify-center'>
-                <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
+                <span className="text-white font-sterilict pt-10 text-[40px] md:text-[55px] xl:text-[65px]">ESPUMA<span className='text-pale-red font-sterilict'> - NEO</span></span>
             </div>
             <div className="w-full flex flex-col xl:flex-row justify-around max-container">
                 <div className="
@@ -78,7 +77,7 @@ const EspumaOne = () => {
                     ">
                     <img src={bigCanonImg} alt="canon collection" width={610} height={500} className=" object-contain relative z-1" />
                     <div className='flex sm:gap-6 gap-4 absolute -bottom-[-5%]  max-sm:px-6'>
-                        {machineOne.map((image, index) => (
+                        {machineNeo.map((image, index) => (
                             <div key={index}>
                                 <CanonCard
                                     index={index}
@@ -93,6 +92,9 @@ const EspumaOne = () => {
                 <div className="flex justify-center items-center flex-col lg:ml-[12em] mx-8">
                     <div className='flex flex-col font-century justify-center mb-12 xl:mb-0 text-start gap-1 xl:ml-52'>
                         <span className="text-white font-bold text-[25px]">{t('cannon-description')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-colors')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-body')}</span>
+                        <span className="text-white text-[20px]">{t('cannon-material')}</span>
                         <span className="text-white text-[20px]">{t('cannon-range')}</span>
                         <span className="text-white text-[20px]">{t('cannon-conex')}</span>
                         <span className="text-white text-[20px]">{t('cannon-waf')}</span>
@@ -115,7 +117,7 @@ const EspumaOne = () => {
                                 </a>
                             </button>
                             <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
-                                <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/usermanual">
+                                <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/">
                                     {t('manual-button')}
                                     <img src={manual} className='w-8 ml-2' alt="shop icon" />
                                 </Link>
@@ -125,10 +127,10 @@ const EspumaOne = () => {
                 </div>
             </div>
             <div>
-                <h1 className='font-century font-bold text-white text-center my-8 text-3xl'>{t('galery')}</h1>
+                <h1 className='font-century font-bold text-white text-center my-8 text-3xl'>{t('galeryneo')}</h1>
             </div>
             <div className='flex justify-center flex-wrap sm:mx-2 pb-12'>
-                {detailsGalery.map((detalle, index) => (
+                {detailsGaleryNeo.map((detalle, index) => (
                     <div key={index} className='flex justify-center mb-[5px] mx-[2px]'>
 
                         <div className=''
@@ -159,7 +161,7 @@ const EspumaOne = () => {
                                 }}
                             >
                             </div>
-                            <RedBackground />
+                            <BlackBackground />
                             <div className='flex justify-center static'>
                                 <span className='mb-[14px]  text-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
                                     {t(detalle.translationKey)}
@@ -174,12 +176,12 @@ const EspumaOne = () => {
                                 cursor: 'pointer',
                                 position: 'relative',
                             }}
-                            onClick={() => openModal({ type: 'video', url: detalle.videoExpand })}
+                            //onClick={() => openModal({ type: 'video', url: detalle.videoExpand })}
                         >
                             <img src={detalle.background2} alt="" />
 
                             <div className="absolute top-[-14%] sm:top-[-10%] left-[83%] xs:left-[95%] sm:left-[90%]">
-                                <PulseRedPoint />
+                                {/* <PulseRedPoint /> */}
                             </div>
                         </div>
                     </div>
@@ -226,7 +228,7 @@ const EspumaOne = () => {
                     </a>
                 </button>
                 <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
-                    <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/usermanual">
+                    <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/">
                         {t('manual-button')}
                         <img src={manual} className='w-8 ml-2' alt="shop icon" />
                     </Link>
@@ -236,4 +238,4 @@ const EspumaOne = () => {
     );
 };
 
-export default EspumaOne;
+export default EspumaNeo;
