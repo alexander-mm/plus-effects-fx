@@ -209,17 +209,19 @@ export const supplies = [
 
 export const foamMachines = [
     {
+        keyword: 'launch',
         name1: 'Espuma ',
         name2: '- One',
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2024/08/one.png",
         to:"/espumaone#one"
     },
     {
+        comingSoon: 'comingSoon',
         name1: 'Espuma ',
         name2: '- Neo',
         auxText: 'Muy Pronto', translationKey: "auxText",
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/neo-foam.png",
-        to:"/espumaNeo#neo"
+        to:"/machines#machines"
     },
 ];
 

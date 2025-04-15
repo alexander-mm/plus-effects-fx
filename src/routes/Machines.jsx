@@ -32,20 +32,30 @@ const Machines = () => {
                                             className="w-[30em] md:w-[35em] px-10"
                                         />
                                     )}
-                                </Link>
-                                
-
+                                </Link>        
+                                                    
                                 <div className='flex justify-end mr-6 mb-6'>
-                                    {articulo.thumbnail && (
+                                    {articulo.keyword && (
                                         <button type='button' className='bg-white mt-8 py-2 px-4 cursor-pointer'>
                                             <Link className=' flex flex-row justify-center items-center gap-2 text-black font-century font-bold' to={articulo.to}>
                                                 <img src={arrowRight} className='w-7 ml-2' alt="back icon" />
                                                 {t('read-more-button')}
                                             </Link>
-                                        </button>)}
+                                        </button>
+                                    )}
+                                    {articulo.comingSoon && (
+                                        <button type='button' className='bg-white mt-8 py-2 px-4 cursor-pointer'>
+                                            <Link className=' flex flex-row justify-center items-center gap-2 text-black font-century font-bold' to={articulo.to}>
+                                                {/* <img src={arrowRight} className='w-7 ml-2' alt="back icon" /> */}
+                                                {t('auxText')}
+                                            </Link>
+                                        </button>
+                                    )}
                                 </div>
+                                
                             </div>
                         ))}
+                        
                     </div>
                 </div>
             </div>
