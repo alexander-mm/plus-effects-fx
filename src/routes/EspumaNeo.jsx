@@ -163,7 +163,7 @@ const EspumaNeo = () => {
                             </div>
                             <BlackBackground />
                             <div className='flex justify-center static'>
-                                <span className='mb-[14px]  text-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
+                                <span className='mb-[14px]  text-black bg-white text-center font-century font-semibold absolute inset-x-0 bottom-[-14px] text-[12px] sm:text-[15px] lg:text-[17px]'>
                                     {t(detalle.translationKey)}
                                 </span>
                             </div>

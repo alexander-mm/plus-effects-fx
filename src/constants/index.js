@@ -221,7 +221,7 @@ export const foamMachines = [
         name2: '- Neo',
         auxText: 'Muy Pronto', translationKey: "auxText",
         thumbnail: "https://www.masqueunefecto.com/wp-content/uploads/2025/02/neo-foam.png",
-        to:"/machines#machines"
+        to:"/espumaneo#neo"
     },
 ];
 

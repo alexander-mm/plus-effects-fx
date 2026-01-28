@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import shopIcon from '../assets/icons/shop-icon.png'
 import { arrowRight } from '../assets/icons/'
 import SwiperHome from '../components/SwiperHome';
-// import SwiperNeo from '../components/SwiperNeo';
+import SwiperNeo from '../components/SwiperNeo';
 //import SwiperFooter from '../components/SwiperFooter';
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
             <div className='flex justify-center'>
                 <span className="text-white text-center font-century text-[40px] md:text-[45px] xl:text-[70px] mt-[3em] md:mt-[2em]">{t('welcome')}</span>
             </div>
-            {/* <div>
+            <div>
                 <div className='flex flex-col justify-center items-center mt-10 md:mt-10'>
                     <span className="text-white text-center font-century font-bold text-[40px] md:text-[45px] xl:text-[65px]">{t('new')}</span>
                     <img src="https://www.masqueunefecto.com/wp-content/uploads/2025/02/neo.png" alt="" className='w-[15em] md:w-[28em] mb-8'/>
@@ -50,7 +50,7 @@ const Home = () => {
                         </a>
                     </button>
                 </div>
-            </div> */}
+            </div>
             <div className='mt-20 md:mt-28'>
                 <div className='flex justify-center'>
                     <span className="text-white font-sterilict text-[35px] md:text-[55px] xl:text-[65px] mt-10">ESPUMA<span className='text-pale-red font-sterilict'> - One</span></span>
