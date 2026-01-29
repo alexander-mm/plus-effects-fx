@@ -115,7 +115,7 @@ const EspumaOne = () => {
                                 </a>
                             </button>
                             <button type='button' className='bg-white py-2 cursor-pointer w-[13em]'>
-                                <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/usermanual">
+                                <Link className='flex flex-row justify-center items-center text-black font-century font-bold' to="/usermanualone">
                                     {t('manual-button')}
                                     <img src={manual} className='w-8 ml-2' alt="shop icon" />
                                 </Link>

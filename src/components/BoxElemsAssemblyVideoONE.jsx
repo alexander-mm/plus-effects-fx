@@ -5,7 +5,7 @@ import closeButton from '../assets/icons/red-close-button.svg'
 import playButton from '../assets/icons/play-button.svg';
 import screenfull from 'screenfull';
 
-const BoxElementsAssembly = () => {
+const BoxElementsAssemblyONE = () => {
 
     const { t, i18n } = useTranslation();
     const videoRef = useRef(null);
@@ -115,4 +115,4 @@ const BoxElementsAssembly = () => {
     )
 }
 
-export default BoxElementsAssembly
+export default BoxElementsAssemblyONE;

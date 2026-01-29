@@ -16,7 +16,8 @@ import EspumaColor from './routes/EspumaColor'
 import EspumaColorSix from './routes/EspumaColorSix'
 import PumpKit from './routes/PumpKit'
 import Buildpage from "./routes/Buildpage";
-import UserManual from "./routes/UserManual";
+import UserManualONE from "./routes/UserManualONE";
+import UserManualNEO from "./routes/UserManualNEO";
 
 const router = createBrowserRouter([
   {
@@ -37,8 +38,13 @@ const router = createBrowserRouter([
       },
 
       {
-        path: '/usermanual',
-        element: <UserManual />
+        path: '/usermanualone',
+        element: <UserManualONE />
+      },
+
+      {
+        path: '/usermanualneo',
+        element: <UserManualNEO />
       },
     ],
   },

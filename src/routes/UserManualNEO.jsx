@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
-import CanonInstallVideo from '../components/CanonInstallVideo';
-import BoxElemsAssemblyVideo from '../components/BoxElemsAssemblyVideo';
+import CanonInstallVideoNEO from '../components/CanonInstallVideoNEO';
+import BoxElemsAssemblyVideoNEO from '../components/BoxElemsAssemblyVideoNEO';
 
-const UserManual = () => {
+const UserManualNEO = () => {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
@@ -19,11 +19,11 @@ const UserManual = () => {
                 <h1 className='font-century font-bold text-3xl text-white text-center'>{t('user-guide')}</h1>
             </div>
             <div className='flex justify-center flex-wrap'>
-                <CanonInstallVideo />
-                <BoxElemsAssemblyVideo />
+                <CanonInstallVideoNEO />
+                <BoxElemsAssemblyVideoNEO />
             </div>
         </section >
     )
 }
 
-export default UserManual
+export default UserManualNEO;
