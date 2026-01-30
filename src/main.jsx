@@ -12,6 +12,7 @@ import EspumaOne from './routes/EspumaOne'
 import EspumaNeo from './routes/EspumaNeo'
 import Supplies from './routes/Supplies'
 import FluidContainer from './routes/FluidContainer'
+import FoamPowder from './routes/FoamPowder'
 import EspumaColor from './routes/EspumaColor'
 import EspumaColorSix from './routes/EspumaColorSix'
 import PumpKit from './routes/PumpKit'
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: '/fluidcontainer',
     element: <FluidContainer />
+  },
+  {
+    path: '/foampowder',
+    element: <FoamPowder />
   },
   {
     path: '/espumaColor',

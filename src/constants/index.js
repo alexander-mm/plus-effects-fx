@@ -1,6 +1,6 @@
 import { facebook, instagram,  tiktok, youtube } from "../assets/icons";
 import { wafmix, profile, fivestars, fourstars, threestars } from "../assets/images";
-import { containerImg, colorant, colorantSix, pumpKit } from "../assets/shop-items";
+import { containerImg, colorant, colorantSix, pumpKit, xpowder} from "../assets/shop-items";
 
 
 export const navLinks = [
@@ -191,6 +191,11 @@ export const supplies = [
         confirm: "bidon"
     },
     {
+        thumbnail: xpowder,
+        bigImg: xpowder,
+        confirm: "powder"
+    },
+    {
         thumbnail: colorant,
         bigImg: colorant,
         confirm: "colorante"
@@ -337,6 +342,12 @@ export const foamFluid= [
         nombre: 'Espuma XPLUS',
         descripcion: 'Bidon: 20 Litros', translationKey: "bidon20",
         to:"/fluidcontainer#container"
+    },
+    {
+        thumbnail: xpowder,
+        nombre: 'Espuma XPOWDER',
+        descripcion: 'Bidon: 20 Litros', translationKey: "xpowder",
+        to:"/foampowder#container"
     },
 ];
 

@@ -62,19 +62,21 @@
   "wire": "10 METERS OF WIRE",
 
   "supplies": "SUPPLIES",
-  "fluid": "FOAM ",
-  "foam2": "FLUID",
+  "fluid": "FOAMING ",
+  "foam2": "INGREDIENTS",
   "color": "COLOR ",
   "adds": "ADDITIVES",
   "accs": "ACCESSORIES",
   "refax": "REPAIR PARTS ",
   "bidon20": "CONTAINER 20 LITERS",
+  "xpowder": "FOAMING POWDER",
   "1-unit": "1 UNT",
   "6-unit": "6 UNTS",
   "pump": "AUX Pump Kit",
 
   "machine": "FOR MACHINE: ",
   "descrip-bidon": "More than 20 liters of liquid for foam cannon and machine",
+  "descrip-xpowder": "1.5KG of foam powder to prepare 20 liters of liquid for foam cannon and machine.",
 
   "colorx1": "1 UNIT OF COLORANT",
   "colorx6": "6 UNITS OF COLORANT",
