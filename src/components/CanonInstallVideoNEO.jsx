@@ -63,7 +63,7 @@ const CanonInstallVideoNEO = () => {
                             })
                         }
                     >
-                        <img src='https://www.masqueunefecto.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-29-at-6.05.54-PM.jpeg' alt='' />
+                        <img src='https://www.masqueunefecto.com/wp-content/uploads/2026/02/manual1.jpg' alt='' />
                         <div
                             style={{
                                 position: 'absolute',

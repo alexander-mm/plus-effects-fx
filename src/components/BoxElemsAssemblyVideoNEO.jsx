@@ -59,9 +59,9 @@ const BoxElementsAssemblyNEO = () => {
                             cursor: 'pointer',
                             position: 'relative',
                         }}
-                        onClick={() => openModal({ type: 'video', url: "https://www.masqueunefecto.com/wp-content/uploads/2026/01/CTAP5662.mov" })}
+                        onClick={() => openModal({ type: 'video', url: "https://www.masqueunefecto.com/wp-content/uploads/2026/02/video-neo-armado.mp4" })}
                     >
-                        <img src="https://www.masqueunefecto.com/wp-content/uploads/2024/01/min-manual-box.jpg" alt="" />
+                        <img src="https://www.masqueunefecto.com/wp-content/uploads/2026/02/manual2.jpg" alt="" />
                         <div
                             style={{
                                 position: 'absolute',
@@ -76,7 +76,7 @@ const BoxElementsAssemblyNEO = () => {
                             onClick={() =>
                                 openModal({
                                     type: 'video',
-                                    url: 'https://www.masqueunefecto.com/wp-content/uploads/2026/01/CTAP5662.mov',
+                                    url: 'https://www.masqueunefecto.com/wp-content/uploads/2026/02/video-neo-armado.mp4',
                                 })
                             }
                         >
